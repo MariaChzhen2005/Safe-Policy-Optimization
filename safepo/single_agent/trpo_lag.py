@@ -54,7 +54,7 @@ default_cfg = {
 }
 
 isaac_gym_specific_cfg = {
-    'total_steps': 100000000,
+    'total_steps': 3000000,
     'steps_per_epoch': 32768,
     'hidden_sizes': [1024, 1024, 512],
     'gamma': 0.96,
@@ -524,7 +524,7 @@ def main(args, cfg_env=None):
             logger.log_tabular("Misc/AcceptanceStep")
 
             logger.dump_tabular()
-            if (epoch+1) % 100 == 0 or epoch == 0:
+            if (epoch+1) % 200 == 0 or epoch == 0:
                 logger.torch_save(itr=epoch)
                 if args.task not in isaac_gym_map.keys():
                     logger.save_state(
