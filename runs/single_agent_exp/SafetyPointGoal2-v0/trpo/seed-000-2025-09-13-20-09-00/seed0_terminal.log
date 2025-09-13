@@ -1,0 +1,3799 @@
+[32mStart with training.[0m
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch0.pt
+[32mExpected Improvement: 0.02073310688138008 Actual: 0.020111835730075855[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.299 |
+|          Metrics/EpCost |            18.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               1 |
+|        Train/TotalSteps |           2e+04 |
+|                Train/KL |         0.00656 |
+| Loss/Loss_reward_critic |          0.0065 |
+|   Loss/Loss_cost_critic |            1.25 |
+|         Loss/Loss_actor |         -0.0201 |
+|            Time/Rollout |            23.4 |
+|             Time/Update |            9.04 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |       -1.14e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |           0.966 |
+|      Misc/FinalStepNorm |           0.252 |
+|                Misc/xHx |          0.0214 |
+|      Misc/gradient_norm |           0.104 |
+|            Misc/H_inv_g |           0.261 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch1.pt
+[32mExpected Improvement: 0.021349254995584488 Actual: 0.02170724047124395[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |           -0.16 |
+|          Metrics/EpCost |            49.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               2 |
+|        Train/TotalSteps |           4e+04 |
+|                Train/KL |         0.00789 |
+| Loss/Loss_reward_critic |         0.00459 |
+|   Loss/Loss_cost_critic |            2.54 |
+|         Loss/Loss_actor |         -0.0217 |
+|            Time/Rollout |            23.4 |
+|             Time/Update |            9.05 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |        1.83e-08 |
+|           Value/CostAdv |       -3.05e-09 |
+|              Misc/Alpha |           0.938 |
+|      Misc/FinalStepNorm |           0.233 |
+|                Misc/xHx |          0.0227 |
+|      Misc/gradient_norm |           0.114 |
+|            Misc/H_inv_g |           0.248 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch2.pt
+[32mExpected Improvement: 0.022191360592842102 Actual: 0.023526355266572097[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |           0.675 |
+|          Metrics/EpCost |            80.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               3 |
+|        Train/TotalSteps |           6e+04 |
+|                Train/KL |         0.00811 |
+| Loss/Loss_reward_critic |         0.00734 |
+|   Loss/Loss_cost_critic |            2.86 |
+|         Loss/Loss_actor |         -0.0235 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.86 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |        1.07e-08 |
+|           Value/CostAdv |        3.97e-08 |
+|              Misc/Alpha |           0.902 |
+|      Misc/FinalStepNorm |           0.224 |
+|                Misc/xHx |          0.0246 |
+|      Misc/gradient_norm |           0.136 |
+|            Misc/H_inv_g |           0.248 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch3.pt
+[32mExpected Improvement: 0.0196914654225111 Actual: 0.020896975383166705[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            2.57 |
+|          Metrics/EpCost |            99.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               4 |
+|        Train/TotalSteps |           8e+04 |
+|                Train/KL |         0.00837 |
+| Loss/Loss_reward_critic |         0.00936 |
+|   Loss/Loss_cost_critic |            2.18 |
+|         Loss/Loss_actor |         -0.0209 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            8.94 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |         5.8e-08 |
+|           Value/CostAdv |        5.49e-08 |
+|              Misc/Alpha |            1.02 |
+|      Misc/FinalStepNorm |           0.234 |
+|                Misc/xHx |          0.0193 |
+|      Misc/gradient_norm |            0.11 |
+|            Misc/H_inv_g |            0.23 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch4.pt
+[32mExpected Improvement: 0.01904749497771263 Actual: 0.020340776950121153[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            4.68 |
+|          Metrics/EpCost |             103 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               5 |
+|        Train/TotalSteps |           1e+05 |
+|                Train/KL |         0.00804 |
+| Loss/Loss_reward_critic |          0.0103 |
+|   Loss/Loss_cost_critic |            2.66 |
+|         Loss/Loss_actor |         -0.0203 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.93 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |         3.7e-08 |
+|           Value/CostAdv |        1.59e-07 |
+|              Misc/Alpha |            1.05 |
+|      Misc/FinalStepNorm |           0.245 |
+|                Misc/xHx |          0.0181 |
+|      Misc/gradient_norm |          0.0997 |
+|            Misc/H_inv_g |           0.233 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch5.pt
+[32mExpected Improvement: 0.017964769154787064 Actual: 0.018799828365445137[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            6.48 |
+|          Metrics/EpCost |             105 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               6 |
+|        Train/TotalSteps |         1.2e+05 |
+|                Train/KL |         0.00782 |
+| Loss/Loss_reward_critic |         0.00956 |
+|   Loss/Loss_cost_critic |             2.9 |
+|         Loss/Loss_actor |         -0.0188 |
+|            Time/Rollout |            23.6 |
+|             Time/Update |            9.32 |
+|              Time/Total |            32.9 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |         6.1e-08 |
+|              Misc/Alpha |            1.11 |
+|      Misc/FinalStepNorm |            0.25 |
+|                Misc/xHx |          0.0161 |
+|      Misc/gradient_norm |           0.096 |
+|            Misc/H_inv_g |           0.224 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch6.pt
+[32mExpected Improvement: 0.018246442079544067 Actual: 0.018769352576137877[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            8.33 |
+|          Metrics/EpCost |             111 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               7 |
+|        Train/TotalSteps |         1.4e+05 |
+|                Train/KL |         0.00827 |
+| Loss/Loss_reward_critic |          0.0158 |
+|   Loss/Loss_cost_critic |            2.92 |
+|         Loss/Loss_actor |         -0.0188 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            8.85 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |        3.05e-08 |
+|           Value/CostAdv |         5.8e-08 |
+|              Misc/Alpha |             1.1 |
+|      Misc/FinalStepNorm |           0.232 |
+|                Misc/xHx |          0.0166 |
+|      Misc/gradient_norm |           0.135 |
+|            Misc/H_inv_g |           0.211 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch7.pt
+[32mExpected Improvement: 0.01810252107679844 Actual: 0.018648050141334416[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            10.9 |
+|          Metrics/EpCost |             119 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               8 |
+|        Train/TotalSteps |         1.6e+05 |
+|                Train/KL |         0.00745 |
+| Loss/Loss_reward_critic |          0.0165 |
+|   Loss/Loss_cost_critic |             3.2 |
+|         Loss/Loss_actor |         -0.0186 |
+|            Time/Rollout |            23.4 |
+|             Time/Update |            8.82 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |            1.11 |
+|      Misc/FinalStepNorm |           0.252 |
+|                Misc/xHx |          0.0163 |
+|      Misc/gradient_norm |           0.112 |
+|            Misc/H_inv_g |           0.227 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch8.pt
+[32mExpected Improvement: 0.01773158460855484 Actual: 0.017589671772718418[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            13.8 |
+|          Metrics/EpCost |             135 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               9 |
+|        Train/TotalSteps |         1.8e+05 |
+|                Train/KL |         0.00762 |
+| Loss/Loss_reward_critic |           0.017 |
+|   Loss/Loss_cost_critic |            3.21 |
+|         Loss/Loss_actor |         -0.0176 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            9.41 |
+|              Time/Total |            32.7 |
+|         Value/RewardAdv |        5.72e-10 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            1.13 |
+|      Misc/FinalStepNorm |           0.252 |
+|                Misc/xHx |          0.0157 |
+|      Misc/gradient_norm |           0.122 |
+|            Misc/H_inv_g |           0.223 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch9.pt
+[32mExpected Improvement: 0.018907949328422546 Actual: 0.018422294682267193[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              15 |
+|          Metrics/EpCost |             155 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              10 |
+|        Train/TotalSteps |           2e+05 |
+|                Train/KL |         0.00783 |
+| Loss/Loss_reward_critic |          0.0195 |
+|   Loss/Loss_cost_critic |            4.03 |
+|         Loss/Loss_actor |         -0.0184 |
+|            Time/Rollout |            23.8 |
+|             Time/Update |            9.04 |
+|              Time/Total |            32.9 |
+|         Value/RewardAdv |        4.88e-08 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |           0.231 |
+|                Misc/xHx |          0.0178 |
+|      Misc/gradient_norm |            0.15 |
+|            Misc/H_inv_g |           0.218 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch10.pt
+[32mExpected Improvement: 0.017128130421042442 Actual: 0.017064558526875828[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            15.9 |
+|          Metrics/EpCost |             172 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              11 |
+|        Train/TotalSteps |         2.2e+05 |
+|                Train/KL |         0.00698 |
+| Loss/Loss_reward_critic |          0.0213 |
+|   Loss/Loss_cost_critic |            3.63 |
+|         Loss/Loss_actor |         -0.0171 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            8.88 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |        6.18e-08 |
+|           Value/CostAdv |       -3.05e-08 |
+|              Misc/Alpha |            1.17 |
+|      Misc/FinalStepNorm |           0.264 |
+|                Misc/xHx |          0.0146 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.225 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch11.pt
+[32mExpected Improvement: 0.017932774499058723 Actual: 0.01769175722003169[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            15.9 |
+|          Metrics/EpCost |             183 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              12 |
+|        Train/TotalSteps |         2.4e+05 |
+|                Train/KL |          0.0065 |
+| Loss/Loss_reward_critic |          0.0248 |
+|   Loss/Loss_cost_critic |            3.97 |
+|         Loss/Loss_actor |         -0.0177 |
+|            Time/Rollout |            23.9 |
+|             Time/Update |            9.07 |
+|              Time/Total |            32.9 |
+|         Value/RewardAdv |         4.5e-08 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |            1.12 |
+|      Misc/FinalStepNorm |           0.279 |
+|                Misc/xHx |           0.016 |
+|      Misc/gradient_norm |           0.111 |
+|            Misc/H_inv_g |            0.25 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch12.pt
+[32mExpected Improvement: 0.01577775552868843 Actual: 0.015487315019965031[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            16.1 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              13 |
+|        Train/TotalSteps |         2.6e+05 |
+|                Train/KL |         0.00643 |
+| Loss/Loss_reward_critic |          0.0335 |
+|   Loss/Loss_cost_critic |            3.62 |
+|         Loss/Loss_actor |         -0.0155 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            8.82 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |       -1.18e-08 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |            1.27 |
+|      Misc/FinalStepNorm |           0.277 |
+|                Misc/xHx |          0.0124 |
+|      Misc/gradient_norm |           0.103 |
+|            Misc/H_inv_g |           0.219 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch13.pt
+[32mExpected Improvement: 0.014758145436644554 Actual: 0.014366645586488147[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            17.4 |
+|          Metrics/EpCost |             197 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              14 |
+|        Train/TotalSteps |         2.8e+05 |
+|                Train/KL |         0.00589 |
+| Loss/Loss_reward_critic |          0.0298 |
+|   Loss/Loss_cost_critic |            4.01 |
+|         Loss/Loss_actor |         -0.0144 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            9.02 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |       -3.81e-08 |
+|           Value/CostAdv |        9.77e-08 |
+|              Misc/Alpha |            1.36 |
+|      Misc/FinalStepNorm |           0.292 |
+|                Misc/xHx |          0.0109 |
+|      Misc/gradient_norm |          0.0992 |
+|            Misc/H_inv_g |           0.215 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch14.pt
+[32mExpected Improvement: 0.015959739685058594 Actual: 0.015783275240659478[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            18.2 |
+|          Metrics/EpCost |             198 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              15 |
+|        Train/TotalSteps |           3e+05 |
+|                Train/KL |         0.00616 |
+| Loss/Loss_reward_critic |            0.03 |
+|   Loss/Loss_cost_critic |            4.11 |
+|         Loss/Loss_actor |         -0.0158 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            9.06 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |           9e-08 |
+|              Misc/Alpha |            1.25 |
+|      Misc/FinalStepNorm |           0.284 |
+|                Misc/xHx |          0.0127 |
+|      Misc/gradient_norm |          0.0962 |
+|            Misc/H_inv_g |           0.226 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch15.pt
+[32mExpected Improvement: 0.015428949147462845 Actual: 0.01528463748395481[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            18.6 |
+|          Metrics/EpCost |             203 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              16 |
+|        Train/TotalSteps |         3.2e+05 |
+|                Train/KL |         0.00604 |
+| Loss/Loss_reward_critic |          0.0343 |
+|   Loss/Loss_cost_critic |            4.19 |
+|         Loss/Loss_actor |         -0.0153 |
+|            Time/Rollout |              23 |
+|             Time/Update |            8.81 |
+|              Time/Total |            31.9 |
+|         Value/RewardAdv |        1.53e-08 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |             1.3 |
+|      Misc/FinalStepNorm |           0.293 |
+|                Misc/xHx |          0.0119 |
+|      Misc/gradient_norm |          0.0912 |
+|            Misc/H_inv_g |           0.226 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch16.pt
+[32mExpected Improvement: 0.01654377207159996 Actual: 0.017229398691654296[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            18.8 |
+|          Metrics/EpCost |             200 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              17 |
+|        Train/TotalSteps |         3.4e+05 |
+|                Train/KL |          0.0059 |
+| Loss/Loss_reward_critic |          0.0376 |
+|   Loss/Loss_cost_critic |            4.46 |
+|         Loss/Loss_actor |         -0.0172 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            8.91 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |         1.6e-08 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |            1.21 |
+|      Misc/FinalStepNorm |           0.289 |
+|                Misc/xHx |          0.0137 |
+|      Misc/gradient_norm |          0.0921 |
+|            Misc/H_inv_g |           0.239 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch17.pt
+[32mExpected Improvement: 0.015524781309068203 Actual: 0.016181553456187325[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            19.1 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              18 |
+|        Train/TotalSteps |         3.6e+05 |
+|                Train/KL |         0.00633 |
+| Loss/Loss_reward_critic |          0.0355 |
+|   Loss/Loss_cost_critic |            4.63 |
+|         Loss/Loss_actor |         -0.0162 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.93 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |       -3.05e-09 |
+|              Misc/Alpha |            1.29 |
+|      Misc/FinalStepNorm |           0.281 |
+|                Misc/xHx |           0.012 |
+|      Misc/gradient_norm |          0.0955 |
+|            Misc/H_inv_g |           0.218 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch18.pt
+[32mExpected Improvement: 0.014892606995999813 Actual: 0.014732534718513435[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            19.3 |
+|          Metrics/EpCost |             218 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              19 |
+|        Train/TotalSteps |         3.8e+05 |
+|                Train/KL |         0.00543 |
+| Loss/Loss_reward_critic |          0.0337 |
+|   Loss/Loss_cost_critic |             4.8 |
+|         Loss/Loss_actor |         -0.0147 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |             8.8 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        1.53e-08 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |            1.34 |
+|      Misc/FinalStepNorm |           0.303 |
+|                Misc/xHx |          0.0111 |
+|      Misc/gradient_norm |          0.0965 |
+|            Misc/H_inv_g |           0.226 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch19.pt
+[32mExpected Improvement: 0.014843454584479332 Actual: 0.01494827491939077[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            20.3 |
+|          Metrics/EpCost |             223 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              20 |
+|        Train/TotalSteps |           4e+05 |
+|                Train/KL |         0.00519 |
+| Loss/Loss_reward_critic |          0.0316 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0149 |
+|            Time/Rollout |            23.4 |
+|             Time/Update |            9.12 |
+|              Time/Total |            32.5 |
+|         Value/RewardAdv |        2.06e-08 |
+|           Value/CostAdv |        1.37e-08 |
+|              Misc/Alpha |            1.35 |
+|      Misc/FinalStepNorm |           0.314 |
+|                Misc/xHx |           0.011 |
+|      Misc/gradient_norm |          0.0837 |
+|            Misc/H_inv_g |           0.232 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch20.pt
+[32mExpected Improvement: 0.017059359699487686 Actual: 0.016675492927431534[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            21.8 |
+|          Metrics/EpCost |             218 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              21 |
+|        Train/TotalSteps |         4.2e+05 |
+|                Train/KL |         0.00593 |
+| Loss/Loss_reward_critic |          0.0288 |
+|   Loss/Loss_cost_critic |            4.62 |
+|         Loss/Loss_actor |         -0.0167 |
+|            Time/Rollout |            22.8 |
+|             Time/Update |             8.8 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -1.37e-08 |
+|           Value/CostAdv |       -3.05e-09 |
+|              Misc/Alpha |            1.17 |
+|      Misc/FinalStepNorm |           0.286 |
+|                Misc/xHx |          0.0146 |
+|      Misc/gradient_norm |           0.117 |
+|            Misc/H_inv_g |           0.245 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch21.pt
+[32mExpected Improvement: 0.01666918583214283 Actual: 0.016322300872207762[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            22.4 |
+|          Metrics/EpCost |             207 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              22 |
+|        Train/TotalSteps |         4.4e+05 |
+|                Train/KL |         0.00617 |
+| Loss/Loss_reward_critic |          0.0297 |
+|   Loss/Loss_cost_critic |            4.39 |
+|         Loss/Loss_actor |         -0.0163 |
+|            Time/Rollout |            23.1 |
+|             Time/Update |            9.13 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |        2.14e-08 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |             1.2 |
+|      Misc/FinalStepNorm |           0.279 |
+|                Misc/xHx |          0.0139 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.233 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch22.pt
+[32mExpected Improvement: 0.016130730509757996 Actual: 0.015733905294537998[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            22.8 |
+|          Metrics/EpCost |             199 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              23 |
+|        Train/TotalSteps |         4.6e+05 |
+|                Train/KL |         0.00546 |
+| Loss/Loss_reward_critic |          0.0328 |
+|   Loss/Loss_cost_critic |            4.08 |
+|         Loss/Loss_actor |         -0.0157 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.79 |
+|              Time/Total |            32.5 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |        1.83e-08 |
+|              Misc/Alpha |            1.24 |
+|      Misc/FinalStepNorm |             0.3 |
+|                Misc/xHx |           0.013 |
+|      Misc/gradient_norm |          0.0866 |
+|            Misc/H_inv_g |           0.241 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch23.pt
+[32mExpected Improvement: 0.016661981120705605 Actual: 0.016180782231688617[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            22.9 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              24 |
+|        Train/TotalSteps |         4.8e+05 |
+|                Train/KL |         0.00543 |
+| Loss/Loss_reward_critic |          0.0319 |
+|   Loss/Loss_cost_critic |             4.9 |
+|         Loss/Loss_actor |         -0.0162 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            9.03 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |        4.27e-08 |
+|              Misc/Alpha |             1.2 |
+|      Misc/FinalStepNorm |           0.293 |
+|                Misc/xHx |          0.0138 |
+|      Misc/gradient_norm |            0.12 |
+|            Misc/H_inv_g |           0.244 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch24.pt
+[32mExpected Improvement: 0.015696894377470016 Actual: 0.015586866560578727[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            22.3 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              25 |
+|        Train/TotalSteps |           5e+05 |
+|                Train/KL |         0.00478 |
+| Loss/Loss_reward_critic |          0.0319 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0156 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.84 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |        6.87e-09 |
+|           Value/CostAdv |        3.36e-08 |
+|              Misc/Alpha |            1.27 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0123 |
+|      Misc/gradient_norm |           0.094 |
+|            Misc/H_inv_g |           0.255 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch25.pt
+[32mExpected Improvement: 0.017646275460720062 Actual: 0.017098274934291613[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.2 |
+|          Metrics/EpCost |             214 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              26 |
+|        Train/TotalSteps |         5.2e+05 |
+|                Train/KL |         0.00575 |
+| Loss/Loss_reward_critic |          0.0315 |
+|   Loss/Loss_cost_critic |            4.55 |
+|         Loss/Loss_actor |         -0.0171 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            8.93 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |        8.54e-08 |
+|              Misc/Alpha |            1.13 |
+|      Misc/FinalStepNorm |           0.292 |
+|                Misc/xHx |          0.0155 |
+|      Misc/gradient_norm |           0.109 |
+|            Misc/H_inv_g |           0.257 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch26.pt
+[32mExpected Improvement: 0.018033090978860855 Actual: 0.01803475887775452[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.8 |
+|          Metrics/EpCost |             214 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              27 |
+|        Train/TotalSteps |         5.4e+05 |
+|                Train/KL |         0.00556 |
+| Loss/Loss_reward_critic |          0.0281 |
+|   Loss/Loss_cost_critic |            4.32 |
+|         Loss/Loss_actor |          -0.018 |
+|            Time/Rollout |            24.1 |
+|             Time/Update |            8.89 |
+|              Time/Total |              33 |
+|         Value/RewardAdv |        1.22e-08 |
+|           Value/CostAdv |        3.05e-09 |
+|              Misc/Alpha |            1.11 |
+|      Misc/FinalStepNorm |           0.299 |
+|                Misc/xHx |          0.0163 |
+|      Misc/gradient_norm |           0.111 |
+|            Misc/H_inv_g |           0.269 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch27.pt
+[32mExpected Improvement: 0.017689526081085205 Actual: 0.016582275483012276[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.6 |
+|          Metrics/EpCost |             217 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              28 |
+|        Train/TotalSteps |         5.6e+05 |
+|                Train/KL |         0.00556 |
+| Loss/Loss_reward_critic |          0.0308 |
+|   Loss/Loss_cost_critic |            4.44 |
+|         Loss/Loss_actor |         -0.0166 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            9.05 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |            1.13 |
+|      Misc/FinalStepNorm |           0.303 |
+|                Misc/xHx |          0.0156 |
+|      Misc/gradient_norm |           0.107 |
+|            Misc/H_inv_g |           0.267 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch28.pt
+[32mExpected Improvement: 0.014917951077222824 Actual: 0.014079310594499073[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.3 |
+|          Metrics/EpCost |             213 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              29 |
+|        Train/TotalSteps |         5.8e+05 |
+|                Train/KL |          0.0049 |
+| Loss/Loss_reward_critic |          0.0308 |
+|   Loss/Loss_cost_critic |             4.3 |
+|         Loss/Loss_actor |         -0.0141 |
+|            Time/Rollout |            23.7 |
+|             Time/Update |            8.92 |
+|              Time/Total |            32.7 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        -6.1e-09 |
+|              Misc/Alpha |            1.34 |
+|      Misc/FinalStepNorm |           0.312 |
+|                Misc/xHx |          0.0111 |
+|      Misc/gradient_norm |          0.0897 |
+|            Misc/H_inv_g |           0.232 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch29.pt
+[32mExpected Improvement: 0.01793358102440834 Actual: 0.017446020954847374[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.3 |
+|          Metrics/EpCost |             194 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              30 |
+|        Train/TotalSteps |           6e+05 |
+|                Train/KL |         0.00589 |
+| Loss/Loss_reward_critic |          0.0294 |
+|   Loss/Loss_cost_critic |            4.24 |
+|         Loss/Loss_actor |         -0.0174 |
+|            Time/Rollout |              23 |
+|             Time/Update |            9.09 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |            1.12 |
+|      Misc/FinalStepNorm |           0.289 |
+|                Misc/xHx |           0.016 |
+|      Misc/gradient_norm |           0.112 |
+|            Misc/H_inv_g |           0.258 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch30.pt
+[32mExpected Improvement: 0.018396545201539993 Actual: 0.017468634051084564[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.1 |
+|          Metrics/EpCost |             174 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              31 |
+|        Train/TotalSteps |         6.2e+05 |
+|                Train/KL |         0.00534 |
+| Loss/Loss_reward_critic |          0.0292 |
+|   Loss/Loss_cost_critic |            4.05 |
+|         Loss/Loss_actor |         -0.0175 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            8.91 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |         1.6e-08 |
+|           Value/CostAdv |       -4.58e-08 |
+|              Misc/Alpha |            1.09 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0169 |
+|      Misc/gradient_norm |           0.112 |
+|            Misc/H_inv_g |           0.285 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch31.pt
+[32mExpected Improvement: 0.01703718490898609 Actual: 0.01647180251479141[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.7 |
+|          Metrics/EpCost |             171 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              32 |
+|        Train/TotalSteps |         6.4e+05 |
+|                Train/KL |         0.00561 |
+| Loss/Loss_reward_critic |          0.0296 |
+|   Loss/Loss_cost_critic |            4.01 |
+|         Loss/Loss_actor |         -0.0165 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            9.23 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |            1.17 |
+|      Misc/FinalStepNorm |            0.29 |
+|                Misc/xHx |          0.0145 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.247 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch32.pt
+[32mExpected Improvement: 0.016543541103601456 Actual: 0.01568868451118477[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.5 |
+|          Metrics/EpCost |             197 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              33 |
+|        Train/TotalSteps |         6.6e+05 |
+|                Train/KL |         0.00509 |
+| Loss/Loss_reward_critic |          0.0294 |
+|   Loss/Loss_cost_critic |            4.16 |
+|         Loss/Loss_actor |         -0.0157 |
+|            Time/Rollout |            22.8 |
+|             Time/Update |            9.24 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        4.88e-08 |
+|              Misc/Alpha |            1.21 |
+|      Misc/FinalStepNorm |           0.315 |
+|                Misc/xHx |          0.0136 |
+|      Misc/gradient_norm |           0.111 |
+|            Misc/H_inv_g |            0.26 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch33.pt
+[32mExpected Improvement: 0.01782120391726494 Actual: 0.01812660151124046[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.6 |
+|          Metrics/EpCost |             205 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              34 |
+|        Train/TotalSteps |         6.8e+05 |
+|                Train/KL |          0.0054 |
+| Loss/Loss_reward_critic |          0.0296 |
+|   Loss/Loss_cost_critic |            4.19 |
+|         Loss/Loss_actor |         -0.0181 |
+|            Time/Rollout |            20.3 |
+|             Time/Update |            9.08 |
+|              Time/Total |            29.4 |
+|         Value/RewardAdv |        1.37e-08 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |            1.12 |
+|      Misc/FinalStepNorm |           0.305 |
+|                Misc/xHx |          0.0159 |
+|      Misc/gradient_norm |          0.0957 |
+|            Misc/H_inv_g |           0.272 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch34.pt
+[32mExpected Improvement: 0.017441561445593834 Actual: 0.017716739684342286[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.7 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              35 |
+|        Train/TotalSteps |           7e+05 |
+|                Train/KL |         0.00518 |
+| Loss/Loss_reward_critic |          0.0274 |
+|   Loss/Loss_cost_critic |            4.08 |
+|         Loss/Loss_actor |         -0.0177 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            14.7 |
+|              Time/Total |            37.6 |
+|         Value/RewardAdv |       -8.39e-09 |
+|           Value/CostAdv |        9.16e-09 |
+|              Misc/Alpha |            1.15 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0152 |
+|      Misc/gradient_norm |          0.0939 |
+|            Misc/H_inv_g |            0.27 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch35.pt
+[32mExpected Improvement: 0.016342220827937126 Actual: 0.01603013108670659[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.8 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              36 |
+|        Train/TotalSteps |         7.2e+05 |
+|                Train/KL |         0.00507 |
+| Loss/Loss_reward_critic |          0.0283 |
+|   Loss/Loss_cost_critic |            4.53 |
+|         Loss/Loss_actor |          -0.016 |
+|            Time/Rollout |              29 |
+|             Time/Update |            10.9 |
+|              Time/Total |            39.9 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        4.58e-08 |
+|              Misc/Alpha |            1.23 |
+|      Misc/FinalStepNorm |           0.311 |
+|                Misc/xHx |          0.0133 |
+|      Misc/gradient_norm |          0.0863 |
+|            Misc/H_inv_g |           0.254 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch36.pt
+[32mExpected Improvement: 0.01633087545633316 Actual: 0.01578019067943104[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.3 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              37 |
+|        Train/TotalSteps |         7.4e+05 |
+|                Train/KL |         0.00516 |
+| Loss/Loss_reward_critic |          0.0283 |
+|   Loss/Loss_cost_critic |             4.4 |
+|         Loss/Loss_actor |         -0.0158 |
+|            Time/Rollout |            23.5 |
+|             Time/Update |            9.19 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |            1.23 |
+|      Misc/FinalStepNorm |           0.312 |
+|                Misc/xHx |          0.0133 |
+|      Misc/gradient_norm |           0.102 |
+|            Misc/H_inv_g |           0.255 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch37.pt
+[32mExpected Improvement: 0.01886981725692749 Actual: 0.018781851157545937[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.5 |
+|          Metrics/EpCost |             211 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              38 |
+|        Train/TotalSteps |         7.6e+05 |
+|                Train/KL |         0.00519 |
+| Loss/Loss_reward_critic |          0.0267 |
+|   Loss/Loss_cost_critic |            4.44 |
+|         Loss/Loss_actor |         -0.0188 |
+|            Time/Rollout |            23.4 |
+|             Time/Update |            9.17 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |       -4.96e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |           0.306 |
+|                Misc/xHx |          0.0178 |
+|      Misc/gradient_norm |           0.108 |
+|            Misc/H_inv_g |           0.289 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch38.pt
+[32mExpected Improvement: 0.01659402996301651 Actual: 0.01617873154878624[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.1 |
+|          Metrics/EpCost |             209 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              39 |
+|        Train/TotalSteps |         7.8e+05 |
+|                Train/KL |         0.00485 |
+| Loss/Loss_reward_critic |          0.0275 |
+|   Loss/Loss_cost_critic |            4.26 |
+|         Loss/Loss_actor |         -0.0162 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |             8.9 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |             1.2 |
+|      Misc/FinalStepNorm |           0.317 |
+|                Misc/xHx |          0.0138 |
+|      Misc/gradient_norm |           0.119 |
+|            Misc/H_inv_g |           0.263 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch39.pt
+[32mExpected Improvement: 0.017278708517551422 Actual: 0.016758969211578822[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              40 |
+|        Train/TotalSteps |           8e+05 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0239 |
+|   Loss/Loss_cost_critic |            4.13 |
+|         Loss/Loss_actor |         -0.0168 |
+|            Time/Rollout |            23.6 |
+|             Time/Update |            8.91 |
+|              Time/Total |            32.5 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |            1.16 |
+|      Misc/FinalStepNorm |           0.311 |
+|                Misc/xHx |          0.0149 |
+|      Misc/gradient_norm |          0.0888 |
+|            Misc/H_inv_g |           0.269 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch40.pt
+[32mExpected Improvement: 0.017688075080513954 Actual: 0.016826217836141133[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              41 |
+|        Train/TotalSteps |         8.2e+05 |
+|                Train/KL |         0.00537 |
+| Loss/Loss_reward_critic |          0.0249 |
+|   Loss/Loss_cost_critic |            4.31 |
+|         Loss/Loss_actor |         -0.0168 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            8.96 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |       -1.68e-08 |
+|           Value/CostAdv |               0 |
+|              Misc/Alpha |            1.13 |
+|      Misc/FinalStepNorm |           0.303 |
+|                Misc/xHx |          0.0157 |
+|      Misc/gradient_norm |            0.12 |
+|            Misc/H_inv_g |           0.268 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch41.pt
+[32mExpected Improvement: 0.019502287730574608 Actual: 0.01793056395351833[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.2 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              42 |
+|        Train/TotalSteps |         8.4e+05 |
+|                Train/KL |         0.00578 |
+| Loss/Loss_reward_critic |           0.028 |
+|   Loss/Loss_cost_critic |            4.14 |
+|         Loss/Loss_actor |         -0.0179 |
+|            Time/Rollout |            23.5 |
+|             Time/Update |            8.81 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |       -1.53e-08 |
+|              Misc/Alpha |            1.03 |
+|      Misc/FinalStepNorm |           0.293 |
+|                Misc/xHx |           0.019 |
+|      Misc/gradient_norm |           0.115 |
+|            Misc/H_inv_g |           0.286 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch42.pt
+[32mExpected Improvement: 0.018175972625613213 Actual: 0.017479383465647924[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.4 |
+|          Metrics/EpCost |             188 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              43 |
+|        Train/TotalSteps |         8.6e+05 |
+|                Train/KL |         0.00561 |
+| Loss/Loss_reward_critic |          0.0277 |
+|   Loss/Loss_cost_critic |            4.22 |
+|         Loss/Loss_actor |         -0.0175 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.25 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |       -9.46e-08 |
+|              Misc/Alpha |             1.1 |
+|      Misc/FinalStepNorm |           0.291 |
+|                Misc/xHx |          0.0165 |
+|      Misc/gradient_norm |           0.108 |
+|            Misc/H_inv_g |           0.265 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch43.pt
+[32mExpected Improvement: 0.017681151628494263 Actual: 0.01680732949376118[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.4 |
+|          Metrics/EpCost |             179 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              44 |
+|        Train/TotalSteps |         8.8e+05 |
+|                Train/KL |         0.00526 |
+| Loss/Loss_reward_critic |          0.0269 |
+|   Loss/Loss_cost_critic |            4.48 |
+|         Loss/Loss_actor |         -0.0168 |
+|            Time/Rollout |            23.6 |
+|             Time/Update |            10.4 |
+|              Time/Total |              34 |
+|         Value/RewardAdv |        5.34e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |            1.13 |
+|      Misc/FinalStepNorm |           0.316 |
+|                Misc/xHx |          0.0156 |
+|      Misc/gradient_norm |          0.0993 |
+|            Misc/H_inv_g |           0.279 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch44.pt
+[32mExpected Improvement: 0.016857940703630447 Actual: 0.016560622075199927[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.6 |
+|          Metrics/EpCost |             178 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              45 |
+|        Train/TotalSteps |           9e+05 |
+|                Train/KL |         0.00436 |
+| Loss/Loss_reward_critic |          0.0255 |
+|   Loss/Loss_cost_critic |            3.96 |
+|         Loss/Loss_actor |         -0.0166 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.05 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            1.19 |
+|      Misc/FinalStepNorm |           0.329 |
+|                Misc/xHx |          0.0142 |
+|      Misc/gradient_norm |          0.0885 |
+|            Misc/H_inv_g |           0.278 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch45.pt
+[32mExpected Improvement: 0.01916869916021824 Actual: 0.019410464575886688[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.7 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              46 |
+|        Train/TotalSteps |         9.2e+05 |
+|                Train/KL |          0.0054 |
+| Loss/Loss_reward_critic |          0.0278 |
+|   Loss/Loss_cost_critic |            4.56 |
+|         Loss/Loss_actor |         -0.0194 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.17 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            1.05 |
+|      Misc/FinalStepNorm |           0.304 |
+|                Misc/xHx |          0.0182 |
+|      Misc/gradient_norm |           0.129 |
+|            Misc/H_inv_g |            0.29 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch46.pt
+[32mExpected Improvement: 0.0170731358230114 Actual: 0.01732060432136051[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              24 |
+|          Metrics/EpCost |             207 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              47 |
+|        Train/TotalSteps |         9.4e+05 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0341 |
+|   Loss/Loss_cost_critic |            4.61 |
+|         Loss/Loss_actor |         -0.0173 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |        7.32e-08 |
+|              Misc/Alpha |            1.17 |
+|      Misc/FinalStepNorm |           0.314 |
+|                Misc/xHx |          0.0145 |
+|      Misc/gradient_norm |           0.106 |
+|            Misc/H_inv_g |           0.267 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch47.pt
+[32mExpected Improvement: 0.018162880092859268 Actual: 0.018035450860858226[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            23.5 |
+|          Metrics/EpCost |             212 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              48 |
+|        Train/TotalSteps |         9.6e+05 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0283 |
+|   Loss/Loss_cost_critic |            4.55 |
+|         Loss/Loss_actor |          -0.018 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.16 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |             1.1 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0165 |
+|      Misc/gradient_norm |           0.128 |
+|            Misc/H_inv_g |           0.281 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch48.pt
+[32mExpected Improvement: 0.01884673535823822 Actual: 0.017964076092838788[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.1 |
+|          Metrics/EpCost |             206 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              49 |
+|        Train/TotalSteps |         9.8e+05 |
+|                Train/KL |         0.00488 |
+| Loss/Loss_reward_critic |          0.0293 |
+|   Loss/Loss_cost_critic |            4.46 |
+|         Loss/Loss_actor |          -0.018 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            9.29 |
+|              Time/Total |            31.8 |
+|         Value/RewardAdv |        -1.3e-08 |
+|           Value/CostAdv |        -6.1e-09 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |           0.317 |
+|                Misc/xHx |          0.0177 |
+|      Misc/gradient_norm |           0.121 |
+|            Misc/H_inv_g |           0.298 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch49.pt
+[32mExpected Improvement: 0.019910909235477448 Actual: 0.019216770800948524[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.9 |
+|          Metrics/EpCost |             199 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              50 |
+|        Train/TotalSteps |           1e+06 |
+|                Train/KL |         0.00512 |
+| Loss/Loss_reward_critic |          0.0277 |
+|   Loss/Loss_cost_critic |             4.3 |
+|         Loss/Loss_actor |         -0.0192 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -3.05e-08 |
+|              Misc/Alpha |            1.01 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0198 |
+|      Misc/gradient_norm |           0.099 |
+|            Misc/H_inv_g |           0.316 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch50.pt
+[32mExpected Improvement: 0.01887388341128826 Actual: 0.017932686281204147[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             204 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              51 |
+|        Train/TotalSteps |        1.02e+06 |
+|                Train/KL |         0.00494 |
+| Loss/Loss_reward_critic |           0.029 |
+|   Loss/Loss_cost_critic |            4.69 |
+|         Loss/Loss_actor |         -0.0179 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |               9 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |        2.14e-08 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0177 |
+|      Misc/gradient_norm |           0.112 |
+|            Misc/H_inv_g |           0.299 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch51.pt
+[32mExpected Improvement: 0.01859687641263008 Actual: 0.01798364131748631[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.1 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              52 |
+|        Train/TotalSteps |        1.04e+06 |
+|                Train/KL |         0.00476 |
+| Loss/Loss_reward_critic |          0.0255 |
+|   Loss/Loss_cost_critic |            4.45 |
+|         Loss/Loss_actor |          -0.018 |
+|            Time/Rollout |              22 |
+|             Time/Update |            9.19 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |        6.48e-09 |
+|              Misc/Alpha |            1.08 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0172 |
+|      Misc/gradient_norm |           0.105 |
+|            Misc/H_inv_g |           0.301 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch52.pt
+[32mExpected Improvement: 0.018758943304419518 Actual: 0.018557933416962547[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.8 |
+|          Metrics/EpCost |             190 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              53 |
+|        Train/TotalSteps |        1.06e+06 |
+|                Train/KL |         0.00505 |
+| Loss/Loss_reward_critic |          0.0265 |
+|   Loss/Loss_cost_critic |            4.39 |
+|         Loss/Loss_actor |         -0.0186 |
+|            Time/Rollout |              22 |
+|             Time/Update |               9 |
+|              Time/Total |              31 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |            1.07 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0176 |
+|      Misc/gradient_norm |           0.114 |
+|            Misc/H_inv_g |           0.293 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch53.pt
+[32mExpected Improvement: 0.02062106877565384 Actual: 0.019803251576423264[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.6 |
+|          Metrics/EpCost |             193 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              54 |
+|        Train/TotalSteps |        1.08e+06 |
+|                Train/KL |         0.00561 |
+| Loss/Loss_reward_critic |          0.0275 |
+|   Loss/Loss_cost_critic |            4.96 |
+|         Loss/Loss_actor |         -0.0198 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            9.02 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -1.37e-08 |
+|           Value/CostAdv |               0 |
+|              Misc/Alpha |           0.971 |
+|      Misc/FinalStepNorm |           0.293 |
+|                Misc/xHx |          0.0212 |
+|      Misc/gradient_norm |           0.135 |
+|            Misc/H_inv_g |           0.302 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch54.pt
+[32mExpected Improvement: 0.020791782066226006 Actual: 0.020202623185515023[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.3 |
+|          Metrics/EpCost |             209 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              55 |
+|        Train/TotalSteps |         1.1e+06 |
+|                Train/KL |         0.00551 |
+| Loss/Loss_reward_critic |          0.0291 |
+|   Loss/Loss_cost_critic |            4.56 |
+|         Loss/Loss_actor |         -0.0202 |
+|            Time/Rollout |            21.8 |
+|             Time/Update |            9.11 |
+|              Time/Total |            30.9 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |           0.963 |
+|      Misc/FinalStepNorm |           0.301 |
+|                Misc/xHx |          0.0216 |
+|      Misc/gradient_norm |           0.124 |
+|            Misc/H_inv_g |           0.312 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch55.pt
+[32mExpected Improvement: 0.01873478852212429 Actual: 0.018427940779924157[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.5 |
+|          Metrics/EpCost |             205 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              56 |
+|        Train/TotalSteps |        1.12e+06 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0299 |
+|   Loss/Loss_cost_critic |            4.35 |
+|         Loss/Loss_actor |         -0.0184 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.8 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+|              Misc/Alpha |            1.07 |
+|      Misc/FinalStepNorm |           0.307 |
+|                Misc/xHx |          0.0175 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.287 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch56.pt
+[32mExpected Improvement: 0.018926145508885384 Actual: 0.018087314733862936[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.9 |
+|          Metrics/EpCost |             184 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              57 |
+|        Train/TotalSteps |        1.14e+06 |
+|                Train/KL |         0.00498 |
+| Loss/Loss_reward_critic |          0.0254 |
+|   Loss/Loss_cost_critic |            4.19 |
+|         Loss/Loss_actor |         -0.0181 |
+|            Time/Rollout |            21.7 |
+|             Time/Update |            9.15 |
+|              Time/Total |            30.9 |
+|         Value/RewardAdv |        7.44e-09 |
+|           Value/CostAdv |        3.36e-08 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |           0.322 |
+|                Misc/xHx |          0.0178 |
+|      Misc/gradient_norm |           0.115 |
+|            Misc/H_inv_g |           0.304 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch57.pt
+[32mExpected Improvement: 0.019688980653882027 Actual: 0.019318853405118297[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             177 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              58 |
+|        Train/TotalSteps |        1.16e+06 |
+|                Train/KL |         0.00499 |
+| Loss/Loss_reward_critic |           0.026 |
+|   Loss/Loss_cost_critic |             4.6 |
+|         Loss/Loss_actor |         -0.0193 |
+|            Time/Rollout |            21.2 |
+|             Time/Update |            8.91 |
+|              Time/Total |            30.1 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |            1.02 |
+|      Misc/FinalStepNorm |           0.323 |
+|                Misc/xHx |          0.0192 |
+|      Misc/gradient_norm |            0.13 |
+|            Misc/H_inv_g |           0.317 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch58.pt
+[32mExpected Improvement: 0.01856350712478161 Actual: 0.018443773376941586[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             180 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              59 |
+|        Train/TotalSteps |        1.18e+06 |
+|                Train/KL |         0.00453 |
+| Loss/Loss_reward_critic |           0.025 |
+|   Loss/Loss_cost_critic |            5.18 |
+|         Loss/Loss_actor |         -0.0184 |
+|            Time/Rollout |            21.1 |
+|             Time/Update |            9.03 |
+|              Time/Total |            30.1 |
+|         Value/RewardAdv |       -4.39e-09 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |            1.08 |
+|      Misc/FinalStepNorm |           0.327 |
+|                Misc/xHx |          0.0171 |
+|      Misc/gradient_norm |           0.108 |
+|            Misc/H_inv_g |           0.302 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch59.pt
+[32mExpected Improvement: 0.01984146423637867 Actual: 0.019187789410352707[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.7 |
+|          Metrics/EpCost |             204 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              60 |
+|        Train/TotalSteps |         1.2e+06 |
+|                Train/KL |          0.0049 |
+| Loss/Loss_reward_critic |          0.0235 |
+|   Loss/Loss_cost_critic |            5.39 |
+|         Loss/Loss_actor |         -0.0192 |
+|            Time/Rollout |            20.9 |
+|             Time/Update |            9.15 |
+|              Time/Total |            30.1 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |            1.01 |
+|      Misc/FinalStepNorm |           0.319 |
+|                Misc/xHx |          0.0197 |
+|      Misc/gradient_norm |            0.13 |
+|            Misc/H_inv_g |           0.316 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch60.pt
+[32mExpected Improvement: 0.019695010036230087 Actual: 0.020653873682022095[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             217 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              61 |
+|        Train/TotalSteps |        1.22e+06 |
+|                Train/KL |         0.00432 |
+| Loss/Loss_reward_critic |          0.0251 |
+|   Loss/Loss_cost_critic |            5.35 |
+|         Loss/Loss_actor |         -0.0207 |
+|            Time/Rollout |            21.6 |
+|             Time/Update |            8.94 |
+|              Time/Total |            30.5 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            1.02 |
+|      Misc/FinalStepNorm |           0.333 |
+|                Misc/xHx |          0.0193 |
+|      Misc/gradient_norm |           0.119 |
+|            Misc/H_inv_g |           0.327 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch61.pt
+[32mExpected Improvement: 0.021377738565206528 Actual: 0.021182139819860613[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             214 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              62 |
+|        Train/TotalSteps |        1.24e+06 |
+|                Train/KL |         0.00563 |
+| Loss/Loss_reward_critic |          0.0278 |
+|   Loss/Loss_cost_critic |            5.53 |
+|         Loss/Loss_actor |         -0.0212 |
+|            Time/Rollout |            21.3 |
+|             Time/Update |            9.05 |
+|              Time/Total |            30.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |           0.936 |
+|      Misc/FinalStepNorm |           0.305 |
+|                Misc/xHx |          0.0228 |
+|      Misc/gradient_norm |            0.15 |
+|            Misc/H_inv_g |           0.326 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch62.pt
+[32mExpected Improvement: 0.019650258123874664 Actual: 0.020878770309686434[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             211 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              63 |
+|        Train/TotalSteps |        1.26e+06 |
+|                Train/KL |         0.00516 |
+| Loss/Loss_reward_critic |          0.0262 |
+|   Loss/Loss_cost_critic |            5.33 |
+|         Loss/Loss_actor |         -0.0209 |
+|            Time/Rollout |            21.2 |
+|             Time/Update |            8.96 |
+|              Time/Total |            30.2 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |            1.02 |
+|      Misc/FinalStepNorm |           0.309 |
+|                Misc/xHx |          0.0193 |
+|      Misc/gradient_norm |           0.126 |
+|            Misc/H_inv_g |           0.304 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch63.pt
+[32mExpected Improvement: 0.0192409660667181 Actual: 0.020620600241422427[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.9 |
+|          Metrics/EpCost |             216 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              64 |
+|        Train/TotalSteps |        1.28e+06 |
+|                Train/KL |          0.0053 |
+| Loss/Loss_reward_critic |          0.0294 |
+|   Loss/Loss_cost_critic |            5.29 |
+|         Loss/Loss_actor |         -0.0206 |
+|            Time/Rollout |            21.5 |
+|             Time/Update |            8.99 |
+|              Time/Total |            30.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |            1.04 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0185 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.301 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch64.pt
+[32mExpected Improvement: 0.02041134424507618 Actual: 0.021188447925448495[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.7 |
+|          Metrics/EpCost |             217 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              65 |
+|        Train/TotalSteps |         1.3e+06 |
+|                Train/KL |         0.00425 |
+| Loss/Loss_reward_critic |          0.0279 |
+|   Loss/Loss_cost_critic |            5.62 |
+|         Loss/Loss_actor |         -0.0212 |
+|            Time/Rollout |            21.2 |
+|             Time/Update |            9.04 |
+|              Time/Total |            30.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        1.53e-08 |
+|              Misc/Alpha |           0.981 |
+|      Misc/FinalStepNorm |           0.337 |
+|                Misc/xHx |          0.0208 |
+|      Misc/gradient_norm |           0.104 |
+|            Misc/H_inv_g |           0.344 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch65.pt
+[32mExpected Improvement: 0.0213007815182209 Actual: 0.021456641244887997[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.9 |
+|          Metrics/EpCost |             213 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              66 |
+|        Train/TotalSteps |        1.32e+06 |
+|                Train/KL |         0.00501 |
+| Loss/Loss_reward_critic |          0.0261 |
+|   Loss/Loss_cost_critic |            5.14 |
+|         Loss/Loss_actor |         -0.0215 |
+|            Time/Rollout |            21.3 |
+|             Time/Update |             8.9 |
+|              Time/Total |            30.2 |
+|         Value/RewardAdv |        5.34e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |           0.939 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0227 |
+|      Misc/gradient_norm |           0.118 |
+|            Misc/H_inv_g |           0.333 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch66.pt
+[32mExpected Improvement: 0.019346121698617935 Actual: 0.01953906184434917[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             204 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              67 |
+|        Train/TotalSteps |        1.34e+06 |
+|                Train/KL |         0.00466 |
+| Loss/Loss_reward_critic |          0.0271 |
+|   Loss/Loss_cost_critic |            4.72 |
+|         Loss/Loss_actor |         -0.0195 |
+|            Time/Rollout |            21.8 |
+|             Time/Update |             9.1 |
+|              Time/Total |            30.9 |
+|         Value/RewardAdv |        5.34e-09 |
+|           Value/CostAdv |               0 |
+|              Misc/Alpha |            1.04 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0186 |
+|      Misc/gradient_norm |           0.107 |
+|            Misc/H_inv_g |           0.313 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch67.pt
+[32mExpected Improvement: 0.021360699087381363 Actual: 0.021981613957882118[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              68 |
+|        Train/TotalSteps |        1.36e+06 |
+|                Train/KL |         0.00493 |
+| Loss/Loss_reward_critic |          0.0266 |
+|   Loss/Loss_cost_critic |            4.97 |
+|         Loss/Loss_actor |          -0.022 |
+|            Time/Rollout |              22 |
+|             Time/Update |            8.81 |
+|              Time/Total |            30.8 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |           0.937 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0228 |
+|      Misc/gradient_norm |           0.112 |
+|            Misc/H_inv_g |           0.342 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch68.pt
+[32mExpected Improvement: 0.018818771466612816 Actual: 0.01871757633388027[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             208 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              69 |
+|        Train/TotalSteps |        1.38e+06 |
+|                Train/KL |         0.00445 |
+| Loss/Loss_reward_critic |          0.0267 |
+|   Loss/Loss_cost_critic |             4.9 |
+|         Loss/Loss_actor |         -0.0187 |
+|            Time/Rollout |            22.4 |
+|             Time/Update |            9.02 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            1.06 |
+|      Misc/FinalStepNorm |            0.33 |
+|                Misc/xHx |          0.0177 |
+|      Misc/gradient_norm |           0.104 |
+|            Misc/H_inv_g |           0.311 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch69.pt
+[32mExpected Improvement: 0.0201089009642601 Actual: 0.019510080274939556[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             218 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              70 |
+|        Train/TotalSteps |         1.4e+06 |
+|                Train/KL |           0.005 |
+| Loss/Loss_reward_critic |           0.025 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0195 |
+|            Time/Rollout |              22 |
+|             Time/Update |            9.01 |
+|              Time/Total |              31 |
+|         Value/RewardAdv |        5.96e-09 |
+|           Value/CostAdv |       -3.05e-08 |
+|              Misc/Alpha |           0.994 |
+|      Misc/FinalStepNorm |           0.315 |
+|                Misc/xHx |          0.0202 |
+|      Misc/gradient_norm |           0.138 |
+|            Misc/H_inv_g |           0.316 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch70.pt
+[32mExpected Improvement: 0.021763917058706284 Actual: 0.022433945572376213[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.1 |
+|          Metrics/EpCost |             213 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              71 |
+|        Train/TotalSteps |        1.42e+06 |
+|                Train/KL |         0.00533 |
+| Loss/Loss_reward_critic |          0.0296 |
+|   Loss/Loss_cost_critic |            4.79 |
+|         Loss/Loss_actor |         -0.0224 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |             8.8 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |            0.92 |
+|      Misc/FinalStepNorm |           0.308 |
+|                Misc/xHx |          0.0236 |
+|      Misc/gradient_norm |           0.157 |
+|            Misc/H_inv_g |           0.335 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch71.pt
+[32mExpected Improvement: 0.02163488045334816 Actual: 0.021617026147246587[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.2 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              72 |
+|        Train/TotalSteps |        1.44e+06 |
+|                Train/KL |         0.00516 |
+| Loss/Loss_reward_critic |          0.0266 |
+|   Loss/Loss_cost_critic |            4.87 |
+|         Loss/Loss_actor |         -0.0216 |
+|            Time/Rollout |            22.4 |
+|             Time/Update |            8.95 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |           0.925 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0234 |
+|      Misc/gradient_norm |           0.163 |
+|            Misc/H_inv_g |           0.335 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch72.pt
+[32mExpected Improvement: 0.021923936903476715 Actual: 0.021419657000899317[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.2 |
+|          Metrics/EpCost |             190 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              73 |
+|        Train/TotalSteps |        1.46e+06 |
+|                Train/KL |         0.00552 |
+| Loss/Loss_reward_critic |          0.0317 |
+|   Loss/Loss_cost_critic |            4.52 |
+|         Loss/Loss_actor |         -0.0214 |
+|            Time/Rollout |            21.9 |
+|             Time/Update |            8.97 |
+|              Time/Total |            30.8 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |       -2.14e-08 |
+|              Misc/Alpha |           0.913 |
+|      Misc/FinalStepNorm |           0.299 |
+|                Misc/xHx |           0.024 |
+|      Misc/gradient_norm |           0.138 |
+|            Misc/H_inv_g |           0.328 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch73.pt
+[32mExpected Improvement: 0.020660415291786194 Actual: 0.01986628584563732[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.3 |
+|          Metrics/EpCost |             173 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              74 |
+|        Train/TotalSteps |        1.48e+06 |
+|                Train/KL |         0.00465 |
+| Loss/Loss_reward_critic |          0.0293 |
+|   Loss/Loss_cost_critic |            4.84 |
+|         Loss/Loss_actor |         -0.0199 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            8.84 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |           0.968 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0214 |
+|      Misc/gradient_norm |           0.123 |
+|            Misc/H_inv_g |           0.336 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch74.pt
+[32mExpected Improvement: 0.01922452822327614 Actual: 0.019178834149241486[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             182 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              75 |
+|        Train/TotalSteps |         1.5e+06 |
+|                Train/KL |         0.00541 |
+| Loss/Loss_reward_critic |          0.0277 |
+|   Loss/Loss_cost_critic |            4.55 |
+|         Loss/Loss_actor |         -0.0192 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.05 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |            1.04 |
+|      Misc/FinalStepNorm |           0.304 |
+|                Misc/xHx |          0.0184 |
+|      Misc/gradient_norm |           0.118 |
+|            Misc/H_inv_g |           0.292 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch75.pt
+[32mExpected Improvement: 0.021527839824557304 Actual: 0.021375874751806023[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             209 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              76 |
+|        Train/TotalSteps |        1.52e+06 |
+|                Train/KL |         0.00484 |
+| Loss/Loss_reward_critic |          0.0266 |
+|   Loss/Loss_cost_critic |            4.88 |
+|         Loss/Loss_actor |         -0.0214 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            8.91 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |            0.93 |
+|      Misc/FinalStepNorm |           0.321 |
+|                Misc/xHx |          0.0231 |
+|      Misc/gradient_norm |           0.132 |
+|            Misc/H_inv_g |           0.345 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch76.pt
+[32mExpected Improvement: 0.020779883489012718 Actual: 0.020498759549855805[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             208 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              77 |
+|        Train/TotalSteps |        1.54e+06 |
+|                Train/KL |         0.00502 |
+| Loss/Loss_reward_critic |          0.0254 |
+|   Loss/Loss_cost_critic |            4.64 |
+|         Loss/Loss_actor |         -0.0205 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            8.91 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |        8.54e-08 |
+|              Misc/Alpha |           0.964 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0215 |
+|      Misc/gradient_norm |           0.134 |
+|            Misc/H_inv_g |            0.33 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch77.pt
+[32mExpected Improvement: 0.02097858488559723 Actual: 0.02068867805898167[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.8 |
+|          Metrics/EpCost |             194 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              78 |
+|        Train/TotalSteps |        1.56e+06 |
+|                Train/KL |         0.00493 |
+| Loss/Loss_reward_critic |           0.027 |
+|   Loss/Loss_cost_critic |            4.38 |
+|         Loss/Loss_actor |         -0.0207 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.37 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -8.54e-08 |
+|              Misc/Alpha |           0.955 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0219 |
+|      Misc/gradient_norm |            0.12 |
+|            Misc/H_inv_g |           0.335 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch78.pt
+[32mExpected Improvement: 0.02354538068175316 Actual: 0.022702703747153663[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.6 |
+|          Metrics/EpCost |             198 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              79 |
+|        Train/TotalSteps |        1.58e+06 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0287 |
+|   Loss/Loss_cost_critic |            5.41 |
+|         Loss/Loss_actor |         -0.0227 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            8.83 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |        2.75e-08 |
+|              Misc/Alpha |            0.85 |
+|      Misc/FinalStepNorm |           0.303 |
+|                Misc/xHx |          0.0277 |
+|      Misc/gradient_norm |           0.155 |
+|            Misc/H_inv_g |           0.357 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch79.pt
+[32mExpected Improvement: 0.020702723413705826 Actual: 0.020613232201337928[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.4 |
+|          Metrics/EpCost |             214 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              80 |
+|        Train/TotalSteps |         1.6e+06 |
+|                Train/KL |         0.00536 |
+| Loss/Loss_reward_critic |          0.0337 |
+|   Loss/Loss_cost_critic |            4.96 |
+|         Loss/Loss_actor |         -0.0206 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            9.12 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        2.59e-08 |
+|              Misc/Alpha |           0.966 |
+|      Misc/FinalStepNorm |           0.306 |
+|                Misc/xHx |          0.0214 |
+|      Misc/gradient_norm |           0.143 |
+|            Misc/H_inv_g |           0.317 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch80.pt
+[32mExpected Improvement: 0.021600397303700447 Actual: 0.020970926788449307[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.4 |
+|          Metrics/EpCost |             207 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              81 |
+|        Train/TotalSteps |        1.62e+06 |
+|                Train/KL |         0.00474 |
+| Loss/Loss_reward_critic |          0.0316 |
+|   Loss/Loss_cost_critic |            4.47 |
+|         Loss/Loss_actor |          -0.021 |
+|            Time/Rollout |              24 |
+|             Time/Update |            9.46 |
+|              Time/Total |            33.4 |
+|         Value/RewardAdv |       -5.34e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |           0.927 |
+|      Misc/FinalStepNorm |           0.321 |
+|                Misc/xHx |          0.0233 |
+|      Misc/gradient_norm |           0.121 |
+|            Misc/H_inv_g |           0.347 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch81.pt
+[32mExpected Improvement: 0.023456469178199768 Actual: 0.021923967221379126[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.6 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              82 |
+|        Train/TotalSteps |        1.64e+06 |
+|                Train/KL |         0.00488 |
+| Loss/Loss_reward_critic |          0.0277 |
+|   Loss/Loss_cost_critic |            4.58 |
+|         Loss/Loss_actor |         -0.0219 |
+|            Time/Rollout |            22.8 |
+|             Time/Update |            8.85 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |           0.854 |
+|      Misc/FinalStepNorm |           0.319 |
+|                Misc/xHx |          0.0274 |
+|      Misc/gradient_norm |           0.157 |
+|            Misc/H_inv_g |           0.373 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch82.pt
+[32mExpected Improvement: 0.022138793021440506 Actual: 0.0229283812940122[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.8 |
+|          Metrics/EpCost |             194 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              83 |
+|        Train/TotalSteps |        1.66e+06 |
+|                Train/KL |         0.00526 |
+| Loss/Loss_reward_critic |          0.0297 |
+|   Loss/Loss_cost_critic |            4.53 |
+|         Loss/Loss_actor |         -0.0229 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.05 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |       -7.63e-10 |
+|           Value/CostAdv |        -1.1e-07 |
+|              Misc/Alpha |           0.904 |
+|      Misc/FinalStepNorm |           0.317 |
+|                Misc/xHx |          0.0245 |
+|      Misc/gradient_norm |           0.115 |
+|            Misc/H_inv_g |           0.351 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch83.pt
+[32mExpected Improvement: 0.01939498633146286 Actual: 0.01880653076767924[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              84 |
+|        Train/TotalSteps |        1.68e+06 |
+|                Train/KL |         0.00467 |
+| Loss/Loss_reward_critic |          0.0266 |
+|   Loss/Loss_cost_critic |            4.96 |
+|         Loss/Loss_actor |         -0.0188 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            8.92 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |       -7.48e-08 |
+|              Misc/Alpha |            1.03 |
+|      Misc/FinalStepNorm |           0.328 |
+|                Misc/xHx |          0.0189 |
+|      Misc/gradient_norm |           0.127 |
+|            Misc/H_inv_g |           0.318 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch84.pt
+[32mExpected Improvement: 0.021024176850914955 Actual: 0.02060690149664879[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.7 |
+|          Metrics/EpCost |             195 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              85 |
+|        Train/TotalSteps |         1.7e+06 |
+|                Train/KL |         0.00531 |
+| Loss/Loss_reward_critic |          0.0262 |
+|   Loss/Loss_cost_critic |            4.79 |
+|         Loss/Loss_actor |         -0.0206 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            9.36 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |           0.952 |
+|      Misc/FinalStepNorm |           0.307 |
+|                Misc/xHx |           0.022 |
+|      Misc/gradient_norm |            0.13 |
+|            Misc/H_inv_g |           0.322 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch85.pt
+[32mExpected Improvement: 0.02129470929503441 Actual: 0.020447578033804703[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             201 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              86 |
+|        Train/TotalSteps |        1.72e+06 |
+|                Train/KL |         0.00479 |
+| Loss/Loss_reward_critic |          0.0278 |
+|   Loss/Loss_cost_critic |             4.8 |
+|         Loss/Loss_actor |         -0.0204 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+|              Misc/Alpha |           0.939 |
+|      Misc/FinalStepNorm |           0.322 |
+|                Misc/xHx |          0.0227 |
+|      Misc/gradient_norm |           0.121 |
+|            Misc/H_inv_g |           0.343 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch86.pt
+[32mExpected Improvement: 0.021729128435254097 Actual: 0.022272661170362973[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.1 |
+|          Metrics/EpCost |             194 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              87 |
+|        Train/TotalSteps |        1.74e+06 |
+|                Train/KL |         0.00528 |
+| Loss/Loss_reward_critic |          0.0289 |
+|   Loss/Loss_cost_critic |            4.38 |
+|         Loss/Loss_actor |         -0.0223 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            8.99 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |            0.92 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0237 |
+|      Misc/gradient_norm |           0.119 |
+|            Misc/H_inv_g |            0.34 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch87.pt
+[32mExpected Improvement: 0.021213511005043983 Actual: 0.01919020508229785[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              88 |
+|        Train/TotalSteps |        1.76e+06 |
+|                Train/KL |         0.00429 |
+| Loss/Loss_reward_critic |          0.0245 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0192 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            9.01 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        1.53e-08 |
+|              Misc/Alpha |           0.943 |
+|      Misc/FinalStepNorm |           0.334 |
+|                Misc/xHx |          0.0225 |
+|      Misc/gradient_norm |           0.122 |
+|            Misc/H_inv_g |           0.354 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch88.pt
+[32mExpected Improvement: 0.021596526727080345 Actual: 0.0218218430787325[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             195 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              89 |
+|        Train/TotalSteps |        1.78e+06 |
+|                Train/KL |         0.00468 |
+| Loss/Loss_reward_critic |          0.0268 |
+|   Loss/Loss_cost_critic |            4.94 |
+|         Loss/Loss_actor |         -0.0218 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.13 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |       -1.91e-09 |
+|           Value/CostAdv |       -6.41e-08 |
+|              Misc/Alpha |           0.927 |
+|      Misc/FinalStepNorm |           0.329 |
+|                Misc/xHx |          0.0233 |
+|      Misc/gradient_norm |           0.113 |
+|            Misc/H_inv_g |           0.355 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch89.pt
+[32mExpected Improvement: 0.022900670766830444 Actual: 0.02192313199341278[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             198 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              90 |
+|        Train/TotalSteps |         1.8e+06 |
+|                Train/KL |         0.00514 |
+| Loss/Loss_reward_critic |          0.0228 |
+|   Loss/Loss_cost_critic |             4.3 |
+|         Loss/Loss_actor |         -0.0219 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            8.93 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |       -6.87e-09 |
+|           Value/CostAdv |       -3.05e-09 |
+|              Misc/Alpha |           0.874 |
+|      Misc/FinalStepNorm |           0.316 |
+|                Misc/xHx |          0.0262 |
+|      Misc/gradient_norm |           0.122 |
+|            Misc/H_inv_g |           0.362 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch90.pt
+[32mExpected Improvement: 0.021399278193712234 Actual: 0.020831540137529636[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             188 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              91 |
+|        Train/TotalSteps |        1.82e+06 |
+|                Train/KL |         0.00476 |
+| Loss/Loss_reward_critic |          0.0259 |
+|   Loss/Loss_cost_critic |            4.72 |
+|         Loss/Loss_actor |         -0.0208 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |             9.1 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |        5.34e-09 |
+|           Value/CostAdv |       -8.85e-08 |
+|              Misc/Alpha |           0.935 |
+|      Misc/FinalStepNorm |           0.322 |
+|                Misc/xHx |          0.0229 |
+|      Misc/gradient_norm |           0.105 |
+|            Misc/H_inv_g |           0.344 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch91.pt
+[32mExpected Improvement: 0.020661596208810806 Actual: 0.020586325371265257[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              92 |
+|        Train/TotalSteps |        1.84e+06 |
+|                Train/KL |         0.00484 |
+| Loss/Loss_reward_critic |          0.0251 |
+|   Loss/Loss_cost_critic |            4.45 |
+|         Loss/Loss_actor |         -0.0206 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |             8.9 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        8.85e-08 |
+|              Misc/Alpha |           0.969 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0213 |
+|      Misc/gradient_norm |            0.12 |
+|            Misc/H_inv_g |            0.33 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch92.pt
+[32mExpected Improvement: 0.021031346172094345 Actual: 0.02073235475420951[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              26 |
+|          Metrics/EpCost |             184 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              93 |
+|        Train/TotalSteps |        1.86e+06 |
+|                Train/KL |         0.00511 |
+| Loss/Loss_reward_critic |          0.0264 |
+|   Loss/Loss_cost_critic |             4.6 |
+|         Loss/Loss_actor |         -0.0207 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            8.96 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -4.96e-09 |
+|           Value/CostAdv |        -6.1e-09 |
+|              Misc/Alpha |           0.952 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0221 |
+|      Misc/gradient_norm |           0.121 |
+|            Misc/H_inv_g |           0.325 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch93.pt
+[32mExpected Improvement: 0.022392434999346733 Actual: 0.02181077409684662[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             178 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              94 |
+|        Train/TotalSteps |        1.88e+06 |
+|                Train/KL |         0.00492 |
+| Loss/Loss_reward_critic |          0.0235 |
+|   Loss/Loss_cost_critic |            4.58 |
+|         Loss/Loss_actor |         -0.0218 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.09 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -2.75e-08 |
+|              Misc/Alpha |           0.893 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0251 |
+|      Misc/gradient_norm |           0.138 |
+|            Misc/H_inv_g |           0.359 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch94.pt
+[32mExpected Improvement: 0.021840250119566917 Actual: 0.02190877319872353[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              95 |
+|        Train/TotalSteps |         1.9e+06 |
+|                Train/KL |         0.00486 |
+| Loss/Loss_reward_critic |          0.0226 |
+|   Loss/Loss_cost_critic |            4.98 |
+|         Loss/Loss_actor |         -0.0219 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.03 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |           0.917 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0238 |
+|      Misc/gradient_norm |           0.119 |
+|            Misc/H_inv_g |           0.355 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch95.pt
+[32mExpected Improvement: 0.02447480522096157 Actual: 0.023066783839464033[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             203 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              96 |
+|        Train/TotalSteps |        1.92e+06 |
+|                Train/KL |         0.00511 |
+| Loss/Loss_reward_critic |          0.0219 |
+|   Loss/Loss_cost_critic |            4.99 |
+|         Loss/Loss_actor |         -0.0231 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            8.91 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |        7.63e-10 |
+|           Value/CostAdv |       -5.19e-08 |
+|              Misc/Alpha |           0.817 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0299 |
+|      Misc/gradient_norm |           0.151 |
+|            Misc/H_inv_g |           0.383 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch96.pt
+[32mExpected Improvement: 0.022412247955799103 Actual: 0.02200637214779899[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             209 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              97 |
+|        Train/TotalSteps |        1.94e+06 |
+|                Train/KL |         0.00499 |
+| Loss/Loss_reward_critic |          0.0241 |
+|   Loss/Loss_cost_critic |            5.03 |
+|         Loss/Loss_actor |          -0.022 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            9.23 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |       -5.49e-08 |
+|              Misc/Alpha |           0.892 |
+|      Misc/FinalStepNorm |           0.319 |
+|                Misc/xHx |          0.0251 |
+|      Misc/gradient_norm |           0.127 |
+|            Misc/H_inv_g |           0.358 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch97.pt
+[32mExpected Improvement: 0.02336033247411251 Actual: 0.0220211274147033[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.1 |
+|          Metrics/EpCost |             197 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              98 |
+|        Train/TotalSteps |        1.96e+06 |
+|                Train/KL |         0.00493 |
+| Loss/Loss_reward_critic |          0.0217 |
+|   Loss/Loss_cost_critic |            5.22 |
+|         Loss/Loss_actor |          -0.022 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            8.93 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |        4.27e-08 |
+|              Misc/Alpha |           0.857 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0273 |
+|      Misc/gradient_norm |           0.151 |
+|            Misc/H_inv_g |            0.38 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch98.pt
+[32mExpected Improvement: 0.024759411811828613 Actual: 0.02251588909923985[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.1 |
+|          Metrics/EpCost |             185 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              99 |
+|        Train/TotalSteps |        1.98e+06 |
+|                Train/KL |         0.00531 |
+| Loss/Loss_reward_critic |           0.023 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0225 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            8.83 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |           0.808 |
+|      Misc/FinalStepNorm |           0.295 |
+|                Misc/xHx |          0.0306 |
+|      Misc/gradient_norm |           0.161 |
+|            Misc/H_inv_g |           0.365 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch99.pt
+[32mExpected Improvement: 0.021777590736746788 Actual: 0.02099067943394184[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             195 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             100 |
+|        Train/TotalSteps |           2e+06 |
+|                Train/KL |         0.00451 |
+| Loss/Loss_reward_critic |          0.0255 |
+|   Loss/Loss_cost_critic |            4.58 |
+|         Loss/Loss_actor |          -0.021 |
+|            Time/Rollout |              22 |
+|             Time/Update |             9.2 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |           0.919 |
+|      Misc/FinalStepNorm |           0.332 |
+|                Misc/xHx |          0.0237 |
+|      Misc/gradient_norm |           0.108 |
+|            Misc/H_inv_g |           0.362 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch100.pt
+[32mExpected Improvement: 0.02353844791650772 Actual: 0.02419032172262714[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             199 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             101 |
+|        Train/TotalSteps |        2.02e+06 |
+|                Train/KL |         0.00475 |
+| Loss/Loss_reward_critic |          0.0238 |
+|   Loss/Loss_cost_critic |            5.12 |
+|         Loss/Loss_actor |         -0.0242 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            9.15 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+|              Misc/Alpha |            0.85 |
+|      Misc/FinalStepNorm |           0.321 |
+|                Misc/xHx |          0.0276 |
+|      Misc/gradient_norm |           0.168 |
+|            Misc/H_inv_g |           0.377 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch101.pt
+[32mExpected Improvement: 0.021963482722640038 Actual: 0.021812306335568438[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.7 |
+|          Metrics/EpCost |             198 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             102 |
+|        Train/TotalSteps |        2.04e+06 |
+|                Train/KL |         0.00458 |
+| Loss/Loss_reward_critic |          0.0249 |
+|   Loss/Loss_cost_critic |            5.19 |
+|         Loss/Loss_actor |         -0.0218 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |             8.8 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |        2.67e-09 |
+|           Value/CostAdv |        9.16e-09 |
+|              Misc/Alpha |            0.91 |
+|      Misc/FinalStepNorm |           0.332 |
+|                Misc/xHx |          0.0242 |
+|      Misc/gradient_norm |           0.122 |
+|            Misc/H_inv_g |           0.365 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch102.pt
+[32mExpected Improvement: 0.020808245986700058 Actual: 0.020086071553826024[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             103 |
+|        Train/TotalSteps |        2.06e+06 |
+|                Train/KL |         0.00488 |
+| Loss/Loss_reward_critic |          0.0241 |
+|   Loss/Loss_cost_critic |            5.51 |
+|         Loss/Loss_actor |         -0.0201 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -9.16e-09 |
+|              Misc/Alpha |           0.961 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0216 |
+|      Misc/gradient_norm |           0.143 |
+|            Misc/H_inv_g |           0.337 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch103.pt
+[32mExpected Improvement: 0.021262681111693382 Actual: 0.020391974553465975[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             104 |
+|        Train/TotalSteps |        2.08e+06 |
+|                Train/KL |         0.00513 |
+| Loss/Loss_reward_critic |          0.0251 |
+|   Loss/Loss_cost_critic |            5.37 |
+|         Loss/Loss_actor |         -0.0204 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            8.95 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        8.01e-09 |
+|           Value/CostAdv |       -1.07e-08 |
+|              Misc/Alpha |            0.94 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0226 |
+|      Misc/gradient_norm |           0.136 |
+|            Misc/H_inv_g |           0.333 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch104.pt
+[32mExpected Improvement: 0.02268597111105919 Actual: 0.02159751509726071[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             191 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             105 |
+|        Train/TotalSteps |         2.1e+06 |
+|                Train/KL |         0.00503 |
+| Loss/Loss_reward_critic |           0.021 |
+|   Loss/Loss_cost_critic |            5.67 |
+|         Loss/Loss_actor |         -0.0216 |
+|            Time/Rollout |            22.4 |
+|             Time/Update |             9.2 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |           0.881 |
+|      Misc/FinalStepNorm |           0.315 |
+|                Misc/xHx |          0.0257 |
+|      Misc/gradient_norm |           0.141 |
+|            Misc/H_inv_g |           0.357 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch105.pt
+[32mExpected Improvement: 0.024252329021692276 Actual: 0.023665516716242063[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             191 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             106 |
+|        Train/TotalSteps |        2.12e+06 |
+|                Train/KL |         0.00519 |
+| Loss/Loss_reward_critic |          0.0226 |
+|   Loss/Loss_cost_critic |            5.36 |
+|         Loss/Loss_actor |         -0.0237 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.04 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        -3.2e-08 |
+|              Misc/Alpha |           0.825 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0294 |
+|      Misc/gradient_norm |           0.132 |
+|            Misc/H_inv_g |           0.385 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch106.pt
+[32mExpected Improvement: 0.022490698844194412 Actual: 0.02321994219422363[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.5 |
+|          Metrics/EpCost |             189 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             107 |
+|        Train/TotalSteps |        2.14e+06 |
+|                Train/KL |         0.00506 |
+| Loss/Loss_reward_critic |          0.0203 |
+|   Loss/Loss_cost_critic |            5.12 |
+|         Loss/Loss_actor |         -0.0232 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            8.86 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -4.27e-08 |
+|              Misc/Alpha |            0.89 |
+|      Misc/FinalStepNorm |           0.323 |
+|                Misc/xHx |          0.0253 |
+|      Misc/gradient_norm |           0.123 |
+|            Misc/H_inv_g |           0.363 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch107.pt
+[32mExpected Improvement: 0.025612186640501022 Actual: 0.0247289684027433[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.3 |
+|          Metrics/EpCost |             188 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             108 |
+|        Train/TotalSteps |        2.16e+06 |
+|                Train/KL |         0.00501 |
+| Loss/Loss_reward_critic |           0.025 |
+|   Loss/Loss_cost_critic |             5.1 |
+|         Loss/Loss_actor |         -0.0247 |
+|            Time/Rollout |            22.4 |
+|             Time/Update |            9.03 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -3.05e-08 |
+|              Misc/Alpha |           0.781 |
+|      Misc/FinalStepNorm |           0.317 |
+|                Misc/xHx |          0.0328 |
+|      Misc/gradient_norm |           0.174 |
+|            Misc/H_inv_g |           0.406 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch108.pt
+[32mExpected Improvement: 0.02355087362229824 Actual: 0.023913873538374375[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              26 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             109 |
+|        Train/TotalSteps |        2.18e+06 |
+|                Train/KL |         0.00491 |
+| Loss/Loss_reward_critic |          0.0225 |
+|   Loss/Loss_cost_critic |            5.18 |
+|         Loss/Loss_actor |         -0.0239 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            8.98 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        -5.8e-08 |
+|              Misc/Alpha |           0.849 |
+|      Misc/FinalStepNorm |           0.323 |
+|                Misc/xHx |          0.0277 |
+|      Misc/gradient_norm |           0.155 |
+|            Misc/H_inv_g |            0.38 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch109.pt
+[32mExpected Improvement: 0.026671316474676132 Actual: 0.02561649799048893[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.1 |
+|          Metrics/EpCost |             210 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             110 |
+|        Train/TotalSteps |         2.2e+06 |
+|                Train/KL |         0.00529 |
+| Loss/Loss_reward_critic |          0.0241 |
+|   Loss/Loss_cost_critic |            5.07 |
+|         Loss/Loss_actor |         -0.0256 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |             9.1 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |            0.75 |
+|      Misc/FinalStepNorm |           0.305 |
+|                Misc/xHx |          0.0355 |
+|      Misc/gradient_norm |           0.162 |
+|            Misc/H_inv_g |           0.406 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch110.pt
+[32mExpected Improvement: 0.026690484955906868 Actual: 0.024295068120956387[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.1 |
+|          Metrics/EpCost |             208 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             111 |
+|        Train/TotalSteps |        2.22e+06 |
+|                Train/KL |         0.00544 |
+| Loss/Loss_reward_critic |          0.0243 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0243 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.12 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        7.93e-08 |
+|              Misc/Alpha |            0.75 |
+|      Misc/FinalStepNorm |           0.305 |
+|                Misc/xHx |          0.0356 |
+|      Misc/gradient_norm |            0.18 |
+|            Misc/H_inv_g |           0.407 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch111.pt
+[32mExpected Improvement: 0.02528456598520279 Actual: 0.02398668550550953[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             193 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             112 |
+|        Train/TotalSteps |        2.24e+06 |
+|                Train/KL |         0.00472 |
+| Loss/Loss_reward_critic |          0.0222 |
+|   Loss/Loss_cost_critic |            4.74 |
+|         Loss/Loss_actor |          -0.024 |
+|            Time/Rollout |            22.4 |
+|             Time/Update |            8.88 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -3.05e-09 |
+|              Misc/Alpha |            0.79 |
+|      Misc/FinalStepNorm |           0.326 |
+|                Misc/xHx |           0.032 |
+|      Misc/gradient_norm |            0.17 |
+|            Misc/H_inv_g |           0.413 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch112.pt
+[32mExpected Improvement: 0.029550524428486824 Actual: 0.02522787146568306[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             191 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             113 |
+|        Train/TotalSteps |        2.26e+06 |
+|                Train/KL |         0.00555 |
+| Loss/Loss_reward_critic |          0.0212 |
+|   Loss/Loss_cost_critic |            4.95 |
+|         Loss/Loss_actor |         -0.0252 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            9.04 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -2.14e-08 |
+|              Misc/Alpha |           0.677 |
+|      Misc/FinalStepNorm |           0.286 |
+|                Misc/xHx |          0.0436 |
+|      Misc/gradient_norm |           0.173 |
+|            Misc/H_inv_g |           0.423 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch113.pt
+[32mExpected Improvement: 0.024397652596235275 Actual: 0.02632149816155449[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             208 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             114 |
+|        Train/TotalSteps |        2.28e+06 |
+|                Train/KL |         0.00494 |
+| Loss/Loss_reward_critic |          0.0213 |
+|   Loss/Loss_cost_critic |            5.03 |
+|         Loss/Loss_actor |         -0.0263 |
+|            Time/Rollout |            22.1 |
+|             Time/Update |            9.09 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -2.14e-08 |
+|              Misc/Alpha |            0.82 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0298 |
+|      Misc/gradient_norm |           0.178 |
+|            Misc/H_inv_g |           0.388 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch114.pt
+[32mExpected Improvement: 0.024260278791189194 Actual: 0.023861181664466935[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.1 |
+|          Metrics/EpCost |             214 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             115 |
+|        Train/TotalSteps |         2.3e+06 |
+|                Train/KL |         0.00497 |
+| Loss/Loss_reward_critic |          0.0247 |
+|   Loss/Loss_cost_critic |            4.71 |
+|         Loss/Loss_actor |         -0.0239 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            9.15 |
+|              Time/Total |            31.8 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |        9.77e-08 |
+|              Misc/Alpha |           0.824 |
+|      Misc/FinalStepNorm |           0.312 |
+|                Misc/xHx |          0.0294 |
+|      Misc/gradient_norm |           0.165 |
+|            Misc/H_inv_g |           0.378 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch115.pt
+[32mExpected Improvement: 0.024530690163373947 Actual: 0.02365646630227558[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             213 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             116 |
+|        Train/TotalSteps |        2.32e+06 |
+|                Train/KL |         0.00507 |
+| Loss/Loss_reward_critic |           0.023 |
+|   Loss/Loss_cost_critic |            5.34 |
+|         Loss/Loss_actor |         -0.0237 |
+|            Time/Rollout |            22.2 |
+|             Time/Update |            9.14 |
+|              Time/Total |            31.4 |
+|         Value/RewardAdv |       -1.91e-10 |
+|           Value/CostAdv |        -6.1e-08 |
+|              Misc/Alpha |           0.814 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0302 |
+|      Misc/gradient_norm |           0.161 |
+|            Misc/H_inv_g |           0.391 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch116.pt
+[32mExpected Improvement: 0.02430144138634205 Actual: 0.023460473865270615[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              26 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             117 |
+|        Train/TotalSteps |        2.34e+06 |
+|                Train/KL |         0.00534 |
+| Loss/Loss_reward_critic |          0.0247 |
+|   Loss/Loss_cost_critic |               5 |
+|         Loss/Loss_actor |         -0.0235 |
+|            Time/Rollout |            22.3 |
+|             Time/Update |            9.49 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        -6.1e-09 |
+|              Misc/Alpha |           0.823 |
+|      Misc/FinalStepNorm |           0.307 |
+|                Misc/xHx |          0.0295 |
+|      Misc/gradient_norm |           0.151 |
+|            Misc/H_inv_g |           0.372 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch117.pt
+[32mExpected Improvement: 0.023382529616355896 Actual: 0.022496642073988937[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             194 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             118 |
+|        Train/TotalSteps |        2.36e+06 |
+|                Train/KL |         0.00461 |
+| Loss/Loss_reward_critic |          0.0244 |
+|   Loss/Loss_cost_critic |            4.59 |
+|         Loss/Loss_actor |         -0.0225 |
+|            Time/Rollout |            20.6 |
+|             Time/Update |            9.42 |
+|              Time/Total |              30 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |        2.44e-08 |
+|              Misc/Alpha |           0.855 |
+|      Misc/FinalStepNorm |           0.331 |
+|                Misc/xHx |          0.0274 |
+|      Misc/gradient_norm |           0.132 |
+|            Misc/H_inv_g |           0.388 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch118.pt
+[32mExpected Improvement: 0.02362685464322567 Actual: 0.022958342322707215[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             200 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             119 |
+|        Train/TotalSteps |        2.38e+06 |
+|                Train/KL |         0.00475 |
+| Loss/Loss_reward_critic |          0.0258 |
+|   Loss/Loss_cost_critic |            5.36 |
+|         Loss/Loss_actor |          -0.023 |
+|            Time/Rollout |            20.4 |
+|             Time/Update |            14.7 |
+|              Time/Total |              35 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |           0.847 |
+|      Misc/FinalStepNorm |           0.327 |
+|                Misc/xHx |          0.0279 |
+|      Misc/gradient_norm |           0.136 |
+|            Misc/H_inv_g |           0.386 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch119.pt
+[32mExpected Improvement: 0.025182558223605156 Actual: 0.023825038224458694[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             204 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             120 |
+|        Train/TotalSteps |         2.4e+06 |
+|                Train/KL |         0.00492 |
+| Loss/Loss_reward_critic |          0.0264 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0238 |
+|            Time/Rollout |            20.3 |
+|             Time/Update |            11.2 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        -2.9e-08 |
+|              Misc/Alpha |           0.795 |
+|      Misc/FinalStepNorm |           0.318 |
+|                Misc/xHx |          0.0317 |
+|      Misc/gradient_norm |           0.151 |
+|            Misc/H_inv_g |             0.4 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch120.pt
+[32mExpected Improvement: 0.024215808138251305 Actual: 0.024464553895592767[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.4 |
+|          Metrics/EpCost |             198 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             121 |
+|        Train/TotalSteps |        2.42e+06 |
+|                Train/KL |         0.00477 |
+| Loss/Loss_reward_critic |          0.0271 |
+|   Loss/Loss_cost_critic |            5.11 |
+|         Loss/Loss_actor |         -0.0245 |
+|            Time/Rollout |            20.4 |
+|             Time/Update |            10.7 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -1.68e-08 |
+|              Misc/Alpha |           0.826 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0293 |
+|      Misc/gradient_norm |           0.152 |
+|            Misc/H_inv_g |           0.394 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch121.pt
+[32mExpected Improvement: 0.02557622641324997 Actual: 0.026033722111582946[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             122 |
+|        Train/TotalSteps |        2.44e+06 |
+|                Train/KL |         0.00527 |
+| Loss/Loss_reward_critic |          0.0278 |
+|   Loss/Loss_cost_critic |            4.74 |
+|         Loss/Loss_actor |          -0.026 |
+|            Time/Rollout |            19.9 |
+|             Time/Update |            11.4 |
+|              Time/Total |            31.3 |
+|         Value/RewardAdv |        7.63e-10 |
+|           Value/CostAdv |       -6.71e-08 |
+|              Misc/Alpha |           0.782 |
+|      Misc/FinalStepNorm |           0.308 |
+|                Misc/xHx |          0.0327 |
+|      Misc/gradient_norm |           0.182 |
+|            Misc/H_inv_g |           0.394 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch122.pt
+[32mExpected Improvement: 0.024410352110862732 Actual: 0.023377440533041915[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             199 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             123 |
+|        Train/TotalSteps |        2.46e+06 |
+|                Train/KL |         0.00462 |
+| Loss/Loss_reward_critic |          0.0261 |
+|   Loss/Loss_cost_critic |            4.96 |
+|         Loss/Loss_actor |         -0.0234 |
+|            Time/Rollout |            20.2 |
+|             Time/Update |            9.77 |
+|              Time/Total |              30 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |        3.05e-09 |
+|              Misc/Alpha |           0.818 |
+|      Misc/FinalStepNorm |           0.325 |
+|                Misc/xHx |          0.0299 |
+|      Misc/gradient_norm |           0.138 |
+|            Misc/H_inv_g |           0.397 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch123.pt
+[32mExpected Improvement: 0.027383148670196533 Actual: 0.02831765331625946[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             195 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             124 |
+|        Train/TotalSteps |        2.48e+06 |
+|                Train/KL |         0.00492 |
+| Loss/Loss_reward_critic |          0.0238 |
+|   Loss/Loss_cost_critic |            4.74 |
+|         Loss/Loss_actor |         -0.0283 |
+|            Time/Rollout |            24.8 |
+|             Time/Update |            14.8 |
+|              Time/Total |            39.6 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |            0.73 |
+|      Misc/FinalStepNorm |           0.315 |
+|                Misc/xHx |          0.0375 |
+|      Misc/gradient_norm |            0.21 |
+|            Misc/H_inv_g |           0.432 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch124.pt
+[32mExpected Improvement: 0.024455256760120392 Actual: 0.022977510151266145[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              26 |
+|          Metrics/EpCost |             184 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             125 |
+|        Train/TotalSteps |         2.5e+06 |
+|                Train/KL |         0.00472 |
+| Loss/Loss_reward_critic |          0.0234 |
+|   Loss/Loss_cost_critic |            4.88 |
+|         Loss/Loss_actor |          -0.023 |
+|            Time/Rollout |            23.6 |
+|             Time/Update |            9.13 |
+|              Time/Total |            32.7 |
+|         Value/RewardAdv |       -8.39e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+|              Misc/Alpha |           0.818 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0299 |
+|      Misc/gradient_norm |           0.157 |
+|            Misc/H_inv_g |           0.391 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch125.pt
+[32mExpected Improvement: 0.023716339841485023 Actual: 0.02263427404761309[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             185 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             126 |
+|        Train/TotalSteps |        2.52e+06 |
+|                Train/KL |         0.00489 |
+| Loss/Loss_reward_critic |          0.0219 |
+|   Loss/Loss_cost_critic |            4.94 |
+|         Loss/Loss_actor |         -0.0226 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            8.99 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        8.39e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+|              Misc/Alpha |           0.842 |
+|      Misc/FinalStepNorm |           0.319 |
+|                Misc/xHx |          0.0282 |
+|      Misc/gradient_norm |           0.178 |
+|            Misc/H_inv_g |           0.379 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch126.pt
+[32mExpected Improvement: 0.023979436606168747 Actual: 0.023830846983194043[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.3 |
+|          Metrics/EpCost |             197 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             127 |
+|        Train/TotalSteps |        2.54e+06 |
+|                Train/KL |         0.00491 |
+| Loss/Loss_reward_critic |           0.023 |
+|   Loss/Loss_cost_critic |            4.82 |
+|         Loss/Loss_actor |         -0.0238 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            9.44 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -2.44e-08 |
+|              Misc/Alpha |           0.832 |
+|      Misc/FinalStepNorm |           0.326 |
+|                Misc/xHx |          0.0289 |
+|      Misc/gradient_norm |           0.143 |
+|            Misc/H_inv_g |           0.391 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch127.pt
+[32mExpected Improvement: 0.024408843368291855 Actual: 0.023439012601971676[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             202 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             128 |
+|        Train/TotalSteps |        2.56e+06 |
+|                Train/KL |         0.00489 |
+| Loss/Loss_reward_critic |           0.024 |
+|   Loss/Loss_cost_critic |            4.91 |
+|         Loss/Loss_actor |         -0.0234 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            9.15 |
+|              Time/Total |            31.8 |
+|         Value/RewardAdv |        4.96e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |            0.82 |
+|      Misc/FinalStepNorm |           0.319 |
+|                Misc/xHx |          0.0298 |
+|      Misc/gradient_norm |           0.148 |
+|            Misc/H_inv_g |           0.389 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch128.pt
+[32mExpected Improvement: 0.023662205785512924 Actual: 0.023132777515053826[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             205 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             129 |
+|        Train/TotalSteps |        2.58e+06 |
+|                Train/KL |         0.00523 |
+| Loss/Loss_reward_critic |          0.0271 |
+|   Loss/Loss_cost_critic |            4.78 |
+|         Loss/Loss_actor |         -0.0231 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.64 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+|              Misc/Alpha |           0.845 |
+|      Misc/FinalStepNorm |           0.307 |
+|                Misc/xHx |           0.028 |
+|      Misc/gradient_norm |           0.135 |
+|            Misc/H_inv_g |           0.364 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch129.pt
+[32mExpected Improvement: 0.026487378403544426 Actual: 0.048322530889510995[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.2 |
+|          Metrics/EpCost |             200 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             130 |
+|        Train/TotalSteps |         2.6e+06 |
+|                Train/KL |          0.0049 |
+| Loss/Loss_reward_critic |          0.0249 |
+|   Loss/Loss_cost_critic |            4.74 |
+|         Loss/Loss_actor |         -0.0483 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.32 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        3.36e-08 |
+|              Misc/Alpha |           0.752 |
+|      Misc/FinalStepNorm |           0.313 |
+|                Misc/xHx |          0.0354 |
+|      Misc/gradient_norm |           0.172 |
+|            Misc/H_inv_g |           0.416 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch130.pt
+[32mExpected Improvement: 0.02746897004544735 Actual: 0.02950777003467081[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             182 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             131 |
+|        Train/TotalSteps |        2.62e+06 |
+|                Train/KL |         0.00527 |
+| Loss/Loss_reward_critic |          0.0212 |
+|   Loss/Loss_cost_critic |             4.6 |
+|         Loss/Loss_actor |         -0.0295 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            9.03 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        1.07e-08 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |           0.727 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0379 |
+|      Misc/gradient_norm |           0.217 |
+|            Misc/H_inv_g |           0.426 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch131.pt
+[32mExpected Improvement: 0.023679019883275032 Actual: 0.023388816875219653[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.8 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             132 |
+|        Train/TotalSteps |        2.64e+06 |
+|                Train/KL |         0.00576 |
+| Loss/Loss_reward_critic |          0.0193 |
+|   Loss/Loss_cost_critic |            5.07 |
+|         Loss/Loss_actor |         -0.0234 |
+|            Time/Rollout |            23.1 |
+|             Time/Update |            9.19 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |           0.841 |
+|      Misc/FinalStepNorm |           0.296 |
+|                Misc/xHx |          0.0282 |
+|      Misc/gradient_norm |           0.172 |
+|            Misc/H_inv_g |           0.352 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch132.pt
+[32mExpected Improvement: 0.024896323680877686 Actual: 0.025342678987979927[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.9 |
+|          Metrics/EpCost |             200 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             133 |
+|        Train/TotalSteps |        2.66e+06 |
+|                Train/KL |         0.00478 |
+| Loss/Loss_reward_critic |          0.0244 |
+|   Loss/Loss_cost_critic |            4.87 |
+|         Loss/Loss_actor |         -0.0253 |
+|            Time/Rollout |            22.5 |
+|             Time/Update |            9.08 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |           0.803 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |           0.031 |
+|      Misc/gradient_norm |           0.159 |
+|            Misc/H_inv_g |           0.403 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch133.pt
+[32mExpected Improvement: 0.0239555761218071 Actual: 0.02327929280102259[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             215 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             134 |
+|        Train/TotalSteps |        2.68e+06 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0225 |
+|   Loss/Loss_cost_critic |            4.52 |
+|         Loss/Loss_actor |         -0.0233 |
+|            Time/Rollout |            23.1 |
+|             Time/Update |            8.98 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |        1.83e-08 |
+|              Misc/Alpha |           0.835 |
+|      Misc/FinalStepNorm |           0.311 |
+|                Misc/xHx |          0.0287 |
+|      Misc/gradient_norm |           0.175 |
+|            Misc/H_inv_g |           0.373 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch134.pt
+[32mExpected Improvement: 0.02513189986348152 Actual: 0.02522759368419636[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.2 |
+|          Metrics/EpCost |             212 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             135 |
+|        Train/TotalSteps |         2.7e+06 |
+|                Train/KL |         0.00494 |
+| Loss/Loss_reward_critic |          0.0253 |
+|   Loss/Loss_cost_critic |            4.88 |
+|         Loss/Loss_actor |         -0.0252 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.11 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        3.66e-08 |
+|              Misc/Alpha |           0.796 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0316 |
+|      Misc/gradient_norm |           0.141 |
+|            Misc/H_inv_g |           0.407 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch135.pt
+[32mExpected Improvement: 0.025900915265083313 Actual: 0.02558467335104897[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             207 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             136 |
+|        Train/TotalSteps |        2.72e+06 |
+|                Train/KL |         0.00559 |
+| Loss/Loss_reward_critic |          0.0253 |
+|   Loss/Loss_cost_critic |            4.99 |
+|         Loss/Loss_actor |         -0.0256 |
+|            Time/Rollout |            22.8 |
+|             Time/Update |            9.15 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -6.71e-08 |
+|              Misc/Alpha |           0.772 |
+|      Misc/FinalStepNorm |           0.301 |
+|                Misc/xHx |          0.0335 |
+|      Misc/gradient_norm |           0.193 |
+|            Misc/H_inv_g |            0.39 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch136.pt
+[32mExpected Improvement: 0.027551954612135887 Actual: 0.025451676920056343[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            24.9 |
+|          Metrics/EpCost |             212 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             137 |
+|        Train/TotalSteps |        2.74e+06 |
+|                Train/KL |          0.0054 |
+| Loss/Loss_reward_critic |          0.0284 |
+|   Loss/Loss_cost_critic |            4.61 |
+|         Loss/Loss_actor |         -0.0255 |
+|            Time/Rollout |              23 |
+|             Time/Update |             8.9 |
+|              Time/Total |            31.9 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        1.22e-08 |
+|              Misc/Alpha |           0.726 |
+|      Misc/FinalStepNorm |           0.304 |
+|                Misc/xHx |          0.0379 |
+|      Misc/gradient_norm |           0.172 |
+|            Misc/H_inv_g |           0.418 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch137.pt
+[32mExpected Improvement: 0.02621278539299965 Actual: 0.025378914034366762[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             205 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             138 |
+|        Train/TotalSteps |        2.76e+06 |
+|                Train/KL |         0.00494 |
+| Loss/Loss_reward_critic |          0.0274 |
+|   Loss/Loss_cost_critic |            4.59 |
+|         Loss/Loss_actor |         -0.0254 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.12 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |       -7.63e-10 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |           0.762 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0344 |
+|      Misc/gradient_norm |           0.181 |
+|            Misc/H_inv_g |            0.42 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch138.pt
+[32mExpected Improvement: 0.026320958510041237 Actual: 0.02865574576258667[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |              25 |
+|          Metrics/EpCost |             193 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             139 |
+|        Train/TotalSteps |        2.78e+06 |
+|                Train/KL |         0.00524 |
+| Loss/Loss_reward_critic |          0.0258 |
+|   Loss/Loss_cost_critic |            4.37 |
+|         Loss/Loss_actor |         -0.0287 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            8.96 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -6.71e-08 |
+|              Misc/Alpha |            0.76 |
+|      Misc/FinalStepNorm |           0.307 |
+|                Misc/xHx |          0.0346 |
+|      Misc/gradient_norm |           0.159 |
+|            Misc/H_inv_g |           0.403 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch139.pt
+[32mExpected Improvement: 0.02571796625852585 Actual: 0.024781610929966114[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.5 |
+|          Metrics/EpCost |             179 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             140 |
+|        Train/TotalSteps |         2.8e+06 |
+|                Train/KL |         0.00483 |
+| Loss/Loss_reward_critic |            0.03 |
+|   Loss/Loss_cost_critic |            4.33 |
+|         Loss/Loss_actor |         -0.0248 |
+|            Time/Rollout |              23 |
+|             Time/Update |            9.14 |
+|              Time/Total |            32.2 |
+|         Value/RewardAdv |       -1.91e-09 |
+|           Value/CostAdv |        4.73e-08 |
+|              Misc/Alpha |           0.778 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0331 |
+|      Misc/gradient_norm |           0.182 |
+|            Misc/H_inv_g |           0.417 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch140.pt
+[32mExpected Improvement: 0.025055088102817535 Actual: 0.02516683411002163[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.7 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             141 |
+|        Train/TotalSteps |        2.82e+06 |
+|                Train/KL |         0.00468 |
+| Loss/Loss_reward_critic |          0.0236 |
+|   Loss/Loss_cost_critic |            4.81 |
+|         Loss/Loss_actor |         -0.0252 |
+|            Time/Rollout |            22.6 |
+|             Time/Update |            8.91 |
+|              Time/Total |            31.5 |
+|         Value/RewardAdv |       -6.87e-09 |
+|           Value/CostAdv |        4.27e-08 |
+|              Misc/Alpha |           0.798 |
+|      Misc/FinalStepNorm |           0.324 |
+|                Misc/xHx |          0.0314 |
+|      Misc/gradient_norm |           0.187 |
+|            Misc/H_inv_g |           0.406 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch141.pt
+[32mExpected Improvement: 0.025646671652793884 Actual: 0.02469798839390247[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             212 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             142 |
+|        Train/TotalSteps |        2.84e+06 |
+|                Train/KL |         0.00534 |
+| Loss/Loss_reward_critic |          0.0234 |
+|   Loss/Loss_cost_critic |            4.98 |
+|         Loss/Loss_actor |         -0.0247 |
+|            Time/Rollout |            23.3 |
+|             Time/Update |            9.08 |
+|              Time/Total |            32.4 |
+|         Value/RewardAdv |       -7.63e-09 |
+|           Value/CostAdv |               0 |
+|              Misc/Alpha |            0.78 |
+|      Misc/FinalStepNorm |            0.31 |
+|                Misc/xHx |          0.0329 |
+|      Misc/gradient_norm |           0.171 |
+|            Misc/H_inv_g |           0.398 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch142.pt
+[32mExpected Improvement: 0.026961855590343475 Actual: 0.029268470850586814[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             200 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             143 |
+|        Train/TotalSteps |        2.86e+06 |
+|                Train/KL |         0.00566 |
+| Loss/Loss_reward_critic |           0.025 |
+|   Loss/Loss_cost_critic |            4.57 |
+|         Loss/Loss_actor |         -0.0293 |
+|            Time/Rollout |              23 |
+|             Time/Update |            9.26 |
+|              Time/Total |            32.3 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -7.32e-08 |
+|              Misc/Alpha |           0.742 |
+|      Misc/FinalStepNorm |             0.3 |
+|                Misc/xHx |          0.0363 |
+|      Misc/gradient_norm |           0.197 |
+|            Misc/H_inv_g |           0.404 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch143.pt
+[32mExpected Improvement: 0.025147633627057076 Actual: 0.02463182604908898[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.6 |
+|          Metrics/EpCost |             186 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             144 |
+|        Train/TotalSteps |        2.88e+06 |
+|                Train/KL |         0.00501 |
+| Loss/Loss_reward_critic |          0.0226 |
+|   Loss/Loss_cost_critic |            5.02 |
+|         Loss/Loss_actor |         -0.0246 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            8.96 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |           0.795 |
+|      Misc/FinalStepNorm |           0.314 |
+|                Misc/xHx |          0.0316 |
+|      Misc/gradient_norm |           0.142 |
+|            Misc/H_inv_g |           0.395 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch144.pt
+[32mExpected Improvement: 0.024144742637872696 Actual: 0.02366273358762272[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             188 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             145 |
+|        Train/TotalSteps |         2.9e+06 |
+|                Train/KL |         0.00502 |
+| Loss/Loss_reward_critic |          0.0217 |
+|   Loss/Loss_cost_critic |            4.67 |
+|         Loss/Loss_actor |         -0.0237 |
+|            Time/Rollout |              23 |
+|             Time/Update |            9.08 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        3.05e-08 |
+|              Misc/Alpha |           0.829 |
+|      Misc/FinalStepNorm |            0.32 |
+|                Misc/xHx |          0.0291 |
+|      Misc/gradient_norm |           0.159 |
+|            Misc/H_inv_g |           0.386 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch145.pt
+[32mExpected Improvement: 0.02559632807970047 Actual: 0.02762561062574398[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.5 |
+|          Metrics/EpCost |             187 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             146 |
+|        Train/TotalSteps |        2.92e+06 |
+|                Train/KL |          0.0052 |
+| Loss/Loss_reward_critic |          0.0221 |
+|   Loss/Loss_cost_critic |            4.59 |
+|         Loss/Loss_actor |         -0.0276 |
+|            Time/Rollout |            22.7 |
+|             Time/Update |            9.19 |
+|              Time/Total |            31.9 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |       -1.34e-07 |
+|              Misc/Alpha |           0.781 |
+|      Misc/FinalStepNorm |           0.314 |
+|                Misc/xHx |          0.0328 |
+|      Misc/gradient_norm |           0.145 |
+|            Misc/H_inv_g |           0.401 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch146.pt
+[32mExpected Improvement: 0.026442458853125572 Actual: 0.02560393157601304[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            26.2 |
+|          Metrics/EpCost |             173 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             147 |
+|        Train/TotalSteps |        2.94e+06 |
+|                Train/KL |         0.00533 |
+| Loss/Loss_reward_critic |          0.0213 |
+|   Loss/Loss_cost_critic |            4.48 |
+|         Loss/Loss_actor |         -0.0256 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            8.87 |
+|              Time/Total |              32 |
+|         Value/RewardAdv |       -7.63e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+|              Misc/Alpha |           0.756 |
+|      Misc/FinalStepNorm |           0.308 |
+|                Misc/xHx |           0.035 |
+|      Misc/gradient_norm |           0.213 |
+|            Misc/H_inv_g |           0.408 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch147.pt
+[32mExpected Improvement: 0.027587393298745155 Actual: 0.029009182992576932[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.7 |
+|          Metrics/EpCost |             179 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             148 |
+|        Train/TotalSteps |        2.96e+06 |
+|                Train/KL |         0.00594 |
+| Loss/Loss_reward_critic |           0.023 |
+|   Loss/Loss_cost_critic |            4.94 |
+|         Loss/Loss_actor |          -0.029 |
+|            Time/Rollout |            22.9 |
+|             Time/Update |            9.14 |
+|              Time/Total |            32.1 |
+|         Value/RewardAdv |       -1.14e-08 |
+|           Value/CostAdv |        1.68e-08 |
+|              Misc/Alpha |           0.725 |
+|      Misc/FinalStepNorm |           0.287 |
+|                Misc/xHx |           0.038 |
+|      Misc/gradient_norm |           0.228 |
+|            Misc/H_inv_g |           0.396 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch148.pt
+[32mExpected Improvement: 0.02619796246290207 Actual: 0.025518205353617707[0m
+[32mAccept step at i=1[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.3 |
+|          Metrics/EpCost |             196 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             149 |
+|        Train/TotalSteps |        2.98e+06 |
+|                Train/KL |         0.00528 |
+| Loss/Loss_reward_critic |          0.0275 |
+|   Loss/Loss_cost_critic |            4.59 |
+|         Loss/Loss_actor |         -0.0255 |
+|            Time/Rollout |            22.8 |
+|             Time/Update |            8.97 |
+|              Time/Total |            31.7 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |         6.1e-09 |
+|              Misc/Alpha |           0.764 |
+|      Misc/FinalStepNorm |           0.305 |
+|                Misc/xHx |          0.0343 |
+|      Misc/gradient_norm |            0.17 |
+|            Misc/H_inv_g |           0.399 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/trpo/seed-000-2025-09-13-20-09-00/trpo_actor_epoch149.pt
+[32mExpected Improvement: 0.02902240678668022 Actual: 0.02780969059467342[0m
+[32mAccept step at i=1[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |            25.1 |
+|          Metrics/EpCost |             206 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             150 |
+|        Train/TotalSteps |           3e+06 |
+|                Train/KL |         0.00535 |
+| Loss/Loss_reward_critic |          0.0266 |
+|   Loss/Loss_cost_critic |            4.85 |
+|         Loss/Loss_actor |         -0.0278 |
+|            Time/Rollout |            23.2 |
+|             Time/Update |            9.59 |
+|              Time/Total |            32.8 |
+|         Value/RewardAdv |        6.87e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+|              Misc/Alpha |           0.689 |
+|      Misc/FinalStepNorm |           0.299 |
+|                Misc/xHx |          0.0421 |
+|      Misc/gradient_norm |           0.182 |
+|            Misc/H_inv_g |           0.434 |
+|     Misc/AcceptanceStep |               1 |
+---------------------------------------------
