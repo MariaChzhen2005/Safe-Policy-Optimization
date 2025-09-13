@@ -29,6 +29,7 @@ try:
 except ImportError:
     pass
 import torch
+from tqdm import tqdm
 import torch.nn as nn
 import torch.optim
 from torch.nn.utils.clip_grad import clip_grad_norm_
@@ -243,7 +244,7 @@ def main(args, cfg_env=None):
         np.zeros(args.num_envs),
     )
     # training loop
-    for epoch in range(epochs):
+    for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch"):
         rollout_start_time = time.time()
         model_save_path = os.path.join(args.log_dir, f"trpo_lag_actor_epoch{epoch}.pt")
         torch.save(policy.actor, model_save_path)
