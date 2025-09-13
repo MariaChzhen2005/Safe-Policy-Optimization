@@ -487,7 +487,7 @@ def main(args, cfg_env=None):
                     }
                 )
         update_end_time = time.time()
-        if (epoch + 1) % 20 == 0 or epoch == 1:
+        if epoch == 0 or epoch == 1 or (epoch + 1) % 15 == 0:
             logger.torch_save(itr=epoch)
             if args.task not in isaac_gym_map.keys():
                 logger.save_state(
