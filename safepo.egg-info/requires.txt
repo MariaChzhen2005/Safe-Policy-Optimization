@@ -1,0 +1,12 @@
+joblib
+scipy
+torch>=1.10.0
+tensorboard>=2.8.0
+wandb>=0.13.0
+pyyaml>=6.0
+matplotlib>=3.7.1
+seaborn>=0.12.2
+pandas>=1.5.3
+safety-gymnasium
+rich>=13.3.0
+moviepy>=1.0.3

@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: safepo
+Version: 1.0.1
+Summary: Pytorch version of Safe Reinforcement Learning Algorithm
+Home-page: https://github.com/OmniSafeAI/Safe-Policy-Optimization
+Author: OmniSafeAI Team
+Author-email: jiamg.ji@gmail.com
+License: Apache License 2.0
+Keywords: Safe Single Agent Reinforcement LearningSafe Mult Agent Rinforcement Learning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: joblib
+Requires-Dist: scipy
+Requires-Dist: torch>=1.10.0
+Requires-Dist: tensorboard>=2.8.0
+Requires-Dist: wandb>=0.13.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: seaborn>=0.12.2
+Requires-Dist: pandas>=1.5.3
+Requires-Dist: safety-gymnasium
+Requires-Dist: rich>=13.3.0
+Requires-Dist: moviepy>=1.0.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
