@@ -338,6 +338,16 @@ def main(args, cfg_env=None):
                 break
         update_end_time = time.time()
         actor_scheduler.step()
+        # Unconditional checkpoint saving at epoch 0 and every 200 epochs
+        if (epoch + 1) % 200 == 0 or epoch == 0:
+            logger.torch_save(itr=epoch)
+            if args.task not in isaac_gym_map.keys():
+                logger.save_state(
+                    state_dict={
+                        "Normalizer": env.obs_rms,
+                    },
+                    itr=epoch,
+                )
         if not logger.logged:
             # log data
             logger.log_tabular("Metrics/EpRet")
@@ -364,15 +374,6 @@ def main(args, cfg_env=None):
             logger.log_tabular("Value/CostAdv", data["adv_c"].mean().item())
 
             logger.dump_tabular()
-            if (epoch+1) % 100 == 0 or epoch == 0:
-                logger.torch_save(itr=epoch)
-                if args.task not in isaac_gym_map.keys():
-                    logger.save_state(
-                        state_dict={
-                            "Normalizer": env.obs_rms,
-                        },
-                        itr = epoch
-                    )
     logger.close()
 
 
