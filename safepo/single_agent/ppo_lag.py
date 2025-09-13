@@ -347,8 +347,7 @@ def main(args, cfg_env=None):
                 break
         update_end_time = time.time()
         actor_scheduler.step()
-        # Unconditional checkpoint saving at epoch 0 and every 200 epochs
-        if (epoch + 1) % 200 == 0 or epoch == 0:
+        if (epoch + 1) % 20 == 0 or epoch == 1:
             logger.torch_save(itr=epoch)
             if args.task not in isaac_gym_map.keys():
                 logger.save_state(
