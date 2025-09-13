@@ -157,7 +157,7 @@ def main(args, cfg_env=None):
     # training loop
     for epoch in range(epochs):
         rollout_start_time = time.time()
-        model_save_path = os.path.join(args.log_dir, f"actor_epoch{epoch}.pt")
+        model_save_path = os.path.join(args.log_dir, f"ppo_lag_actor_epoch{epoch}.pt")
         torch.save(policy.actor, model_save_path)
         print(f"Saved checkpoint to {model_save_path}")
         # collect samples until we have enough to update
