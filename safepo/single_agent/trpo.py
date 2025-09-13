@@ -533,33 +533,8 @@ if __name__ == "__main__":
     relpath = "-".join([subfolder, relpath])
     algo = os.path.basename(__file__).split(".")[0]
     args.log_dir = os.path.join(args.log_dir, args.experiment, args.task, algo, relpath)
-    if not args.write_terminal:
-        terminal_log_name = "terminal.log"
-        error_log_name = "error.log"
-        terminal_log_name = f"seed{args.seed}_{terminal_log_name}"
-        error_log_name = f"seed{args.seed}_{error_log_name}"
-        sys.stdout = sys.__stdout__
-        sys.stderr = sys.__stderr__
-        if not os.path.exists(args.log_dir):
-            os.makedirs(args.log_dir, exist_ok=True)
-        with open(
-            os.path.join(
-                f"{args.log_dir}",
-                terminal_log_name,
-            ),
-            "w",
-            encoding="utf-8",
-        ) as f_out:
-            sys.stdout = f_out
-            with open(
-                os.path.join(
-                    f"{args.log_dir}",
-                    error_log_name,
-                ),
-                "w",
-                encoding="utf-8",
-            ) as f_error:
-                sys.stderr = f_error
-                main(args, cfg_env)
-    else:
-        main(args, cfg_env)
+    
+    # Force terminal output to see where files are saved
+    args.write_terminal = True
+    
+    main(args, cfg_env)
