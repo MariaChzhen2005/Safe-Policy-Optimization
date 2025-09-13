@@ -238,6 +238,9 @@ def main(args, cfg_env=None):
     # training loop
     for epoch in range(epochs):
         rollout_start_time = time.time()
+        model_save_path = os.path.join(args.log_dir, f"actor_epoch{epoch}.pt")
+        torch.save(policy.actor, model_save_path)
+        print(f"Saved checkpoint to {model_save_path}")
         # collect samples until we have enough to update
         for steps in range(local_steps_per_epoch):
             with torch.no_grad():
@@ -532,9 +535,40 @@ if __name__ == "__main__":
     subfolder = "-".join(["seed", str(args.seed).zfill(3)])
     relpath = "-".join([subfolder, relpath])
     algo = os.path.basename(__file__).split(".")[0]
-    args.log_dir = os.path.join(args.log_dir, args.experiment, args.task, algo, relpath)
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    base_log_dir = os.path.join(project_root, "runs")
+    args.log_dir = os.path.join(base_log_dir, args.experiment, args.task, algo, relpath)
     
-    # Force terminal output to see where files are saved
-    args.write_terminal = True
+    # Save terminal and error logs to files for full reproducibility
+    args.write_terminal = False
     
-    main(args, cfg_env)
+    if not args.write_terminal:
+        terminal_log_name = "terminal.log"
+        error_log_name = "error.log"
+        terminal_log_name = f"seed{args.seed}_{terminal_log_name}"
+        error_log_name = f"seed{args.seed}_{error_log_name}"
+        sys.stdout = sys.__stdout__
+        sys.stderr = sys.__stderr__
+        if not os.path.exists(args.log_dir):
+            os.makedirs(args.log_dir, exist_ok=True)
+        with open(
+            os.path.join(
+                f"{args.log_dir}",
+                terminal_log_name,
+            ),
+            "w",
+            encoding="utf-8",
+        ) as f_out:
+            sys.stdout = f_out
+            with open(
+                os.path.join(
+                    f"{args.log_dir}",
+                    error_log_name,
+                ),
+                "w",
+                encoding="utf-8",
+            ) as f_error:
+                sys.stderr = f_error
+                main(args, cfg_env)
+    else:
+        main(args, cfg_env)
