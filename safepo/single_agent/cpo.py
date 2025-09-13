@@ -29,6 +29,7 @@ try:
 except ImportError:
     pass
 import torch
+from tqdm import tqdm
 import torch.nn as nn
 import torch.optim
 from torch.nn.utils.clip_grad import clip_grad_norm_
@@ -235,8 +236,11 @@ def main(args, cfg_env=None):
         np.zeros(args.num_envs),
     )
     # training loop
-    for epoch in range(epochs):
+    for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch"):
         rollout_start_time = time.time()
+        model_save_path = os.path.join(args.log_dir, f"cpo_actor_epoch{epoch}.pt")
+        torch.save(policy.actor, model_save_path)
+        print(f"Saved checkpoint to {model_save_path}")
         # collect samples until we have enough to update
         for steps in range(local_steps_per_epoch):
             with torch.no_grad():
@@ -570,8 +574,8 @@ def main(args, cfg_env=None):
                     }
                 )
         update_end_time = time.time()
-        # Unconditional checkpoint saving at epoch 0 and every 200 epochs
-        if (epoch + 1) % 200 == 0 or epoch == 0:
+        # Checkpoint saving at epochs 0, 1, and every 15th epoch
+        if epoch == 0 or epoch == 1 or (epoch + 1) % 15 == 0:
             logger.torch_save(itr=epoch)
             if args.task not in isaac_gym_map.keys():
                 logger.save_state(
@@ -619,7 +623,9 @@ if __name__ == "__main__":
     subfolder = "-".join(["seed", str(args.seed).zfill(3)])
     relpath = "-".join([subfolder, relpath])
     algo = os.path.basename(__file__).split(".")[0]
-    args.log_dir = os.path.join(args.log_dir, args.experiment, args.task, algo, relpath)
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    base_log_dir = os.path.join(project_root, "runs")
+    args.log_dir = os.path.join(base_log_dir, args.experiment, args.task, algo, relpath)
     if not args.write_terminal:
         terminal_log_name = "terminal.log"
         error_log_name = "error.log"
