@@ -17,7 +17,7 @@
 #
 # -------------------------------------------------------------------------
 # Usage
-#   python collect_dataset.py --n-samples 250000 --out data/dataset_pointgoal2.npz
+#   python collect_dataset.py --n_samples 250000 --out data/dataset_pointgoal2.npz
 # -------------------------------------------------------------------------
 
 import argparse
@@ -108,7 +108,7 @@ def collect_pairs(
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--env",        default="SafetyPointGoal2-v0")
-    parser.add_argument("--n-samples",  type=int, default=250_000,
+    parser.add_argument("--n_samples",  type=int, default=250_000,
                         help="total number of (obs, action) pairs to save")
     parser.add_argument("--seed",       type=int, default=0)
     parser.add_argument("--out",        default="dataset_pointgoal2.npz",
