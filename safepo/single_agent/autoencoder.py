@@ -4,9 +4,6 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from pypower.newtonpf import newtonpf
-from pypower.ppoption import ppoption
-from scipy.sparse import csr_matrix
 import os
 
 np.random.seed(42)

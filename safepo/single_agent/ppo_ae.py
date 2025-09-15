@@ -111,19 +111,28 @@ def main(args, cfg_env=None):
     print(f"Action space shape: {act_space.shape[0]}D")
 
     # Initialize autoencoder with same architecture as the saved model
-    autoencoder = ConditionalConstraintAwareAutoencoder(
-        action_dim=act_space.shape[0],
-        state_dim=obs_space.shape[0],
-        latent_dim=act_space.shape[0],  # assuming latent_dim matches action_dim
-        hidden_dim=64,
-        num_decoders=2,
-        latent_geom="hypersphere"
-    ).to(device)
+    print("Initializing autoencoder...")
+    try:
+        autoencoder = ConditionalConstraintAwareAutoencoder(
+            action_dim=act_space.shape[0],
+            state_dim=obs_space.shape[0],
+            latent_dim=act_space.shape[0],  # assuming latent_dim matches action_dim
+            hidden_dim=64,
+            num_decoders=2,
+            latent_geom="hypersphere",
+            norm_params_path=None,  # Avoid IEEE37 dependencies
+            ieee37_model_instance_in=None
+        ).to(device)
+        print("Autoencoder initialized, loading weights...")
 
-    # Load the trained weights
-    autoencoder.load_state_dict(torch.load(autoencoder_path, map_location=device))
-    autoencoder.eval()  # Set to evaluation mode
-    print("Autoencoder loaded successfully!")
+        # Load the trained weights
+        autoencoder.load_state_dict(torch.load(autoencoder_path, map_location=device))
+        autoencoder.eval()  # Set to evaluation mode
+        print("Autoencoder loaded successfully!")
+    except Exception as e:
+        print(f"Error loading autoencoder: {e}")
+        print("Continuing without autoencoder (actions won't be projected)")
+        autoencoder = None
     actor_optimizer = torch.optim.Adam(policy.actor.parameters(), lr=3e-4)
     actor_scheduler = LinearLR(
         actor_optimizer,
@@ -186,10 +195,13 @@ def main(args, cfg_env=None):
                 print(f"Original action shape: {act.shape}")
                 print(f"Observation shape: {obs.shape}")
 
-                # Use autoencoder's project_action method
-                projected_act = autoencoder.project_action(act, obs)
-                print(f"Projected action shape: {projected_act.shape}")
-                print(f"Action change norm: {torch.norm(projected_act - act, dim=-1).mean().item():.6f}")
+                # Use autoencoder's project_action method if available
+                if autoencoder is not None:
+                    projected_act = autoencoder.project_action(act, obs)
+                    print(f"Projected action shape: {projected_act.shape}")
+                    print(f"Action change norm: {torch.norm(projected_act - act, dim=-1).mean().item():.6f}")
+                else:
+                    projected_act = act  # Use original action if no autoencoder
 
             action = projected_act.detach().squeeze() if args.task in isaac_gym_map.keys() else projected_act.detach().squeeze().cpu().numpy()
             next_obs, reward, cost, terminated, truncated, info = env.step(action)
