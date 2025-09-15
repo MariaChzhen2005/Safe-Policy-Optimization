@@ -9,8 +9,6 @@ from pypower.ppoption import ppoption
 from scipy.sparse import csr_matrix
 import os
 
-import data_generation
-
 np.random.seed(42)
 torch.manual_seed(42)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

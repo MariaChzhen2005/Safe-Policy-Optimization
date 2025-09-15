@@ -44,6 +44,7 @@ from safepo.single_agent.autoencoder import ConditionalConstraintAwareAutoencode
 
 
 default_cfg = {
+    'total_steps': 3000000,  # Set 3M steps as default
     'hidden_sizes': [64, 64],
     'gamma': 0.99,
     'target_kl': 0.02,
