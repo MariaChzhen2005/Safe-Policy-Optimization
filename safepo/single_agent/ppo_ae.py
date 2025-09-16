@@ -108,8 +108,6 @@ def main(args, cfg_env=None):
     # load the trained autoencoder for action projection
     autoencoder_path = "safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt"
     print(f"Loading autoencoder from: {autoencoder_path}")
-    print(f"Observation space shape: {obs_space.shape[0]}D")
-    print(f"Action space shape: {act_space.shape[0]}D")
 
     # Initialize autoencoder with same architecture as the saved model
     print("Initializing autoencoder...")
@@ -192,15 +190,10 @@ def main(args, cfg_env=None):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
 
-                # Project action through autoencoder for safety
-                print(f"Original action shape: {act.shape}")
-                print(f"Observation shape: {obs.shape}")
-
                 # Use autoencoder's project_action method if available
                 if autoencoder is not None:
                     projected_act = autoencoder.project_action(act, obs)
-                    print(f"Projected action shape: {projected_act.shape}")
-                    print(f"Action change norm: {torch.norm(projected_act - act, dim=-1).mean().item():.6f}")
+                    print("PROJECTED")
                 else:
                     projected_act = act  # Use original action if no autoencoder
 
