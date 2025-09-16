@@ -52,7 +52,7 @@ default_cfg = {
     'batch_size': 64,
     'learning_iters': 40,
     'max_grad_norm': 40.0,
-    'proj_action_penalty_coef': 0.1,
+    'proj_action_penalty_coef': 0.05,
 }
 
 isaac_gym_specific_cfg = {
@@ -66,7 +66,7 @@ isaac_gym_specific_cfg = {
     'learning_iters': 8,
     'max_grad_norm': 1.0,
     'use_critic_norm': False,
-    'proj_action_penalty_coef': 0.1,
+    'proj_action_penalty_coef': 0.05,
 }
 
 def main(args, cfg_env=None):
