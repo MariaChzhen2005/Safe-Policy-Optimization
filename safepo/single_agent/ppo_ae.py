@@ -41,6 +41,7 @@ from safepo.common.logger import EpochLogger
 from safepo.common.model import ActorVCritic
 from safepo.utils.config import single_agent_args, isaac_gym_map, parse_sim_params
 from safepo.single_agent.autoencoder import ConditionalConstraintAwareAutoencoder
+print("imported everything")
 
 
 default_cfg = {
@@ -120,7 +121,7 @@ def main(args, cfg_env=None):
             hidden_dim=64,
             num_decoders=2,
             latent_geom="hypersphere",
-            norm_params_path=None,  # Avoid IEEE37 dependencies
+            norm_params_path=None,
             ieee37_model_instance_in=None
         ).to(device)
         print("Autoencoder initialized, loading weights...")
