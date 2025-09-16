@@ -52,6 +52,7 @@ default_cfg = {
     'batch_size': 64,
     'learning_iters': 40,
     'max_grad_norm': 40.0,
+    'proj_action_penalty_coef': 0.1,
 }
 
 isaac_gym_specific_cfg = {
@@ -65,6 +66,7 @@ isaac_gym_specific_cfg = {
     'learning_iters': 8,
     'max_grad_norm': 1.0,
     'use_critic_norm': False,
+    'proj_action_penalty_coef': 0.1,
 }
 
 def main(args, cfg_env=None):
@@ -211,7 +213,6 @@ def main(args, cfg_env=None):
                 # Use autoencoder's project_action method if available
                 if autoencoder is not None:
                     projected_act = autoencoder.project_action(act, obs)
-                    print("PROJECTED")
                 else:
                     projected_act = act  # Use original action if no autoencoder
 
@@ -373,10 +374,19 @@ def main(args, cfg_env=None):
                 ratio = torch.exp(log_prob - log_prob_b)
                 ratio_cliped = torch.clamp(ratio, 0.8, 1.2)
                 loss_pi = -torch.min(ratio * adv_b, ratio_cliped * adv_b).mean()
+                # Projected-action distance penalty (encourage original actions to be close to their projections)
+                proj_penalty_coef = config.get("proj_action_penalty_coef", 0.0)
+                proj_penalty = torch.tensor(0.0, device=obs_b.device)
+                if autoencoder is not None and proj_penalty_coef > 0.0:
+                    with torch.no_grad():
+                        projected_action = autoencoder.project_action(distribution.loc, obs_b)
+                    proj_penalty = nn.functional.mse_loss(distribution.loc, projected_action)
                 actor_optimizer.zero_grad()
                 total_loss = loss_pi + 2*loss_r + loss_c \
                     if config.get("use_value_coefficient", False) \
                     else loss_pi + loss_r + loss_c
+                # Add projection penalty
+                total_loss = total_loss + proj_penalty_coef * proj_penalty
                 total_loss.backward()
                 clip_grad_norm_(policy.parameters(), config["max_grad_norm"])
                 reward_critic_optimizer.step()
@@ -388,6 +398,7 @@ def main(args, cfg_env=None):
                         "Loss/Loss_reward_critic": loss_r.mean().item(),
                         "Loss/Loss_cost_critic": loss_c.mean().item(),
                         "Loss/Loss_actor": loss_pi.mean().item(),
+                        "Loss/Loss_proj_penalty": proj_penalty.item() if torch.is_tensor(proj_penalty) else float(proj_penalty),
                     }
                 )
 
@@ -430,6 +441,7 @@ def main(args, cfg_env=None):
             logger.log_tabular("Loss/Loss_reward_critic")
             logger.log_tabular("Loss/Loss_cost_critic")
             logger.log_tabular("Loss/Loss_actor")
+            logger.log_tabular("Loss/Loss_proj_penalty")
             logger.log_tabular("Time/Rollout", rollout_end_time - rollout_start_time)
             if args.use_eval:
                 logger.log_tabular("Time/Eval", eval_end_time - eval_start_time)
