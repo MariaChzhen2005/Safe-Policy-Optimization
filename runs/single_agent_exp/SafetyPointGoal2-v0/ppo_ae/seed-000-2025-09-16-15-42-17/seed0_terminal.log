@@ -1,0 +1,3061 @@
+Loading autoencoder from: /workspace/Safe-Policy-Optimization/safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt
+Observation space shape: 60D
+Action space shape: 2D
+Autoencoder file found at /workspace/Safe-Policy-Optimization/safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt
+Initializing autoencoder...
+Creating ConditionalConstraintAwareAutoencoder instance...
+Moving autoencoder to device...
+Autoencoder initialized, loading weights...
+Loading state dict...
+Setting to eval mode...
+Autoencoder loaded successfully!
+Model checkpoints will be saved to: /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17
+[32mStart with training.[0m
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch0.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.556 |
+|          Metrics/EpCost |             143 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               1 |
+|        Train/TotalSteps |           2e+04 |
+|          Train/StopIter |               1 |
+|                Train/KL |            82.5 |
+|                Train/LR |        0.000298 |
+| Loss/Loss_reward_critic |          0.0428 |
+|   Loss/Loss_cost_critic |            20.8 |
+|         Loss/Loss_actor |           0.268 |
+|  Loss/Loss_proj_penalty |        1.24e+04 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.64 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |         1.1e-07 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch1.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.383 |
+|          Metrics/EpCost |             132 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               2 |
+|        Train/TotalSteps |           4e+04 |
+|          Train/StopIter |               1 |
+|                Train/KL |            59.2 |
+|                Train/LR |        0.000296 |
+| Loss/Loss_reward_critic |          0.0268 |
+|   Loss/Loss_cost_critic |            10.4 |
+|         Loss/Loss_actor |           0.322 |
+|  Loss/Loss_proj_penalty |        2.58e+04 |
+|            Time/Rollout |            30.1 |
+|             Time/Update |            4.28 |
+|              Time/Total |            34.4 |
+|         Value/RewardAdv |       -1.37e-08 |
+|           Value/CostAdv |         1.1e-07 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch2.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.575 |
+|          Metrics/EpCost |             113 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               3 |
+|        Train/TotalSteps |           6e+04 |
+|          Train/StopIter |               1 |
+|                Train/KL |            93.3 |
+|                Train/LR |        0.000294 |
+| Loss/Loss_reward_critic |          0.0198 |
+|   Loss/Loss_cost_critic |              12 |
+|         Loss/Loss_actor |           0.429 |
+|  Loss/Loss_proj_penalty |        2.04e+04 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            3.02 |
+|              Time/Total |            34.2 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -9.16e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch3.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.681 |
+|          Metrics/EpCost |            93.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               4 |
+|        Train/TotalSteps |           8e+04 |
+|          Train/StopIter |               1 |
+|                Train/KL |             119 |
+|                Train/LR |        0.000292 |
+| Loss/Loss_reward_critic |          0.0146 |
+|   Loss/Loss_cost_critic |            10.5 |
+|         Loss/Loss_actor |           0.327 |
+|  Loss/Loss_proj_penalty |        1.62e+04 |
+|            Time/Rollout |            30.1 |
+|             Time/Update |            4.55 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        6.87e-09 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch4.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.497 |
+|          Metrics/EpCost |            76.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               5 |
+|        Train/TotalSteps |           1e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            46.8 |
+|                Train/LR |         0.00029 |
+| Loss/Loss_reward_critic |          0.0112 |
+|   Loss/Loss_cost_critic |            6.59 |
+|         Loss/Loss_actor |           0.423 |
+|  Loss/Loss_proj_penalty |        2.51e+04 |
+|            Time/Rollout |            30.5 |
+|             Time/Update |            4.39 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |        1.68e-08 |
+|           Value/CostAdv |        2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch5.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.287 |
+|          Metrics/EpCost |            86.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               6 |
+|        Train/TotalSteps |         1.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            32.2 |
+|                Train/LR |        0.000288 |
+| Loss/Loss_reward_critic |          0.0101 |
+|   Loss/Loss_cost_critic |            14.4 |
+|         Loss/Loss_actor |           0.276 |
+|  Loss/Loss_proj_penalty |        1.34e+04 |
+|            Time/Rollout |              29 |
+|             Time/Update |             2.1 |
+|              Time/Total |            31.1 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        2.14e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch6.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.249 |
+|          Metrics/EpCost |            86.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               7 |
+|        Train/TotalSteps |         1.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            43.3 |
+|                Train/LR |        0.000286 |
+| Loss/Loss_reward_critic |         0.00823 |
+|   Loss/Loss_cost_critic |            8.42 |
+|         Loss/Loss_actor |            0.37 |
+|  Loss/Loss_proj_penalty |        1.47e+04 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            4.04 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        3.05e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch7.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.188 |
+|          Metrics/EpCost |            89.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               8 |
+|        Train/TotalSteps |         1.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            37.1 |
+|                Train/LR |        0.000284 |
+| Loss/Loss_reward_critic |         0.00905 |
+|   Loss/Loss_cost_critic |            8.01 |
+|         Loss/Loss_actor |           0.233 |
+|  Loss/Loss_proj_penalty |        1.73e+04 |
+|            Time/Rollout |            29.1 |
+|             Time/Update |            2.47 |
+|              Time/Total |            31.6 |
+|         Value/RewardAdv |       -7.63e-10 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch8.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0876 |
+|          Metrics/EpCost |            88.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |               9 |
+|        Train/TotalSteps |         1.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            22.3 |
+|                Train/LR |        0.000282 |
+| Loss/Loss_reward_critic |         0.00888 |
+|   Loss/Loss_cost_critic |            14.1 |
+|         Loss/Loss_actor |           0.215 |
+|  Loss/Loss_proj_penalty |        7.54e+03 |
+|            Time/Rollout |            30.6 |
+|             Time/Update |            2.09 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |       -3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch9.pt
+---------------------------------------------
+|           Metrics/EpRet |         0.00476 |
+|          Metrics/EpCost |             118 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              10 |
+|        Train/TotalSteps |           2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            28.1 |
+|                Train/LR |         0.00028 |
+| Loss/Loss_reward_critic |         0.00765 |
+|   Loss/Loss_cost_critic |            8.63 |
+|         Loss/Loss_actor |            0.24 |
+|  Loss/Loss_proj_penalty |        1.13e+04 |
+|            Time/Rollout |            31.1 |
+|             Time/Update |            3.79 |
+|              Time/Total |            34.8 |
+|         Value/RewardAdv |        6.48e-09 |
+|           Value/CostAdv |       -3.66e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch10.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0329 |
+|          Metrics/EpCost |             115 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              11 |
+|        Train/TotalSteps |         2.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            70.3 |
+|                Train/LR |        0.000278 |
+| Loss/Loss_reward_critic |         0.00725 |
+|   Loss/Loss_cost_critic |            8.93 |
+|         Loss/Loss_actor |           0.236 |
+|  Loss/Loss_proj_penalty |         1.4e+04 |
+|            Time/Rollout |            30.9 |
+|             Time/Update |            2.08 |
+|              Time/Total |            32.9 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -1.98e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch11.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.309 |
+|          Metrics/EpCost |            94.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              12 |
+|        Train/TotalSteps |         2.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            68.1 |
+|                Train/LR |        0.000276 |
+| Loss/Loss_reward_critic |         0.00734 |
+|   Loss/Loss_cost_critic |              11 |
+|         Loss/Loss_actor |           0.332 |
+|  Loss/Loss_proj_penalty |        1.35e+04 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            3.94 |
+|              Time/Total |            35.1 |
+|         Value/RewardAdv |       -9.92e-09 |
+|           Value/CostAdv |        -5.8e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch12.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.409 |
+|          Metrics/EpCost |             122 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              13 |
+|        Train/TotalSteps |         2.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            44.3 |
+|                Train/LR |        0.000274 |
+| Loss/Loss_reward_critic |         0.00904 |
+|   Loss/Loss_cost_critic |            14.9 |
+|         Loss/Loss_actor |           0.229 |
+|  Loss/Loss_proj_penalty |        1.33e+04 |
+|            Time/Rollout |            30.8 |
+|             Time/Update |            4.66 |
+|              Time/Total |            35.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        9.77e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch13.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.287 |
+|          Metrics/EpCost |             139 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              14 |
+|        Train/TotalSteps |         2.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            37.7 |
+|                Train/LR |        0.000272 |
+| Loss/Loss_reward_critic |         0.00882 |
+|   Loss/Loss_cost_critic |            14.8 |
+|         Loss/Loss_actor |           0.188 |
+|  Loss/Loss_proj_penalty |        1.11e+04 |
+|            Time/Rollout |            30.8 |
+|             Time/Update |            4.64 |
+|              Time/Total |            35.4 |
+|         Value/RewardAdv |        9.92e-09 |
+|           Value/CostAdv |        1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch14.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |         -0.0728 |
+|          Metrics/EpCost |             114 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              15 |
+|        Train/TotalSteps |           3e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            69.3 |
+|                Train/LR |         0.00027 |
+| Loss/Loss_reward_critic |         0.00827 |
+|   Loss/Loss_cost_critic |            9.31 |
+|         Loss/Loss_actor |           0.217 |
+|  Loss/Loss_proj_penalty |        1.08e+04 |
+|            Time/Rollout |            30.1 |
+|             Time/Update |            4.16 |
+|              Time/Total |            34.3 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |       -2.59e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch15.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0176 |
+|          Metrics/EpCost |            99.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              16 |
+|        Train/TotalSteps |         3.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            60.9 |
+|                Train/LR |        0.000268 |
+| Loss/Loss_reward_critic |         0.00887 |
+|   Loss/Loss_cost_critic |            11.9 |
+|         Loss/Loss_actor |           0.235 |
+|  Loss/Loss_proj_penalty |        1.25e+04 |
+|            Time/Rollout |            30.9 |
+|             Time/Update |            4.68 |
+|              Time/Total |            35.6 |
+|         Value/RewardAdv |       -8.39e-09 |
+|           Value/CostAdv |       -4.27e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch16.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0455 |
+|          Metrics/EpCost |             115 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              17 |
+|        Train/TotalSteps |         3.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            88.4 |
+|                Train/LR |        0.000266 |
+| Loss/Loss_reward_critic |         0.00701 |
+|   Loss/Loss_cost_critic |            12.4 |
+|         Loss/Loss_actor |           0.201 |
+|  Loss/Loss_proj_penalty |        8.99e+03 |
+|            Time/Rollout |              30 |
+|             Time/Update |            4.34 |
+|              Time/Total |            34.3 |
+|         Value/RewardAdv |        1.14e-08 |
+|           Value/CostAdv |       -2.14e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch17.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.176 |
+|          Metrics/EpCost |             124 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              18 |
+|        Train/TotalSteps |         3.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            72.5 |
+|                Train/LR |        0.000264 |
+| Loss/Loss_reward_critic |         0.00588 |
+|   Loss/Loss_cost_critic |            7.58 |
+|         Loss/Loss_actor |           0.337 |
+|  Loss/Loss_proj_penalty |        1.16e+04 |
+|            Time/Rollout |            29.9 |
+|             Time/Update |            4.72 |
+|              Time/Total |            34.6 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch18.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.253 |
+|          Metrics/EpCost |            83.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              19 |
+|        Train/TotalSteps |         3.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            86.9 |
+|                Train/LR |        0.000262 |
+| Loss/Loss_reward_critic |         0.00496 |
+|   Loss/Loss_cost_critic |            4.81 |
+|         Loss/Loss_actor |           0.263 |
+|  Loss/Loss_proj_penalty |        1.43e+04 |
+|            Time/Rollout |            30.2 |
+|             Time/Update |             4.7 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -1.07e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch19.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.256 |
+|          Metrics/EpCost |            68.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              20 |
+|        Train/TotalSteps |           4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            56.8 |
+|                Train/LR |         0.00026 |
+| Loss/Loss_reward_critic |         0.00905 |
+|   Loss/Loss_cost_critic |            14.1 |
+|         Loss/Loss_actor |           0.194 |
+|  Loss/Loss_proj_penalty |        7.57e+03 |
+|            Time/Rollout |              31 |
+|             Time/Update |            4.73 |
+|              Time/Total |            35.7 |
+|         Value/RewardAdv |        1.14e-09 |
+|           Value/CostAdv |       -4.27e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch20.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.165 |
+|          Metrics/EpCost |              93 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              21 |
+|        Train/TotalSteps |         4.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |              68 |
+|                Train/LR |        0.000258 |
+| Loss/Loss_reward_critic |         0.00819 |
+|   Loss/Loss_cost_critic |            12.6 |
+|         Loss/Loss_actor |           0.209 |
+|  Loss/Loss_proj_penalty |        6.51e+03 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            3.45 |
+|              Time/Total |            34.6 |
+|         Value/RewardAdv |       -1.07e-08 |
+|           Value/CostAdv |        1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch21.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0908 |
+|          Metrics/EpCost |             135 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              22 |
+|        Train/TotalSteps |         4.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            95.6 |
+|                Train/LR |        0.000256 |
+| Loss/Loss_reward_critic |         0.00686 |
+|   Loss/Loss_cost_critic |            10.4 |
+|         Loss/Loss_actor |           0.271 |
+|  Loss/Loss_proj_penalty |        9.48e+03 |
+|            Time/Rollout |            30.4 |
+|             Time/Update |            4.58 |
+|              Time/Total |              35 |
+|         Value/RewardAdv |       -1.83e-08 |
+|           Value/CostAdv |        7.32e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch22.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0543 |
+|          Metrics/EpCost |             103 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              23 |
+|        Train/TotalSteps |         4.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            51.6 |
+|                Train/LR |        0.000254 |
+| Loss/Loss_reward_critic |         0.00585 |
+|   Loss/Loss_cost_critic |            5.75 |
+|         Loss/Loss_actor |           0.408 |
+|  Loss/Loss_proj_penalty |         1.1e+04 |
+|            Time/Rollout |              30 |
+|             Time/Update |             4.7 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -1.53e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch23.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.133 |
+|          Metrics/EpCost |            82.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              24 |
+|        Train/TotalSteps |         4.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |              33 |
+|                Train/LR |        0.000252 |
+| Loss/Loss_reward_critic |         0.00693 |
+|   Loss/Loss_cost_critic |            11.8 |
+|         Loss/Loss_actor |            0.32 |
+|  Loss/Loss_proj_penalty |        8.42e+03 |
+|            Time/Rollout |            28.9 |
+|             Time/Update |            4.66 |
+|              Time/Total |            33.5 |
+|         Value/RewardAdv |       -5.34e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch24.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.108 |
+|          Metrics/EpCost |            85.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              25 |
+|        Train/TotalSteps |           5e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            77.3 |
+|                Train/LR |         0.00025 |
+| Loss/Loss_reward_critic |         0.00783 |
+|   Loss/Loss_cost_critic |            12.6 |
+|         Loss/Loss_actor |           0.212 |
+|  Loss/Loss_proj_penalty |        4.68e+03 |
+|            Time/Rollout |            30.7 |
+|             Time/Update |            4.71 |
+|              Time/Total |            35.4 |
+|         Value/RewardAdv |       -1.11e-08 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch25.pt
+---------------------------------------------
+|           Metrics/EpRet |           -0.09 |
+|          Metrics/EpCost |             112 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              26 |
+|        Train/TotalSteps |         5.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |             124 |
+|                Train/LR |        0.000248 |
+| Loss/Loss_reward_critic |          0.0065 |
+|   Loss/Loss_cost_critic |              10 |
+|         Loss/Loss_actor |           0.208 |
+|  Loss/Loss_proj_penalty |        5.44e+03 |
+|            Time/Rollout |            29.4 |
+|             Time/Update |            4.45 |
+|              Time/Total |            33.8 |
+|         Value/RewardAdv |        1.34e-08 |
+|           Value/CostAdv |        3.81e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch26.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0194 |
+|          Metrics/EpCost |            99.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              27 |
+|        Train/TotalSteps |         5.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            59.4 |
+|                Train/LR |        0.000246 |
+| Loss/Loss_reward_critic |         0.00678 |
+|   Loss/Loss_cost_critic |            9.92 |
+|         Loss/Loss_actor |           0.177 |
+|  Loss/Loss_proj_penalty |        7.36e+03 |
+|            Time/Rollout |            31.1 |
+|             Time/Update |            4.68 |
+|              Time/Total |            35.7 |
+|         Value/RewardAdv |        -4.2e-09 |
+|           Value/CostAdv |        4.43e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch27.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0217 |
+|          Metrics/EpCost |             106 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              28 |
+|        Train/TotalSteps |         5.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            63.1 |
+|                Train/LR |        0.000244 |
+| Loss/Loss_reward_critic |         0.00717 |
+|   Loss/Loss_cost_critic |            12.6 |
+|         Loss/Loss_actor |           0.266 |
+|  Loss/Loss_proj_penalty |        5.95e+03 |
+|            Time/Rollout |            28.1 |
+|             Time/Update |            3.75 |
+|              Time/Total |            31.9 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        5.34e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch28.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.158 |
+|          Metrics/EpCost |             107 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              29 |
+|        Train/TotalSteps |         5.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            58.8 |
+|                Train/LR |        0.000242 |
+| Loss/Loss_reward_critic |         0.00863 |
+|   Loss/Loss_cost_critic |            10.5 |
+|         Loss/Loss_actor |            0.24 |
+|  Loss/Loss_proj_penalty |        3.93e+03 |
+|            Time/Rollout |            30.5 |
+|             Time/Update |            4.67 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch29.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |         -0.0323 |
+|          Metrics/EpCost |            97.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              30 |
+|        Train/TotalSteps |           6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |             133 |
+|                Train/LR |         0.00024 |
+| Loss/Loss_reward_critic |          0.0066 |
+|   Loss/Loss_cost_critic |             8.9 |
+|         Loss/Loss_actor |            0.24 |
+|  Loss/Loss_proj_penalty |        7.25e+03 |
+|            Time/Rollout |              31 |
+|             Time/Update |            4.68 |
+|              Time/Total |            35.6 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        1.03e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch30.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.134 |
+|          Metrics/EpCost |            89.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              31 |
+|        Train/TotalSteps |         6.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            49.8 |
+|                Train/LR |        0.000238 |
+| Loss/Loss_reward_critic |         0.00775 |
+|   Loss/Loss_cost_critic |              10 |
+|         Loss/Loss_actor |           0.176 |
+|  Loss/Loss_proj_penalty |         5.8e+03 |
+|            Time/Rollout |            30.5 |
+|             Time/Update |            4.66 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch31.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.142 |
+|          Metrics/EpCost |            83.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              32 |
+|        Train/TotalSteps |         6.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            60.1 |
+|                Train/LR |        0.000236 |
+| Loss/Loss_reward_critic |         0.00801 |
+|   Loss/Loss_cost_critic |              10 |
+|         Loss/Loss_actor |           0.192 |
+|  Loss/Loss_proj_penalty |        5.87e+03 |
+|            Time/Rollout |            30.8 |
+|             Time/Update |            4.62 |
+|              Time/Total |            35.4 |
+|         Value/RewardAdv |        1.07e-08 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch32.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.104 |
+|          Metrics/EpCost |            87.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              33 |
+|        Train/TotalSteps |         6.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            30.2 |
+|                Train/LR |        0.000234 |
+| Loss/Loss_reward_critic |          0.0067 |
+|   Loss/Loss_cost_critic |            8.93 |
+|         Loss/Loss_actor |           0.259 |
+|  Loss/Loss_proj_penalty |        5.23e+03 |
+|            Time/Rollout |            29.4 |
+|             Time/Update |            4.63 |
+|              Time/Total |              34 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch33.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.207 |
+|          Metrics/EpCost |            68.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              34 |
+|        Train/TotalSteps |         6.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            68.3 |
+|                Train/LR |        0.000232 |
+| Loss/Loss_reward_critic |         0.00638 |
+|   Loss/Loss_cost_critic |            7.17 |
+|         Loss/Loss_actor |           0.202 |
+|  Loss/Loss_proj_penalty |        6.61e+03 |
+|            Time/Rollout |            30.6 |
+|             Time/Update |            4.64 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |        8.01e-09 |
+|           Value/CostAdv |       -5.19e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch34.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.204 |
+|          Metrics/EpCost |              84 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              35 |
+|        Train/TotalSteps |           7e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            54.5 |
+|                Train/LR |         0.00023 |
+| Loss/Loss_reward_critic |         0.00724 |
+|   Loss/Loss_cost_critic |            16.4 |
+|         Loss/Loss_actor |           0.181 |
+|  Loss/Loss_proj_penalty |        3.71e+03 |
+|            Time/Rollout |            30.1 |
+|             Time/Update |            3.83 |
+|              Time/Total |            33.9 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch35.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.163 |
+|          Metrics/EpCost |             107 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              36 |
+|        Train/TotalSteps |         7.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            30.3 |
+|                Train/LR |        0.000228 |
+| Loss/Loss_reward_critic |         0.00839 |
+|   Loss/Loss_cost_critic |             9.6 |
+|         Loss/Loss_actor |            0.18 |
+|  Loss/Loss_proj_penalty |        5.93e+03 |
+|            Time/Rollout |            29.6 |
+|             Time/Update |            3.05 |
+|              Time/Total |            32.6 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -1.98e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch36.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.222 |
+|          Metrics/EpCost |             119 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              37 |
+|        Train/TotalSteps |         7.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            57.4 |
+|                Train/LR |        0.000226 |
+| Loss/Loss_reward_critic |         0.00733 |
+|   Loss/Loss_cost_critic |            10.8 |
+|         Loss/Loss_actor |           0.217 |
+|  Loss/Loss_proj_penalty |        5.58e+03 |
+|            Time/Rollout |            30.2 |
+|             Time/Update |            4.16 |
+|              Time/Total |            34.3 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |       -5.49e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch37.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.209 |
+|          Metrics/EpCost |             121 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              38 |
+|        Train/TotalSteps |         7.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            56.4 |
+|                Train/LR |        0.000224 |
+| Loss/Loss_reward_critic |         0.00687 |
+|   Loss/Loss_cost_critic |            7.49 |
+|         Loss/Loss_actor |           0.202 |
+|  Loss/Loss_proj_penalty |         4.9e+03 |
+|            Time/Rollout |            29.8 |
+|             Time/Update |             4.6 |
+|              Time/Total |            34.4 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        2.37e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch38.pt
+---------------------------------------------
+|           Metrics/EpRet |           -0.11 |
+|          Metrics/EpCost |             108 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              39 |
+|        Train/TotalSteps |         7.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            34.7 |
+|                Train/LR |        0.000222 |
+| Loss/Loss_reward_critic |         0.00654 |
+|   Loss/Loss_cost_critic |               8 |
+|         Loss/Loss_actor |           0.212 |
+|  Loss/Loss_proj_penalty |        7.83e+03 |
+|            Time/Rollout |            29.8 |
+|             Time/Update |            4.53 |
+|              Time/Total |            34.3 |
+|         Value/RewardAdv |       -1.13e-08 |
+|           Value/CostAdv |       -2.14e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch39.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.121 |
+|          Metrics/EpCost |            88.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              40 |
+|        Train/TotalSteps |           8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            91.8 |
+|                Train/LR |         0.00022 |
+| Loss/Loss_reward_critic |           0.006 |
+|   Loss/Loss_cost_critic |             8.2 |
+|         Loss/Loss_actor |           0.229 |
+|  Loss/Loss_proj_penalty |        6.23e+03 |
+|            Time/Rollout |            27.3 |
+|             Time/Update |            3.99 |
+|              Time/Total |            31.2 |
+|         Value/RewardAdv |        3.81e-09 |
+|           Value/CostAdv |        9.16e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch40.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.171 |
+|          Metrics/EpCost |            74.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              41 |
+|        Train/TotalSteps |         8.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            47.6 |
+|                Train/LR |        0.000218 |
+| Loss/Loss_reward_critic |         0.00717 |
+|   Loss/Loss_cost_critic |            10.9 |
+|         Loss/Loss_actor |           0.198 |
+|  Loss/Loss_proj_penalty |        3.62e+03 |
+|            Time/Rollout |              29 |
+|             Time/Update |            4.32 |
+|              Time/Total |            33.4 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |               0 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch41.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.111 |
+|          Metrics/EpCost |            88.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              42 |
+|        Train/TotalSteps |         8.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |              66 |
+|                Train/LR |        0.000216 |
+| Loss/Loss_reward_critic |         0.00692 |
+|   Loss/Loss_cost_critic |            9.41 |
+|         Loss/Loss_actor |           0.202 |
+|  Loss/Loss_proj_penalty |        5.96e+03 |
+|            Time/Rollout |            31.4 |
+|             Time/Update |            4.45 |
+|              Time/Total |            35.8 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -4.73e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch42.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0247 |
+|          Metrics/EpCost |            91.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              43 |
+|        Train/TotalSteps |         8.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            69.4 |
+|                Train/LR |        0.000214 |
+| Loss/Loss_reward_critic |         0.00699 |
+|   Loss/Loss_cost_critic |            10.6 |
+|         Loss/Loss_actor |            0.25 |
+|  Loss/Loss_proj_penalty |        5.51e+03 |
+|            Time/Rollout |            30.2 |
+|             Time/Update |            4.81 |
+|              Time/Total |              35 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |         6.1e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch43.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0333 |
+|          Metrics/EpCost |            84.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              44 |
+|        Train/TotalSteps |         8.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            66.9 |
+|                Train/LR |        0.000212 |
+| Loss/Loss_reward_critic |         0.00544 |
+|   Loss/Loss_cost_critic |            6.18 |
+|         Loss/Loss_actor |           0.226 |
+|  Loss/Loss_proj_penalty |        3.24e+03 |
+|            Time/Rollout |            30.5 |
+|             Time/Update |            4.47 |
+|              Time/Total |              35 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch44.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |           0.058 |
+|          Metrics/EpCost |            78.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              45 |
+|        Train/TotalSteps |           9e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            27.7 |
+|                Train/LR |         0.00021 |
+| Loss/Loss_reward_critic |         0.00927 |
+|   Loss/Loss_cost_critic |            12.1 |
+|         Loss/Loss_actor |            0.16 |
+|  Loss/Loss_proj_penalty |        2.78e+03 |
+|            Time/Rollout |            30.6 |
+|             Time/Update |            4.08 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        7.63e-10 |
+|           Value/CostAdv |         6.1e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch45.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0498 |
+|          Metrics/EpCost |              76 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              46 |
+|        Train/TotalSteps |         9.2e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            40.8 |
+|                Train/LR |        0.000208 |
+| Loss/Loss_reward_critic |         0.00782 |
+|   Loss/Loss_cost_critic |            14.7 |
+|         Loss/Loss_actor |           0.141 |
+|  Loss/Loss_proj_penalty |        2.29e+03 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            3.94 |
+|              Time/Total |            35.1 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch46.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0112 |
+|          Metrics/EpCost |            99.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              47 |
+|        Train/TotalSteps |         9.4e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |              49 |
+|                Train/LR |        0.000206 |
+| Loss/Loss_reward_critic |         0.00788 |
+|   Loss/Loss_cost_critic |            10.9 |
+|         Loss/Loss_actor |           0.211 |
+|  Loss/Loss_proj_penalty |        2.65e+03 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.44 |
+|              Time/Total |            35.9 |
+|         Value/RewardAdv |         6.1e-09 |
+|           Value/CostAdv |        -6.1e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch47.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0157 |
+|          Metrics/EpCost |             102 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              48 |
+|        Train/TotalSteps |         9.6e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            44.5 |
+|                Train/LR |        0.000204 |
+| Loss/Loss_reward_critic |         0.00749 |
+|   Loss/Loss_cost_critic |            9.71 |
+|         Loss/Loss_actor |           0.211 |
+|  Loss/Loss_proj_penalty |        5.38e+03 |
+|            Time/Rollout |            29.5 |
+|             Time/Update |            4.38 |
+|              Time/Total |            33.8 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |       -4.58e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch48.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0563 |
+|          Metrics/EpCost |            91.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              49 |
+|        Train/TotalSteps |         9.8e+05 |
+|          Train/StopIter |               1 |
+|                Train/KL |            39.3 |
+|                Train/LR |        0.000202 |
+| Loss/Loss_reward_critic |         0.00641 |
+|   Loss/Loss_cost_critic |            11.1 |
+|         Loss/Loss_actor |           0.166 |
+|  Loss/Loss_proj_penalty |        2.02e+03 |
+|            Time/Rollout |            31.4 |
+|             Time/Update |            4.74 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |       -7.63e-10 |
+|           Value/CostAdv |        4.27e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch49.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0717 |
+|          Metrics/EpCost |            94.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              50 |
+|        Train/TotalSteps |           1e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            46.2 |
+|                Train/LR |          0.0002 |
+| Loss/Loss_reward_critic |         0.00745 |
+|   Loss/Loss_cost_critic |            10.8 |
+|         Loss/Loss_actor |           0.391 |
+|  Loss/Loss_proj_penalty |        2.37e+03 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.74 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -5.34e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch50.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0128 |
+|          Metrics/EpCost |            92.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              51 |
+|        Train/TotalSteps |        1.02e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            43.2 |
+|                Train/LR |        0.000198 |
+| Loss/Loss_reward_critic |         0.00612 |
+|   Loss/Loss_cost_critic |            5.01 |
+|         Loss/Loss_actor |           0.234 |
+|  Loss/Loss_proj_penalty |        3.27e+03 |
+|            Time/Rollout |            29.7 |
+|             Time/Update |            4.59 |
+|              Time/Total |            34.3 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        6.87e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch51.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0436 |
+|          Metrics/EpCost |            73.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              52 |
+|        Train/TotalSteps |        1.04e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            36.3 |
+|                Train/LR |        0.000196 |
+| Loss/Loss_reward_critic |         0.00619 |
+|   Loss/Loss_cost_critic |            7.95 |
+|         Loss/Loss_actor |           0.257 |
+|  Loss/Loss_proj_penalty |        2.88e+03 |
+|            Time/Rollout |            30.1 |
+|             Time/Update |            4.37 |
+|              Time/Total |            34.5 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |               0 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch52.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0943 |
+|          Metrics/EpCost |            75.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              53 |
+|        Train/TotalSteps |        1.06e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            25.6 |
+|                Train/LR |        0.000194 |
+| Loss/Loss_reward_critic |         0.00817 |
+|   Loss/Loss_cost_critic |            11.8 |
+|         Loss/Loss_actor |           0.168 |
+|  Loss/Loss_proj_penalty |        2.32e+03 |
+|            Time/Rollout |            30.3 |
+|             Time/Update |            4.44 |
+|              Time/Total |            34.8 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch53.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0614 |
+|          Metrics/EpCost |            92.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              54 |
+|        Train/TotalSteps |        1.08e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            13.7 |
+|                Train/LR |        0.000192 |
+| Loss/Loss_reward_critic |         0.00592 |
+|   Loss/Loss_cost_critic |            12.4 |
+|         Loss/Loss_actor |            0.14 |
+|  Loss/Loss_proj_penalty |        1.68e+03 |
+|            Time/Rollout |            30.9 |
+|             Time/Update |            4.33 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch54.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.011 |
+|          Metrics/EpCost |             109 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              55 |
+|        Train/TotalSteps |         1.1e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |              51 |
+|                Train/LR |         0.00019 |
+| Loss/Loss_reward_critic |         0.00855 |
+|   Loss/Loss_cost_critic |            10.6 |
+|         Loss/Loss_actor |           0.155 |
+|  Loss/Loss_proj_penalty |        3.51e+03 |
+|            Time/Rollout |            30.5 |
+|             Time/Update |            4.32 |
+|              Time/Total |            34.8 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |        3.97e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch55.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.199 |
+|          Metrics/EpCost |             122 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              56 |
+|        Train/TotalSteps |        1.12e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            38.3 |
+|                Train/LR |        0.000188 |
+| Loss/Loss_reward_critic |         0.00756 |
+|   Loss/Loss_cost_critic |            14.2 |
+|         Loss/Loss_actor |           0.173 |
+|  Loss/Loss_proj_penalty |        1.29e+03 |
+|            Time/Rollout |            30.3 |
+|             Time/Update |            4.69 |
+|              Time/Total |              35 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -6.71e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch56.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.335 |
+|          Metrics/EpCost |             132 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              57 |
+|        Train/TotalSteps |        1.14e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            17.3 |
+|                Train/LR |        0.000186 |
+| Loss/Loss_reward_critic |         0.00847 |
+|   Loss/Loss_cost_critic |            13.7 |
+|         Loss/Loss_actor |           0.167 |
+|  Loss/Loss_proj_penalty |        1.56e+03 |
+|            Time/Rollout |              30 |
+|             Time/Update |            4.73 |
+|              Time/Total |            34.8 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch57.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.266 |
+|          Metrics/EpCost |             127 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              58 |
+|        Train/TotalSteps |        1.16e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            38.5 |
+|                Train/LR |        0.000184 |
+| Loss/Loss_reward_critic |         0.00814 |
+|   Loss/Loss_cost_critic |            10.9 |
+|         Loss/Loss_actor |           0.204 |
+|  Loss/Loss_proj_penalty |        2.48e+03 |
+|            Time/Rollout |            30.4 |
+|             Time/Update |            4.46 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        3.97e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch58.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.113 |
+|          Metrics/EpCost |             110 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              59 |
+|        Train/TotalSteps |        1.18e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            47.8 |
+|                Train/LR |        0.000182 |
+| Loss/Loss_reward_critic |         0.00817 |
+|   Loss/Loss_cost_critic |              11 |
+|         Loss/Loss_actor |           0.171 |
+|  Loss/Loss_proj_penalty |        2.31e+03 |
+|            Time/Rollout |            29.7 |
+|             Time/Update |            4.51 |
+|              Time/Total |            34.2 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch59.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |         -0.0138 |
+|          Metrics/EpCost |            90.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              60 |
+|        Train/TotalSteps |         1.2e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            32.8 |
+|                Train/LR |         0.00018 |
+| Loss/Loss_reward_critic |         0.00576 |
+|   Loss/Loss_cost_critic |            5.28 |
+|         Loss/Loss_actor |           0.233 |
+|  Loss/Loss_proj_penalty |        1.83e+03 |
+|            Time/Rollout |            30.7 |
+|             Time/Update |             4.7 |
+|              Time/Total |            35.4 |
+|         Value/RewardAdv |        5.34e-09 |
+|           Value/CostAdv |       -2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch60.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0884 |
+|          Metrics/EpCost |            78.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              61 |
+|        Train/TotalSteps |        1.22e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            38.7 |
+|                Train/LR |        0.000178 |
+| Loss/Loss_reward_critic |         0.00637 |
+|   Loss/Loss_cost_critic |            9.76 |
+|         Loss/Loss_actor |           0.194 |
+|  Loss/Loss_proj_penalty |        1.99e+03 |
+|            Time/Rollout |            29.7 |
+|             Time/Update |            4.64 |
+|              Time/Total |            34.4 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        1.37e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch61.pt
+---------------------------------------------
+|           Metrics/EpRet |           -0.22 |
+|          Metrics/EpCost |            84.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              62 |
+|        Train/TotalSteps |        1.24e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            20.2 |
+|                Train/LR |        0.000176 |
+| Loss/Loss_reward_critic |         0.00707 |
+|   Loss/Loss_cost_critic |            11.7 |
+|         Loss/Loss_actor |            0.18 |
+|  Loss/Loss_proj_penalty |        1.22e+03 |
+|            Time/Rollout |            29.9 |
+|             Time/Update |            4.75 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        3.62e-09 |
+|           Value/CostAdv |        4.88e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch62.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.139 |
+|          Metrics/EpCost |            88.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              63 |
+|        Train/TotalSteps |        1.26e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            35.5 |
+|                Train/LR |        0.000174 |
+| Loss/Loss_reward_critic |         0.00552 |
+|   Loss/Loss_cost_critic |            6.93 |
+|         Loss/Loss_actor |           0.187 |
+|  Loss/Loss_proj_penalty |        2.76e+03 |
+|            Time/Rollout |            29.9 |
+|             Time/Update |            4.55 |
+|              Time/Total |            34.5 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch63.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0499 |
+|          Metrics/EpCost |            94.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              64 |
+|        Train/TotalSteps |        1.28e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            17.1 |
+|                Train/LR |        0.000172 |
+| Loss/Loss_reward_critic |         0.00669 |
+|   Loss/Loss_cost_critic |            11.2 |
+|         Loss/Loss_actor |           0.153 |
+|  Loss/Loss_proj_penalty |        3.77e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.45 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |       -8.01e-09 |
+|           Value/CostAdv |        5.95e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch64.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0279 |
+|          Metrics/EpCost |            96.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              65 |
+|        Train/TotalSteps |         1.3e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            34.8 |
+|                Train/LR |         0.00017 |
+| Loss/Loss_reward_critic |         0.00689 |
+|   Loss/Loss_cost_critic |            8.27 |
+|         Loss/Loss_actor |           0.203 |
+|  Loss/Loss_proj_penalty |        2.53e+03 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.46 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -1.53e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch65.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0281 |
+|          Metrics/EpCost |            88.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              66 |
+|        Train/TotalSteps |        1.32e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            30.4 |
+|                Train/LR |        0.000168 |
+| Loss/Loss_reward_critic |         0.00581 |
+|   Loss/Loss_cost_critic |            6.35 |
+|         Loss/Loss_actor |           0.171 |
+|  Loss/Loss_proj_penalty |        1.64e+03 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.56 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |       -7.63e-09 |
+|           Value/CostAdv |        -6.1e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch66.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.148 |
+|          Metrics/EpCost |            71.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              67 |
+|        Train/TotalSteps |        1.34e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            30.1 |
+|                Train/LR |        0.000166 |
+| Loss/Loss_reward_critic |         0.00689 |
+|   Loss/Loss_cost_critic |            7.63 |
+|         Loss/Loss_actor |           0.235 |
+|  Loss/Loss_proj_penalty |        2.49e+03 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            4.59 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |               0 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch67.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.125 |
+|          Metrics/EpCost |            76.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              68 |
+|        Train/TotalSteps |        1.36e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            28.1 |
+|                Train/LR |        0.000164 |
+| Loss/Loss_reward_critic |         0.00875 |
+|   Loss/Loss_cost_critic |            10.9 |
+|         Loss/Loss_actor |           0.155 |
+|  Loss/Loss_proj_penalty |        1.12e+03 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.57 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |       -2.59e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch68.pt
+---------------------------------------------
+|           Metrics/EpRet |        -0.00238 |
+|          Metrics/EpCost |            85.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              69 |
+|        Train/TotalSteps |        1.38e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            40.6 |
+|                Train/LR |        0.000162 |
+| Loss/Loss_reward_critic |         0.00532 |
+|   Loss/Loss_cost_critic |            5.51 |
+|         Loss/Loss_actor |           0.163 |
+|  Loss/Loss_proj_penalty |        2.02e+03 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            3.05 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch69.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0122 |
+|          Metrics/EpCost |            90.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              70 |
+|        Train/TotalSteps |         1.4e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            22.3 |
+|                Train/LR |         0.00016 |
+| Loss/Loss_reward_critic |         0.00576 |
+|   Loss/Loss_cost_critic |            10.8 |
+|         Loss/Loss_actor |           0.147 |
+|  Loss/Loss_proj_penalty |        2.56e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.56 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |        2.82e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch70.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0452 |
+|          Metrics/EpCost |            85.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              71 |
+|        Train/TotalSteps |        1.42e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            51.2 |
+|                Train/LR |        0.000158 |
+| Loss/Loss_reward_critic |         0.00755 |
+|   Loss/Loss_cost_critic |            8.51 |
+|         Loss/Loss_actor |           0.226 |
+|  Loss/Loss_proj_penalty |        1.44e+03 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.45 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch71.pt
+---------------------------------------------
+|           Metrics/EpRet |            -0.1 |
+|          Metrics/EpCost |            77.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              72 |
+|        Train/TotalSteps |        1.44e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            25.3 |
+|                Train/LR |        0.000156 |
+| Loss/Loss_reward_critic |         0.00535 |
+|   Loss/Loss_cost_critic |            5.61 |
+|         Loss/Loss_actor |           0.197 |
+|  Loss/Loss_proj_penalty |        2.36e+03 |
+|            Time/Rollout |              32 |
+|             Time/Update |            2.41 |
+|              Time/Total |            34.4 |
+|         Value/RewardAdv |         4.2e-09 |
+|           Value/CostAdv |       -3.36e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch72.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.196 |
+|          Metrics/EpCost |            54.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              73 |
+|        Train/TotalSteps |        1.46e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            35.4 |
+|                Train/LR |        0.000154 |
+| Loss/Loss_reward_critic |         0.00605 |
+|   Loss/Loss_cost_critic |            6.81 |
+|         Loss/Loss_actor |           0.325 |
+|  Loss/Loss_proj_penalty |        1.96e+03 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            4.54 |
+|              Time/Total |            35.8 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |        7.63e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch73.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.235 |
+|          Metrics/EpCost |            67.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              74 |
+|        Train/TotalSteps |        1.48e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            17.3 |
+|                Train/LR |        0.000152 |
+| Loss/Loss_reward_critic |         0.00579 |
+|   Loss/Loss_cost_critic |            12.2 |
+|         Loss/Loss_actor |           0.119 |
+|  Loss/Loss_proj_penalty |             998 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.37 |
+|              Time/Total |            35.8 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch74.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.185 |
+|          Metrics/EpCost |            91.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              75 |
+|        Train/TotalSteps |         1.5e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            19.9 |
+|                Train/LR |         0.00015 |
+| Loss/Loss_reward_critic |         0.00746 |
+|   Loss/Loss_cost_critic |            8.39 |
+|         Loss/Loss_actor |           0.172 |
+|  Loss/Loss_proj_penalty |        1.34e+03 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.53 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |        8.39e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch75.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.113 |
+|          Metrics/EpCost |            90.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              76 |
+|        Train/TotalSteps |        1.52e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            24.6 |
+|                Train/LR |        0.000148 |
+| Loss/Loss_reward_critic |         0.00688 |
+|   Loss/Loss_cost_critic |            8.26 |
+|         Loss/Loss_actor |           0.196 |
+|  Loss/Loss_proj_penalty |        1.36e+03 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.45 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |        8.01e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch76.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.071 |
+|          Metrics/EpCost |            63.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              77 |
+|        Train/TotalSteps |        1.54e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            27.4 |
+|                Train/LR |        0.000146 |
+| Loss/Loss_reward_critic |          0.0058 |
+|   Loss/Loss_cost_critic |            6.69 |
+|         Loss/Loss_actor |           0.175 |
+|  Loss/Loss_proj_penalty |         1.9e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.01 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |       -6.87e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch77.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.109 |
+|          Metrics/EpCost |            64.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              78 |
+|        Train/TotalSteps |        1.56e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            15.7 |
+|                Train/LR |        0.000144 |
+| Loss/Loss_reward_critic |         0.00736 |
+|   Loss/Loss_cost_critic |            8.76 |
+|         Loss/Loss_actor |           0.186 |
+|  Loss/Loss_proj_penalty |        1.28e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.04 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |         6.1e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch78.pt
+---------------------------------------------
+|           Metrics/EpRet |           -0.17 |
+|          Metrics/EpCost |              74 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              79 |
+|        Train/TotalSteps |        1.58e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            19.7 |
+|                Train/LR |        0.000142 |
+| Loss/Loss_reward_critic |         0.00751 |
+|   Loss/Loss_cost_critic |            7.96 |
+|         Loss/Loss_actor |           0.204 |
+|  Loss/Loss_proj_penalty |        1.55e+03 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.49 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |       -7.63e-10 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch79.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0609 |
+|          Metrics/EpCost |            90.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              80 |
+|        Train/TotalSteps |         1.6e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            23.3 |
+|                Train/LR |         0.00014 |
+| Loss/Loss_reward_critic |          0.0104 |
+|   Loss/Loss_cost_critic |            13.1 |
+|         Loss/Loss_actor |           0.181 |
+|  Loss/Loss_proj_penalty |         1.9e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            3.82 |
+|              Time/Total |            35.9 |
+|         Value/RewardAdv |        1.91e-09 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch80.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0171 |
+|          Metrics/EpCost |             105 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              81 |
+|        Train/TotalSteps |        1.62e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            15.8 |
+|                Train/LR |        0.000138 |
+| Loss/Loss_reward_critic |         0.00767 |
+|   Loss/Loss_cost_critic |            8.85 |
+|         Loss/Loss_actor |           0.248 |
+|  Loss/Loss_proj_penalty |        1.97e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.53 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch81.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0872 |
+|          Metrics/EpCost |             107 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              82 |
+|        Train/TotalSteps |        1.64e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            26.3 |
+|                Train/LR |        0.000136 |
+| Loss/Loss_reward_critic |         0.00721 |
+|   Loss/Loss_cost_critic |            8.17 |
+|         Loss/Loss_actor |           0.153 |
+|  Loss/Loss_proj_penalty |             917 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.26 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch82.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0257 |
+|          Metrics/EpCost |            97.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              83 |
+|        Train/TotalSteps |        1.66e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |              25 |
+|                Train/LR |        0.000134 |
+| Loss/Loss_reward_critic |         0.00659 |
+|   Loss/Loss_cost_critic |            10.5 |
+|         Loss/Loss_actor |           0.216 |
+|  Loss/Loss_proj_penalty |         1.7e+03 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |        6.71e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch83.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0085 |
+|          Metrics/EpCost |             104 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              84 |
+|        Train/TotalSteps |        1.68e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            28.2 |
+|                Train/LR |        0.000132 |
+| Loss/Loss_reward_critic |         0.00682 |
+|   Loss/Loss_cost_critic |            9.81 |
+|         Loss/Loss_actor |           0.196 |
+|  Loss/Loss_proj_penalty |        1.03e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.53 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |        1.22e-08 |
+|           Value/CostAdv |       -4.88e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch84.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0805 |
+|          Metrics/EpCost |            95.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              85 |
+|        Train/TotalSteps |         1.7e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            21.2 |
+|                Train/LR |         0.00013 |
+| Loss/Loss_reward_critic |         0.00597 |
+|   Loss/Loss_cost_critic |            5.86 |
+|         Loss/Loss_actor |           0.193 |
+|  Loss/Loss_proj_penalty |        1.74e+03 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.46 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |       -1.91e-09 |
+|           Value/CostAdv |       -1.02e-07 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch85.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.191 |
+|          Metrics/EpCost |            56.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              86 |
+|        Train/TotalSteps |        1.72e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            16.4 |
+|                Train/LR |        0.000128 |
+| Loss/Loss_reward_critic |         0.00709 |
+|   Loss/Loss_cost_critic |            4.55 |
+|         Loss/Loss_actor |           0.184 |
+|  Loss/Loss_proj_penalty |             896 |
+|            Time/Rollout |            31.4 |
+|             Time/Update |            4.53 |
+|              Time/Total |            35.9 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -5.19e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch86.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.208 |
+|          Metrics/EpCost |            57.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              87 |
+|        Train/TotalSteps |        1.74e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            14.1 |
+|                Train/LR |        0.000126 |
+| Loss/Loss_reward_critic |         0.00731 |
+|   Loss/Loss_cost_critic |            7.57 |
+|         Loss/Loss_actor |           0.181 |
+|  Loss/Loss_proj_penalty |             980 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |        7.63e-10 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch87.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0251 |
+|          Metrics/EpCost |            73.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              88 |
+|        Train/TotalSteps |        1.76e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            22.3 |
+|                Train/LR |        0.000124 |
+| Loss/Loss_reward_critic |         0.00854 |
+|   Loss/Loss_cost_critic |            10.5 |
+|         Loss/Loss_actor |           0.159 |
+|  Loss/Loss_proj_penalty |             828 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            3.04 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |        7.63e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch88.pt
+---------------------------------------------
+|           Metrics/EpRet |            0.12 |
+|          Metrics/EpCost |             100 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              89 |
+|        Train/TotalSteps |        1.78e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            14.7 |
+|                Train/LR |        0.000122 |
+| Loss/Loss_reward_critic |         0.00874 |
+|   Loss/Loss_cost_critic |            9.69 |
+|         Loss/Loss_actor |           0.169 |
+|  Loss/Loss_proj_penalty |             751 |
+|            Time/Rollout |              31 |
+|             Time/Update |            4.52 |
+|              Time/Total |            35.5 |
+|         Value/RewardAdv |       -1.14e-09 |
+|           Value/CostAdv |        9.16e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch89.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |           0.192 |
+|          Metrics/EpCost |             101 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              90 |
+|        Train/TotalSteps |         1.8e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |              19 |
+|                Train/LR |         0.00012 |
+| Loss/Loss_reward_critic |         0.00791 |
+|   Loss/Loss_cost_critic |             6.9 |
+|         Loss/Loss_actor |           0.163 |
+|  Loss/Loss_proj_penalty |             882 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch90.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0438 |
+|          Metrics/EpCost |            89.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              91 |
+|        Train/TotalSteps |        1.82e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            17.4 |
+|                Train/LR |        0.000118 |
+| Loss/Loss_reward_critic |         0.00609 |
+|   Loss/Loss_cost_critic |            8.63 |
+|         Loss/Loss_actor |            0.47 |
+|  Loss/Loss_proj_penalty |             895 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.47 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch91.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.189 |
+|          Metrics/EpCost |              81 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              92 |
+|        Train/TotalSteps |        1.84e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            15.5 |
+|                Train/LR |        0.000116 |
+| Loss/Loss_reward_critic |         0.00554 |
+|   Loss/Loss_cost_critic |            7.15 |
+|         Loss/Loss_actor |           0.227 |
+|  Loss/Loss_proj_penalty |        1.93e+03 |
+|            Time/Rollout |            31.3 |
+|             Time/Update |            3.34 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |       -1.07e-08 |
+|           Value/CostAdv |        -1.3e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch92.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.121 |
+|          Metrics/EpCost |            87.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              93 |
+|        Train/TotalSteps |        1.86e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            14.9 |
+|                Train/LR |        0.000114 |
+| Loss/Loss_reward_critic |          0.0069 |
+|   Loss/Loss_cost_critic |            9.76 |
+|         Loss/Loss_actor |           0.148 |
+|  Loss/Loss_proj_penalty |        1.18e+03 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |             4.4 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |       -3.05e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch93.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.033 |
+|          Metrics/EpCost |            90.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              94 |
+|        Train/TotalSteps |        1.88e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            15.6 |
+|                Train/LR |        0.000112 |
+| Loss/Loss_reward_critic |         0.00625 |
+|   Loss/Loss_cost_critic |             7.4 |
+|         Loss/Loss_actor |           0.199 |
+|  Loss/Loss_proj_penalty |             443 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            4.07 |
+|              Time/Total |            35.9 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch94.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0867 |
+|          Metrics/EpCost |            91.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              95 |
+|        Train/TotalSteps |         1.9e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |              14 |
+|                Train/LR |         0.00011 |
+| Loss/Loss_reward_critic |         0.00648 |
+|   Loss/Loss_cost_critic |            10.4 |
+|         Loss/Loss_actor |           0.148 |
+|  Loss/Loss_proj_penalty |        1.11e+03 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.55 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -3.36e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch95.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.264 |
+|          Metrics/EpCost |             108 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              96 |
+|        Train/TotalSteps |        1.92e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.73 |
+|                Train/LR |        0.000108 |
+| Loss/Loss_reward_critic |         0.00642 |
+|   Loss/Loss_cost_critic |            10.1 |
+|         Loss/Loss_actor |           0.205 |
+|  Loss/Loss_proj_penalty |             407 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.51 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        3.05e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch96.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.251 |
+|          Metrics/EpCost |             117 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              97 |
+|        Train/TotalSteps |        1.94e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            12.8 |
+|                Train/LR |        0.000106 |
+| Loss/Loss_reward_critic |         0.00614 |
+|   Loss/Loss_cost_critic |            7.65 |
+|         Loss/Loss_actor |           0.151 |
+|  Loss/Loss_proj_penalty |             689 |
+|            Time/Rollout |            32.3 |
+|             Time/Update |            4.46 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |       -9.92e-09 |
+|           Value/CostAdv |       -7.32e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch97.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.177 |
+|          Metrics/EpCost |             116 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              98 |
+|        Train/TotalSteps |        1.96e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            10.1 |
+|                Train/LR |        0.000104 |
+| Loss/Loss_reward_critic |         0.00696 |
+|   Loss/Loss_cost_critic |            9.93 |
+|         Loss/Loss_actor |           0.186 |
+|  Loss/Loss_proj_penalty |             899 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |        2.67e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch98.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.142 |
+|          Metrics/EpCost |            92.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |              99 |
+|        Train/TotalSteps |        1.98e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            12.3 |
+|                Train/LR |        0.000102 |
+| Loss/Loss_reward_critic |         0.00466 |
+|   Loss/Loss_cost_critic |            6.45 |
+|         Loss/Loss_actor |           0.274 |
+|  Loss/Loss_proj_penalty |             959 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.51 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch99.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0211 |
+|          Metrics/EpCost |            88.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             100 |
+|        Train/TotalSteps |           2e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            9.06 |
+|                Train/LR |          0.0001 |
+| Loss/Loss_reward_critic |         0.00799 |
+|   Loss/Loss_cost_critic |            9.88 |
+|         Loss/Loss_actor |          0.0986 |
+|  Loss/Loss_proj_penalty |             562 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.52 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |        2.67e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch100.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0118 |
+|          Metrics/EpCost |            73.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             101 |
+|        Train/TotalSteps |        2.02e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            10.2 |
+|                Train/LR |         9.8e-05 |
+| Loss/Loss_reward_critic |         0.00635 |
+|   Loss/Loss_cost_critic |            8.02 |
+|         Loss/Loss_actor |           0.158 |
+|  Loss/Loss_proj_penalty |        1.03e+03 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -4.27e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch101.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.126 |
+|          Metrics/EpCost |            76.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             102 |
+|        Train/TotalSteps |        2.04e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |              10 |
+|                Train/LR |         9.6e-05 |
+| Loss/Loss_reward_critic |         0.00644 |
+|   Loss/Loss_cost_critic |            9.51 |
+|         Loss/Loss_actor |           0.113 |
+|  Loss/Loss_proj_penalty |             481 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        1.14e-08 |
+|           Value/CostAdv |         6.1e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch102.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.197 |
+|          Metrics/EpCost |            81.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             103 |
+|        Train/TotalSteps |        2.06e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            13.2 |
+|                Train/LR |         9.4e-05 |
+| Loss/Loss_reward_critic |         0.00644 |
+|   Loss/Loss_cost_critic |            9.84 |
+|         Loss/Loss_actor |           0.144 |
+|  Loss/Loss_proj_penalty |             862 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.49 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -1.21e-07 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch103.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.169 |
+|          Metrics/EpCost |            87.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             104 |
+|        Train/TotalSteps |        2.08e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            9.52 |
+|                Train/LR |         9.2e-05 |
+| Loss/Loss_reward_critic |          0.0056 |
+|   Loss/Loss_cost_critic |            7.96 |
+|         Loss/Loss_actor |           0.203 |
+|  Loss/Loss_proj_penalty |        1.15e+03 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.28 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.22e-08 |
+|           Value/CostAdv |        1.37e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch104.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.182 |
+|          Metrics/EpCost |            88.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             105 |
+|        Train/TotalSteps |         2.1e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            15.5 |
+|                Train/LR |           9e-05 |
+| Loss/Loss_reward_critic |         0.00756 |
+|   Loss/Loss_cost_critic |            6.92 |
+|         Loss/Loss_actor |           0.158 |
+|  Loss/Loss_proj_penalty |             519 |
+|            Time/Rollout |            30.7 |
+|             Time/Update |            4.53 |
+|              Time/Total |            35.2 |
+|         Value/RewardAdv |        3.05e-09 |
+|           Value/CostAdv |        -3.2e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch105.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.135 |
+|          Metrics/EpCost |            90.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             106 |
+|        Train/TotalSteps |        2.12e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            14.2 |
+|                Train/LR |         8.8e-05 |
+| Loss/Loss_reward_critic |         0.00897 |
+|   Loss/Loss_cost_critic |            8.08 |
+|         Loss/Loss_actor |             0.2 |
+|  Loss/Loss_proj_penalty |             730 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.31 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |        1.53e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch106.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0782 |
+|          Metrics/EpCost |            84.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             107 |
+|        Train/TotalSteps |        2.14e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            10.2 |
+|                Train/LR |         8.6e-05 |
+| Loss/Loss_reward_critic |         0.00513 |
+|   Loss/Loss_cost_critic |            7.54 |
+|         Loss/Loss_actor |           0.199 |
+|  Loss/Loss_proj_penalty |        1.26e+03 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.44 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |        3.66e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch107.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0153 |
+|          Metrics/EpCost |            86.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             108 |
+|        Train/TotalSteps |        2.16e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            9.29 |
+|                Train/LR |         8.4e-05 |
+| Loss/Loss_reward_critic |         0.00752 |
+|   Loss/Loss_cost_critic |            14.3 |
+|         Loss/Loss_actor |           0.154 |
+|  Loss/Loss_proj_penalty |             727 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.56 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |       -8.58e-09 |
+|           Value/CostAdv |        3.05e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch108.pt
+---------------------------------------------
+|           Metrics/EpRet |           -0.13 |
+|          Metrics/EpCost |            99.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             109 |
+|        Train/TotalSteps |        2.18e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            11.7 |
+|                Train/LR |         8.2e-05 |
+| Loss/Loss_reward_critic |         0.00657 |
+|   Loss/Loss_cost_critic |            8.69 |
+|         Loss/Loss_actor |           0.231 |
+|  Loss/Loss_proj_penalty |             395 |
+|            Time/Rollout |            32.3 |
+|             Time/Update |            3.03 |
+|              Time/Total |            35.3 |
+|         Value/RewardAdv |        7.63e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch109.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.157 |
+|          Metrics/EpCost |            89.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             110 |
+|        Train/TotalSteps |         2.2e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            9.93 |
+|                Train/LR |           8e-05 |
+| Loss/Loss_reward_critic |         0.00647 |
+|   Loss/Loss_cost_critic |            5.53 |
+|         Loss/Loss_actor |           0.133 |
+|  Loss/Loss_proj_penalty |        1.93e+03 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |             4.4 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch110.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.157 |
+|          Metrics/EpCost |            78.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             111 |
+|        Train/TotalSteps |        2.22e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            6.88 |
+|                Train/LR |         7.8e-05 |
+| Loss/Loss_reward_critic |         0.00966 |
+|   Loss/Loss_cost_critic |            10.2 |
+|         Loss/Loss_actor |           0.137 |
+|  Loss/Loss_proj_penalty |             575 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.53 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch111.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0545 |
+|          Metrics/EpCost |            81.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             112 |
+|        Train/TotalSteps |        2.24e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.77 |
+|                Train/LR |         7.6e-05 |
+| Loss/Loss_reward_critic |         0.00593 |
+|   Loss/Loss_cost_critic |            9.15 |
+|         Loss/Loss_actor |           0.152 |
+|  Loss/Loss_proj_penalty |             770 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        1.53e-08 |
+|           Value/CostAdv |       -1.83e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch112.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0579 |
+|          Metrics/EpCost |            93.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             113 |
+|        Train/TotalSteps |        2.26e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            11.2 |
+|                Train/LR |         7.4e-05 |
+| Loss/Loss_reward_critic |         0.00785 |
+|   Loss/Loss_cost_critic |            7.74 |
+|         Loss/Loss_actor |           0.164 |
+|  Loss/Loss_proj_penalty |        1.44e+03 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            4.42 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |        1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch113.pt
+---------------------------------------------
+|           Metrics/EpRet |         0.00876 |
+|          Metrics/EpCost |              99 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             114 |
+|        Train/TotalSteps |        2.28e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.35 |
+|                Train/LR |         7.2e-05 |
+| Loss/Loss_reward_critic |         0.00839 |
+|   Loss/Loss_cost_critic |            8.98 |
+|         Loss/Loss_actor |            0.12 |
+|  Loss/Loss_proj_penalty |             765 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.55 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -2.67e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch114.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.155 |
+|          Metrics/EpCost |            98.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             115 |
+|        Train/TotalSteps |         2.3e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            13.7 |
+|                Train/LR |           7e-05 |
+| Loss/Loss_reward_critic |         0.00697 |
+|   Loss/Loss_cost_critic |            6.26 |
+|         Loss/Loss_actor |           0.171 |
+|  Loss/Loss_proj_penalty |             406 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            4.42 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |       -1.14e-09 |
+|           Value/CostAdv |       -4.73e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch115.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0675 |
+|          Metrics/EpCost |             108 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             116 |
+|        Train/TotalSteps |        2.32e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            6.63 |
+|                Train/LR |         6.8e-05 |
+| Loss/Loss_reward_critic |          0.0073 |
+|   Loss/Loss_cost_critic |              11 |
+|         Loss/Loss_actor |           0.161 |
+|  Loss/Loss_proj_penalty |        1.17e+03 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            3.89 |
+|              Time/Total |            35.6 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch116.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0185 |
+|          Metrics/EpCost |             113 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             117 |
+|        Train/TotalSteps |        2.34e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.68 |
+|                Train/LR |         6.6e-05 |
+| Loss/Loss_reward_critic |         0.00589 |
+|   Loss/Loss_cost_critic |            10.4 |
+|         Loss/Loss_actor |            0.14 |
+|  Loss/Loss_proj_penalty |             654 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |        1.53e-09 |
+|           Value/CostAdv |         2.9e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch117.pt
+---------------------------------------------
+|           Metrics/EpRet |         0.00714 |
+|          Metrics/EpCost |             120 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             118 |
+|        Train/TotalSteps |        2.36e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            8.77 |
+|                Train/LR |         6.4e-05 |
+| Loss/Loss_reward_critic |         0.00808 |
+|   Loss/Loss_cost_critic |            14.2 |
+|         Loss/Loss_actor |           0.122 |
+|  Loss/Loss_proj_penalty |             566 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.06 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |        9.92e-09 |
+|           Value/CostAdv |        5.19e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch118.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0682 |
+|          Metrics/EpCost |             112 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             119 |
+|        Train/TotalSteps |        2.38e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.89 |
+|                Train/LR |         6.2e-05 |
+| Loss/Loss_reward_critic |         0.00592 |
+|   Loss/Loss_cost_critic |            7.39 |
+|         Loss/Loss_actor |           0.152 |
+|  Loss/Loss_proj_penalty |             922 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.46 |
+|              Time/Total |              36 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |       -3.05e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch119.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |         -0.0603 |
+|          Metrics/EpCost |            91.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             120 |
+|        Train/TotalSteps |         2.4e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.74 |
+|                Train/LR |           6e-05 |
+| Loss/Loss_reward_critic |         0.00729 |
+|   Loss/Loss_cost_critic |            6.95 |
+|         Loss/Loss_actor |          0.0909 |
+|  Loss/Loss_proj_penalty |             527 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            2.18 |
+|              Time/Total |            33.4 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch120.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.115 |
+|          Metrics/EpCost |            73.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             121 |
+|        Train/TotalSteps |        2.42e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            6.51 |
+|                Train/LR |         5.8e-05 |
+| Loss/Loss_reward_critic |         0.00644 |
+|   Loss/Loss_cost_critic |            9.04 |
+|         Loss/Loss_actor |           0.105 |
+|  Loss/Loss_proj_penalty |             385 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.46 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |        2.86e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch121.pt
+---------------------------------------------
+|           Metrics/EpRet |        2.71e-05 |
+|          Metrics/EpCost |            95.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             122 |
+|        Train/TotalSteps |        2.44e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.01 |
+|                Train/LR |         5.6e-05 |
+| Loss/Loss_reward_critic |         0.00579 |
+|   Loss/Loss_cost_critic |            12.1 |
+|         Loss/Loss_actor |           0.124 |
+|  Loss/Loss_proj_penalty |             444 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.52 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -9.16e-09 |
+|           Value/CostAdv |        2.14e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch122.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0284 |
+|          Metrics/EpCost |             104 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             123 |
+|        Train/TotalSteps |        2.46e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            8.08 |
+|                Train/LR |         5.4e-05 |
+| Loss/Loss_reward_critic |         0.00764 |
+|   Loss/Loss_cost_critic |            8.03 |
+|         Loss/Loss_actor |           0.177 |
+|  Loss/Loss_proj_penalty |             650 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.55 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.53e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch123.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0583 |
+|          Metrics/EpCost |              80 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             124 |
+|        Train/TotalSteps |        2.48e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            5.12 |
+|                Train/LR |         5.2e-05 |
+| Loss/Loss_reward_critic |         0.00654 |
+|   Loss/Loss_cost_critic |            6.88 |
+|         Loss/Loss_actor |           0.138 |
+|  Loss/Loss_proj_penalty |             454 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.51 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |       -1.54e-08 |
+|           Value/CostAdv |        7.63e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch124.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0759 |
+|          Metrics/EpCost |            72.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             125 |
+|        Train/TotalSteps |         2.5e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            6.47 |
+|                Train/LR |           5e-05 |
+| Loss/Loss_reward_critic |          0.0066 |
+|   Loss/Loss_cost_critic |            8.65 |
+|         Loss/Loss_actor |           0.149 |
+|  Loss/Loss_proj_penalty |             906 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.55 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |       -7.25e-09 |
+|           Value/CostAdv |       -3.36e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch125.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.252 |
+|          Metrics/EpCost |            76.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             126 |
+|        Train/TotalSteps |        2.52e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            7.26 |
+|                Train/LR |         4.8e-05 |
+| Loss/Loss_reward_critic |         0.00768 |
+|   Loss/Loss_cost_critic |             4.3 |
+|         Loss/Loss_actor |           0.183 |
+|  Loss/Loss_proj_penalty |             913 |
+|            Time/Rollout |            31.8 |
+|             Time/Update |            4.52 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |        1.22e-08 |
+|           Value/CostAdv |       -1.68e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch126.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0747 |
+|          Metrics/EpCost |            75.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             127 |
+|        Train/TotalSteps |        2.54e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            3.61 |
+|                Train/LR |         4.6e-05 |
+| Loss/Loss_reward_critic |         0.00607 |
+|   Loss/Loss_cost_critic |            6.76 |
+|         Loss/Loss_actor |          0.0757 |
+|  Loss/Loss_proj_penalty |             503 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            4.48 |
+|              Time/Total |              36 |
+|         Value/RewardAdv |        3.81e-09 |
+|           Value/CostAdv |        -5.8e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch127.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0148 |
+|          Metrics/EpCost |            64.8 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             128 |
+|        Train/TotalSteps |        2.56e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.91 |
+|                Train/LR |         4.4e-05 |
+| Loss/Loss_reward_critic |         0.00672 |
+|   Loss/Loss_cost_critic |            9.53 |
+|         Loss/Loss_actor |           0.126 |
+|  Loss/Loss_proj_penalty |             417 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.41 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch128.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0164 |
+|          Metrics/EpCost |            92.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             129 |
+|        Train/TotalSteps |        2.58e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |             5.3 |
+|                Train/LR |         4.2e-05 |
+| Loss/Loss_reward_critic |         0.00809 |
+|   Loss/Loss_cost_critic |            13.3 |
+|         Loss/Loss_actor |           0.146 |
+|  Loss/Loss_proj_penalty |             354 |
+|            Time/Rollout |            31.5 |
+|             Time/Update |            3.75 |
+|              Time/Total |            35.3 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |       -3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch129.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.103 |
+|          Metrics/EpCost |             106 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             130 |
+|        Train/TotalSteps |         2.6e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.33 |
+|                Train/LR |           4e-05 |
+| Loss/Loss_reward_critic |         0.00837 |
+|   Loss/Loss_cost_critic |            9.67 |
+|         Loss/Loss_actor |           0.291 |
+|  Loss/Loss_proj_penalty |             747 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            4.53 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |               0 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch130.pt
+---------------------------------------------
+|           Metrics/EpRet |        -0.00302 |
+|          Metrics/EpCost |             106 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             131 |
+|        Train/TotalSteps |        2.62e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            3.36 |
+|                Train/LR |         3.8e-05 |
+| Loss/Loss_reward_critic |         0.00786 |
+|   Loss/Loss_cost_critic |            9.51 |
+|         Loss/Loss_actor |          0.0896 |
+|  Loss/Loss_proj_penalty |             419 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.5 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -4.88e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch131.pt
+---------------------------------------------
+|           Metrics/EpRet |           0.104 |
+|          Metrics/EpCost |            98.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             132 |
+|        Train/TotalSteps |        2.64e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.29 |
+|                Train/LR |         3.6e-05 |
+| Loss/Loss_reward_critic |         0.00895 |
+|   Loss/Loss_cost_critic |            10.6 |
+|         Loss/Loss_actor |           0.106 |
+|  Loss/Loss_proj_penalty |             562 |
+|            Time/Rollout |            31.4 |
+|             Time/Update |            4.48 |
+|              Time/Total |            35.9 |
+|         Value/RewardAdv |        3.81e-09 |
+|           Value/CostAdv |       -2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch132.pt
+---------------------------------------------
+|           Metrics/EpRet |          0.0776 |
+|          Metrics/EpCost |            92.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             133 |
+|        Train/TotalSteps |        2.66e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            2.85 |
+|                Train/LR |         3.4e-05 |
+| Loss/Loss_reward_critic |         0.00728 |
+|   Loss/Loss_cost_critic |            9.83 |
+|         Loss/Loss_actor |          0.0768 |
+|  Loss/Loss_proj_penalty |        1.07e+03 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            3.82 |
+|              Time/Total |            35.7 |
+|         Value/RewardAdv |       -2.29e-09 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch133.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0701 |
+|          Metrics/EpCost |            87.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             134 |
+|        Train/TotalSteps |        2.68e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.92 |
+|                Train/LR |         3.2e-05 |
+| Loss/Loss_reward_critic |         0.00705 |
+|   Loss/Loss_cost_critic |            7.81 |
+|         Loss/Loss_actor |            0.13 |
+|  Loss/Loss_proj_penalty |         1.1e+03 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            3.83 |
+|              Time/Total |            35.1 |
+|         Value/RewardAdv |        9.16e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch134.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.116 |
+|          Metrics/EpCost |            95.4 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             135 |
+|        Train/TotalSteps |         2.7e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            5.06 |
+|                Train/LR |           3e-05 |
+| Loss/Loss_reward_critic |         0.00602 |
+|   Loss/Loss_cost_critic |            10.1 |
+|         Loss/Loss_actor |           0.145 |
+|  Loss/Loss_proj_penalty |             848 |
+|            Time/Rollout |            32.1 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        1.53e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch135.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.132 |
+|          Metrics/EpCost |             108 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             136 |
+|        Train/TotalSteps |        2.72e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            1.96 |
+|                Train/LR |         2.8e-05 |
+| Loss/Loss_reward_critic |         0.00672 |
+|   Loss/Loss_cost_critic |            12.7 |
+|         Loss/Loss_actor |          0.0872 |
+|  Loss/Loss_proj_penalty |             582 |
+|            Time/Rollout |            31.3 |
+|             Time/Update |            3.31 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        4.58e-09 |
+|           Value/CostAdv |       -8.01e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch136.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0232 |
+|          Metrics/EpCost |             102 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             137 |
+|        Train/TotalSteps |        2.74e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.72 |
+|                Train/LR |         2.6e-05 |
+| Loss/Loss_reward_critic |          0.0083 |
+|   Loss/Loss_cost_critic |            7.02 |
+|         Loss/Loss_actor |           0.155 |
+|  Loss/Loss_proj_penalty |             419 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            4.16 |
+|              Time/Total |            35.8 |
+|         Value/RewardAdv |        -6.1e-09 |
+|           Value/CostAdv |       -3.05e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch137.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0213 |
+|          Metrics/EpCost |            76.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             138 |
+|        Train/TotalSteps |        2.76e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            4.33 |
+|                Train/LR |         2.4e-05 |
+| Loss/Loss_reward_critic |         0.00587 |
+|   Loss/Loss_cost_critic |            7.65 |
+|         Loss/Loss_actor |           0.135 |
+|  Loss/Loss_proj_penalty |             456 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.38 |
+|              Time/Total |            36.6 |
+|         Value/RewardAdv |       -9.92e-09 |
+|           Value/CostAdv |       -1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch138.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0327 |
+|          Metrics/EpCost |            78.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             139 |
+|        Train/TotalSteps |        2.78e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            2.34 |
+|                Train/LR |         2.2e-05 |
+| Loss/Loss_reward_critic |         0.00789 |
+|   Loss/Loss_cost_critic |            10.3 |
+|         Loss/Loss_actor |           0.082 |
+|  Loss/Loss_proj_penalty |             695 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.3 |
+|         Value/RewardAdv |        2.29e-09 |
+|           Value/CostAdv |         1.6e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch139.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0702 |
+|          Metrics/EpCost |            86.7 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             140 |
+|        Train/TotalSteps |         2.8e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            1.51 |
+|                Train/LR |           2e-05 |
+| Loss/Loss_reward_critic |         0.00637 |
+|   Loss/Loss_cost_critic |            6.49 |
+|         Loss/Loss_actor |          0.0831 |
+|  Loss/Loss_proj_penalty |             254 |
+|            Time/Rollout |            32.3 |
+|             Time/Update |             4.4 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |       -4.58e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch140.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0168 |
+|          Metrics/EpCost |              84 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             141 |
+|        Train/TotalSteps |        2.82e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            2.82 |
+|                Train/LR |         1.8e-05 |
+| Loss/Loss_reward_critic |         0.00644 |
+|   Loss/Loss_cost_critic |            7.19 |
+|         Loss/Loss_actor |          0.0878 |
+|  Loss/Loss_proj_penalty |             653 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            4.45 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |       -2.75e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch141.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.067 |
+|          Metrics/EpCost |            76.3 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             142 |
+|        Train/TotalSteps |        2.84e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            2.25 |
+|                Train/LR |         1.6e-05 |
+| Loss/Loss_reward_critic |         0.00676 |
+|   Loss/Loss_cost_critic |            7.94 |
+|         Loss/Loss_actor |          0.0865 |
+|  Loss/Loss_proj_penalty |        1.02e+03 |
+|            Time/Rollout |            31.4 |
+|             Time/Update |            3.98 |
+|              Time/Total |            35.4 |
+|         Value/RewardAdv |        1.22e-08 |
+|           Value/CostAdv |       -4.88e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch142.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0371 |
+|          Metrics/EpCost |            83.5 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             143 |
+|        Train/TotalSteps |        2.86e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            3.56 |
+|                Train/LR |         1.4e-05 |
+| Loss/Loss_reward_critic |         0.00749 |
+|   Loss/Loss_cost_critic |            7.74 |
+|         Loss/Loss_actor |            0.11 |
+|  Loss/Loss_proj_penalty |             558 |
+|            Time/Rollout |            31.9 |
+|             Time/Update |            3.03 |
+|              Time/Total |            34.9 |
+|         Value/RewardAdv |        1.53e-08 |
+|           Value/CostAdv |       -5.65e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch143.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.111 |
+|          Metrics/EpCost |            75.2 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             144 |
+|        Train/TotalSteps |        2.88e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            3.54 |
+|                Train/LR |         1.2e-05 |
+| Loss/Loss_reward_critic |         0.00579 |
+|   Loss/Loss_cost_critic |            5.95 |
+|         Loss/Loss_actor |          0.0942 |
+|  Loss/Loss_proj_penalty |             944 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.45 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |       -3.81e-09 |
+|           Value/CostAdv |        -6.1e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch144.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.282 |
+|          Metrics/EpCost |            73.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             145 |
+|        Train/TotalSteps |         2.9e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            3.22 |
+|                Train/LR |           1e-05 |
+| Loss/Loss_reward_critic |         0.00625 |
+|   Loss/Loss_cost_critic |            11.1 |
+|         Loss/Loss_actor |           0.121 |
+|  Loss/Loss_proj_penalty |             973 |
+|            Time/Rollout |            31.2 |
+|             Time/Update |            4.43 |
+|              Time/Total |            35.6 |
+|         Value/RewardAdv |       -3.05e-09 |
+|           Value/CostAdv |        9.16e-09 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch145.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.288 |
+|          Metrics/EpCost |            79.9 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             146 |
+|        Train/TotalSteps |        2.92e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |           0.983 |
+|                Train/LR |           8e-06 |
+| Loss/Loss_reward_critic |           0.006 |
+|   Loss/Loss_cost_critic |            8.75 |
+|         Loss/Loss_actor |          0.0692 |
+|  Loss/Loss_proj_penalty |             952 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |             4.5 |
+|              Time/Total |            36.2 |
+|         Value/RewardAdv |        1.07e-08 |
+|           Value/CostAdv |        1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch146.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.234 |
+|          Metrics/EpCost |            94.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             147 |
+|        Train/TotalSteps |        2.94e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |            0.35 |
+|                Train/LR |           6e-06 |
+| Loss/Loss_reward_critic |         0.00767 |
+|   Loss/Loss_cost_critic |            10.6 |
+|         Loss/Loss_actor |           0.042 |
+|  Loss/Loss_proj_penalty |             586 |
+|            Time/Rollout |            31.7 |
+|             Time/Update |            3.01 |
+|              Time/Total |            34.7 |
+|         Value/RewardAdv |        1.91e-10 |
+|           Value/CostAdv |        2.44e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch147.pt
+---------------------------------------------
+|           Metrics/EpRet |         -0.0978 |
+|          Metrics/EpCost |            91.6 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             148 |
+|        Train/TotalSteps |        2.96e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |           0.314 |
+|                Train/LR |           4e-06 |
+| Loss/Loss_reward_critic |         0.00714 |
+|   Loss/Loss_cost_critic |             8.2 |
+|         Loss/Loss_actor |           0.017 |
+|  Loss/Loss_proj_penalty |             405 |
+|            Time/Rollout |            32.2 |
+|             Time/Update |            4.46 |
+|              Time/Total |            36.7 |
+|         Value/RewardAdv |        7.63e-10 |
+|           Value/CostAdv |        3.66e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch148.pt
+---------------------------------------------
+|           Metrics/EpRet |          -0.168 |
+|          Metrics/EpCost |            97.1 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             149 |
+|        Train/TotalSteps |        2.98e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |           0.155 |
+|                Train/LR |           2e-06 |
+| Loss/Loss_reward_critic |         0.00597 |
+|   Loss/Loss_cost_critic |            10.3 |
+|         Loss/Loss_actor |          0.0288 |
+|  Loss/Loss_proj_penalty |             553 |
+|            Time/Rollout |            31.6 |
+|             Time/Update |            4.54 |
+|              Time/Total |            36.1 |
+|         Value/RewardAdv |               0 |
+|           Value/CostAdv |        1.22e-08 |
+---------------------------------------------
+Saved checkpoint to /workspace/Safe-Policy-Optimization/runs/single_agent_exp/SafetyPointGoal2-v0/ppo_ae/seed-000-2025-09-16-15-42-17/ppo_actor_epoch149.pt
+[32mSave model to disk...[0m
+[32mDone.[0m
+[32mSave model to disk...[0m
+[32mDone.[0m
+---------------------------------------------
+|           Metrics/EpRet |          -0.147 |
+|          Metrics/EpCost |             108 |
+|           Metrics/EpLen |           1e+03 |
+|             Train/Epoch |             150 |
+|        Train/TotalSteps |           3e+06 |
+|          Train/StopIter |               1 |
+|                Train/KL |          0.0293 |
+|                Train/LR |               0 |
+| Loss/Loss_reward_critic |          0.0054 |
+|   Loss/Loss_cost_critic |            8.02 |
+|         Loss/Loss_actor |          0.0076 |
+|  Loss/Loss_proj_penalty |             306 |
+|            Time/Rollout |              32 |
+|             Time/Update |            4.43 |
+|              Time/Total |            36.4 |
+|         Value/RewardAdv |         1.3e-08 |
+|           Value/CostAdv |        1.83e-08 |
+---------------------------------------------
