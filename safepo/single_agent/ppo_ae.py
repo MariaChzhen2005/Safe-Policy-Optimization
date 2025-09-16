@@ -105,7 +105,7 @@ def main(args, cfg_env=None):
     ).to(device)
 
     # load the trained autoencoder for action projection
-    autoencoder_path = "safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt"
+    autoencoder_path = "/workspace/Safe-Policy-Optimization/safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt"
     print(f"Loading autoencoder from: {autoencoder_path}")
     print(f"Observation space shape: {obs_space.shape[0]}D")
     print(f"Action space shape: {act_space.shape[0]}D")
