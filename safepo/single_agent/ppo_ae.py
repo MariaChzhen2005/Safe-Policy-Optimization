@@ -76,7 +76,6 @@ def main(args, cfg_env=None):
     torch.set_num_threads(4)
     device = torch.device(f'{args.device}:{args.device_id}')
 
-
     if args.task not in isaac_gym_map.keys():
         env, obs_space, act_space = make_sa_mujoco_env(
             num_envs=args.num_envs, env_id=args.task, seed=args.seed
@@ -108,30 +107,49 @@ def main(args, cfg_env=None):
     # load the trained autoencoder for action projection
     autoencoder_path = "safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt"
     print(f"Loading autoencoder from: {autoencoder_path}")
-
-    # Initialize autoencoder with same architecture as the saved model
-    print("Initializing autoencoder...")
-    try:
-        autoencoder = ConditionalConstraintAwareAutoencoder(
-            action_dim=act_space.shape[0],
-            state_dim=obs_space.shape[0],
-            latent_dim=act_space.shape[0],  # assuming latent_dim matches action_dim
-            hidden_dim=64,
-            num_decoders=2,
-            latent_geom="hypersphere",
-            norm_params_path=None,
-            ieee37_model_instance_in=None
-        ).to(device)
-        print("Autoencoder initialized, loading weights...")
-
-        # Load the trained weights
-        autoencoder.load_state_dict(torch.load(autoencoder_path, map_location=device))
-        autoencoder.eval()  # Set to evaluation mode
-        print("Autoencoder loaded successfully!")
-    except Exception as e:
-        print(f"Error loading autoencoder: {e}")
+    print(f"Observation space shape: {obs_space.shape[0]}D")
+    print(f"Action space shape: {act_space.shape[0]}D")
+    
+    # Check if autoencoder file exists
+    if not os.path.exists(autoencoder_path):
+        print(f"ERROR: Autoencoder file not found at {autoencoder_path}")
         print("Continuing without autoencoder (actions won't be projected)")
         autoencoder = None
+    else:
+        print(f"Autoencoder file found at {autoencoder_path}")
+        
+        # Initialize autoencoder with same architecture as the saved model
+        print("Initializing autoencoder...")
+        try:
+            print("Creating ConditionalConstraintAwareAutoencoder instance...")
+            autoencoder = ConditionalConstraintAwareAutoencoder(
+                action_dim=act_space.shape[0],
+                state_dim=obs_space.shape[0],
+                latent_dim=act_space.shape[0],  # assuming latent_dim matches action_dim
+                hidden_dim=64,
+                num_decoders=2,
+                latent_geom="hypersphere",
+                norm_params_path=None,
+                ieee37_model_instance_in=None
+            )
+            print("Moving autoencoder to device...")
+            autoencoder = autoencoder.to(device)
+            print("Autoencoder initialized, loading weights...")
+
+            # Load the trained weights
+            print("Loading state dict...")
+            autoencoder.load_state_dict(torch.load(autoencoder_path, map_location=device))
+            print("Setting to eval mode...")
+            autoencoder.eval()  # Set to evaluation mode
+            print("Autoencoder loaded successfully!")
+        except Exception as e:
+            print(f"Error loading autoencoder: {e}")
+            print(f"Exception type: {type(e).__name__}")
+            import traceback
+            print("Full traceback:")
+            traceback.print_exc()
+            print("Continuing without autoencoder (actions won't be projected)")
+            autoencoder = None
     actor_optimizer = torch.optim.Adam(policy.actor.parameters(), lr=3e-4)
     actor_scheduler = LinearLR(
         actor_optimizer,
