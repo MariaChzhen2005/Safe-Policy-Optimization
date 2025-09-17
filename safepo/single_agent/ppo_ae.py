@@ -106,6 +106,10 @@ def main(args, cfg_env=None):
         hidden_sizes=config["hidden_sizes"],
     ).to(device)
 
+    # Action bounds for clamping projected actions
+    act_low = torch.as_tensor(act_space.low, dtype=torch.float32, device=device)
+    act_high = torch.as_tensor(act_space.high, dtype=torch.float32, device=device)
+
     # load the trained autoencoder for action projection
     autoencoder_path = "/workspace/Safe-Policy-Optimization/safepo/single_agent/data/conditional_phase2_safety_gym_1_decoders_2_2_absolute_Adam.pt"
     print(f"Loading autoencoder from: {autoencoder_path}")
@@ -216,6 +220,13 @@ def main(args, cfg_env=None):
                 else:
                     projected_act = act  # Use original action if no autoencoder
 
+                # Clamp projected action to env bounds before stepping and log-prob computation
+                projected_act = torch.clamp(projected_act, act_low, act_high)
+
+                # Compute log-prob of the executed (projected) action under the old policy
+                old_dist = policy.actor(obs)
+                log_prob_exec = old_dist.log_prob(projected_act).sum(-1)
+
             action = projected_act.detach().squeeze() if args.task in isaac_gym_map.keys() else projected_act.detach().squeeze().cpu().numpy()
             next_obs, reward, cost, terminated, truncated, info = env.step(action)
 
@@ -238,15 +249,15 @@ def main(args, cfg_env=None):
                     dtype=torch.float32,
                     device=device,
                 )
-            # Store the original action in buffer for policy training
+            # Store executed (projected and clamped) action and its log-prob
             buffer.store(
                 obs=obs,
-                act=act,  # Store original action, not projected_act
+                act=projected_act,
                 reward=reward,
                 cost=cost,
                 value_r=value_r,
                 value_c=value_c,
-                log_prob=log_prob,
+                log_prob=log_prob_exec,
             )
 
             obs = next_obs
@@ -303,7 +314,8 @@ def main(args, cfg_env=None):
                         act, log_prob, value_r, value_c = policy.step(eval_obs, deterministic=True)
 
                         # Project evaluation action through autoencoder for safety
-                        projected_act = autoencoder.project_action(act, eval_obs)
+                        projected_act = autoencoder.project_action(act, eval_obs) if autoencoder is not None else act
+                        projected_act = torch.clamp(projected_act, act_low, act_high)
 
                     next_obs, reward, cost, terminated, truncated, info = env.step(
                         projected_act.detach().squeeze().cpu().numpy()
