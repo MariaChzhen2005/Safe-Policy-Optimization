@@ -346,13 +346,18 @@ def main(args, cfg_env=None):
         ep_costs = logger.get_stats("Metrics/EpCost")
 
         # update policy
+        logger.log(f"Epoch {epoch}: starting buffer.get()")
         data = buffer.get()
+        logger.log(f"Epoch {epoch}: buffer.get() done; dataset_size={data['obs'].shape[0]}")
+        logger.log(f"Epoch {epoch}: computing old_distribution baseline for KL")
         old_distribution = policy.actor(data["obs"])
+        logger.log(f"Epoch {epoch}: old_distribution ready")
 
         # comnpute advantage + normalize
         advantage = data["adv_r"]
         advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-8)
 
+        logger.log(f"Epoch {epoch}: building DataLoader...")
         dataloader = DataLoader(
             dataset=TensorDataset(
                 data["obs"],
@@ -364,10 +369,14 @@ def main(args, cfg_env=None):
             ),
             batch_size=config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1)),
             shuffle=True,
+            num_workers=0,
+            pin_memory=False,
+            persistent_workers=False,
         )
         update_counts = 0
         final_kl = 0.0
         num_batches = len(dataloader)
+        logger.log(f"Epoch {epoch}: dataloader ready with {num_batches} batches x {config['learning_iters']} iters")
         for update_iter in range(config["learning_iters"]):
             for batch_idx, (
                 obs_b,
