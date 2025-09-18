@@ -359,7 +359,8 @@ def main(args, cfg_env=None):
         advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-8)
 
         # Manual mini-batching to avoid DataLoader overhead/hangs with GPU tensors
-        batch_size = config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1))
+        # batch_size = config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1))
+        batch_size = 256
         num_samples = data["obs"].shape[0]
         num_batches = (num_samples + batch_size - 1) // batch_size
         logger.log(f"Epoch {epoch}: update using manual batching with {num_batches} batches x {config['learning_iters']} iters")
