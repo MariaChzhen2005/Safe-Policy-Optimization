@@ -78,6 +78,7 @@ def main(args, cfg_env=None):
     torch.backends.cudnn.deterministic = True
     torch.set_num_threads(4)
     device = torch.device(f'{args.device}:{args.device_id}')
+    is_cuda = device.type == 'cuda'
 
     if args.task not in isaac_gym_map.keys():
         env, obs_space, act_space = make_sa_mujoco_env(
@@ -365,6 +366,7 @@ def main(args, cfg_env=None):
         update_counts = 0
         final_kl = 0.0
         for update_iter in range(config["learning_iters"]):
+            logger.log(f"Epoch {epoch}: update iter {update_iter+1}/{config['learning_iters']} starting")
             perm = torch.randperm(num_samples, device=data["obs"].device)
             for batch_idx in range(num_batches):
                 idx_start = batch_idx * batch_size
@@ -376,6 +378,8 @@ def main(args, cfg_env=None):
                 target_value_r_b = data["target_value_r"][batch_idxes]
                 target_value_c_b = data["target_value_c"][batch_idxes]
                 adv_b = advantage[batch_idxes]
+                if (batch_idx + 1) % 50 == 0 or (batch_idx + 1) == num_batches:
+                    logger.log(f"Epoch {epoch}: batch {batch_idx+1}/{num_batches} forward start")
                 reward_critic_optimizer.zero_grad()
                 loss_r = nn.functional.mse_loss(policy.reward_critic(obs_b), target_value_r_b)
                 cost_critic_optimizer.zero_grad()
@@ -403,11 +407,23 @@ def main(args, cfg_env=None):
                     else loss_pi + loss_r + loss_c
                 # Add projection penalty
                 total_loss = total_loss + proj_penalty_coef * proj_penalty
+                if (batch_idx + 1) % 50 == 0 or (batch_idx + 1) == num_batches:
+                    logger.log(f"Epoch {epoch}: batch {batch_idx+1}/{num_batches} forward ok; starting backward")
+                if is_cuda:
+                    torch.cuda.synchronize()
                 total_loss.backward()
+                if is_cuda:
+                    torch.cuda.synchronize()
+                if (batch_idx + 1) % 50 == 0 or (batch_idx + 1) == num_batches:
+                    logger.log(f"Epoch {epoch}: batch {batch_idx+1}/{num_batches} backward ok; stepping optimizers")
                 clip_grad_norm_(policy.parameters(), config["max_grad_norm"])
                 reward_critic_optimizer.step()
                 cost_critic_optimizer.step()
                 actor_optimizer.step()
+                if is_cuda:
+                    torch.cuda.synchronize()
+                if (batch_idx + 1) % 50 == 0 or (batch_idx + 1) == num_batches:
+                    logger.log(f"Epoch {epoch}: batch {batch_idx+1}/{num_batches} optimizer step ok")
 
                 # Heartbeat within update loop
                 if (batch_idx + 1) % 100 == 0 or (batch_idx + 1) == num_batches:
