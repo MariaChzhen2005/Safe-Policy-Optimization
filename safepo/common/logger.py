@@ -266,8 +266,8 @@ class Logger:
         os.makedirs(fpath, exist_ok=True)
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
-            torch.save(self.torch_saver_elements, fname)
-        torch.save(self.torch_saver_elements.state_dict(), fname)
+            # Save only the state_dict to reduce size and avoid redundant writes
+            torch.save(self.torch_saver_elements.state_dict(), fname)
         self.log("Done.")
 
     def dump_tabular(self) -> None:

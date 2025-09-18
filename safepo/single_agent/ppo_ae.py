@@ -57,7 +57,7 @@ default_cfg = {
 }
 
 isaac_gym_specific_cfg = {
-    'total_steps': 3,
+    'total_steps': 3000000,
     'steps_per_epoch': 32768,
     'hidden_sizes': [1024, 1024, 512],
     'gamma': 0.96,
@@ -206,11 +206,11 @@ def main(args, cfg_env=None):
         np.zeros(args.num_envs),
     )
     # training loop
-    for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch"):
+    for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch", file=sys.stdout):
         rollout_start_time = time.time()
         model_save_path = os.path.join(args.log_dir, f"ppo_actor_epoch{epoch}.pt")
-        torch.save(policy.actor, model_save_path)
-        print(f"Saved checkpoint to {model_save_path}")
+        torch.save(policy.actor.state_dict(), model_save_path)
+        print(f"Saved checkpoint (state_dict) to {model_save_path}")
         for steps in range(local_steps_per_epoch):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
@@ -300,6 +300,7 @@ def main(args, cfg_env=None):
                         last_value_r=last_value_r, last_value_c=last_value_c, idx=idx
                     )
         rollout_end_time = time.time()
+        logger.log(f"Epoch {epoch}: rollout done in {rollout_end_time - rollout_start_time:.2f}s")
 
         eval_start_time = time.time()
 
@@ -339,6 +340,7 @@ def main(args, cfg_env=None):
             )
 
         eval_end_time = time.time()
+        logger.log(f"Epoch {epoch}: eval done in {eval_end_time - eval_start_time:.2f}s")
 
         # update lagrange multiplier
         ep_costs = logger.get_stats("Metrics/EpCost")
@@ -428,6 +430,7 @@ def main(args, cfg_env=None):
             if kl > config["target_kl"]:
                 break
         update_end_time = time.time()
+        logger.log(f"Epoch {epoch}: update done in {update_end_time - eval_end_time:.2f}s (KL={final_kl:.4f})")
         actor_scheduler.step()
         if epoch == 0 or epoch == 1 or (epoch + 1) % 15 == 0:
             logger.torch_save(itr=epoch)
