@@ -46,6 +46,7 @@ print("imported everything")
 
 default_cfg = {
     'total_steps': 3000000,  # Set 3M steps as default
+    'steps_per_epoch': 32768,
     'hidden_sizes': [64, 64],
     'gamma': 0.99,
     'target_kl': 0.02,
@@ -317,7 +318,7 @@ def main(args, cfg_env=None):
                         projected_act = autoencoder.project_action(act, eval_obs) if autoencoder is not None else act
                         projected_act = torch.clamp(projected_act, act_low, act_high)
 
-                    next_obs, reward, cost, terminated, truncated, info = env.step(
+                    next_obs, reward, cost, terminated, truncated, info = eval_env.step(
                         projected_act.detach().squeeze().cpu().numpy()
                     )
                     next_obs = torch.as_tensor(next_obs, dtype=torch.float32, device=device)
@@ -331,9 +332,9 @@ def main(args, cfg_env=None):
                 eval_len_deque.append(eval_len)
             logger.store(
                 **{
-                    "Metrics/EvalEpRet": np.mean(eval_rew),
-                    "Metrics/EvalEpCost": np.mean(eval_cost),
-                    "Metrics/EvalEpLen": np.mean(eval_len),
+                    "Metrics/EvalEpRet": np.mean(eval_rew_deque),
+                    "Metrics/EvalEpCost": np.mean(eval_cost_deque),
+                    "Metrics/EvalEpLen": np.mean(eval_len_deque),
                 }
             )
 
@@ -346,8 +347,9 @@ def main(args, cfg_env=None):
         data = buffer.get()
         old_distribution = policy.actor(data["obs"])
 
-        # comnpute advantage
+        # comnpute advantage + normalize
         advantage = data["adv_r"]
+        advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-8)
 
         dataloader = DataLoader(
             dataset=TensorDataset(
@@ -362,7 +364,7 @@ def main(args, cfg_env=None):
             shuffle=True,
         )
         update_counts = 0
-        final_kl = torch.ones_like(old_distribution.loc)
+        final_kl = 0.0
         for _ in range(config["learning_iters"]):
             for (
                 obs_b,
