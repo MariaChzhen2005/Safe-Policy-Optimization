@@ -367,8 +367,9 @@ def main(args, cfg_env=None):
         )
         update_counts = 0
         final_kl = 0.0
-        for _ in range(config["learning_iters"]):
-            for (
+        num_batches = len(dataloader)
+        for update_iter in range(config["learning_iters"]):
+            for batch_idx, (
                 obs_b,
                 act_b,
                 log_prob_b,
@@ -408,6 +409,13 @@ def main(args, cfg_env=None):
                 reward_critic_optimizer.step()
                 cost_critic_optimizer.step()
                 actor_optimizer.step()
+
+                # Heartbeat within update loop
+                if (batch_idx + 1) % 100 == 0 or (batch_idx + 1) == num_batches:
+                    logger.log(
+                        f"Epoch {epoch}: update iter {update_iter+1}/{config['learning_iters']} "
+                        f"batch {batch_idx+1}/{num_batches}"
+                    )
 
                 logger.store(
                     **{
