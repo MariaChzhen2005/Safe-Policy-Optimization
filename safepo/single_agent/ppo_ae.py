@@ -357,35 +357,25 @@ def main(args, cfg_env=None):
         advantage = data["adv_r"]
         advantage = (advantage - advantage.mean()) / (advantage.std() + 1e-8)
 
-        logger.log(f"Epoch {epoch}: building DataLoader...")
-        dataloader = DataLoader(
-            dataset=TensorDataset(
-                data["obs"],
-                data["act"],
-                data["log_prob"],
-                data["target_value_r"],
-                data["target_value_c"],
-                advantage,
-            ),
-            batch_size=config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1)),
-            shuffle=True,
-            num_workers=0,
-            pin_memory=False,
-            persistent_workers=False,
-        )
+        # Manual mini-batching to avoid DataLoader overhead/hangs with GPU tensors
+        batch_size = config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1))
+        num_samples = data["obs"].shape[0]
+        num_batches = (num_samples + batch_size - 1) // batch_size
+        logger.log(f"Epoch {epoch}: update using manual batching with {num_batches} batches x {config['learning_iters']} iters")
         update_counts = 0
         final_kl = 0.0
-        num_batches = len(dataloader)
-        logger.log(f"Epoch {epoch}: dataloader ready with {num_batches} batches x {config['learning_iters']} iters")
         for update_iter in range(config["learning_iters"]):
-            for batch_idx, (
-                obs_b,
-                act_b,
-                log_prob_b,
-                target_value_r_b,
-                target_value_c_b,
-                adv_b,
-            ) in dataloader:
+            perm = torch.randperm(num_samples, device=data["obs"].device)
+            for batch_idx in range(num_batches):
+                idx_start = batch_idx * batch_size
+                idx_end = min(idx_start + batch_size, num_samples)
+                batch_idxes = perm[idx_start:idx_end]
+                obs_b = data["obs"][batch_idxes]
+                act_b = data["act"][batch_idxes]
+                log_prob_b = data["log_prob"][batch_idxes]
+                target_value_r_b = data["target_value_r"][batch_idxes]
+                target_value_c_b = data["target_value_c"][batch_idxes]
+                adv_b = advantage[batch_idxes]
                 reward_critic_optimizer.zero_grad()
                 loss_r = nn.functional.mse_loss(policy.reward_critic(obs_b), target_value_r_b)
                 cost_critic_optimizer.zero_grad()
