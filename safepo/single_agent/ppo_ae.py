@@ -51,7 +51,7 @@ default_cfg = {
     'gamma': 0.99,
     'target_kl': 0.02,
     'batch_size': 64,
-    'learning_iters': 40,
+    'learning_iters': 30,
     'max_grad_norm': 40.0,
     'proj_action_penalty_coef': 0.05,
 }
@@ -209,9 +209,6 @@ def main(args, cfg_env=None):
     # training loop
     for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch", file=sys.stdout):
         rollout_start_time = time.time()
-        model_save_path = os.path.join(args.log_dir, f"ppo_actor_epoch{epoch}.pt")
-        torch.save(policy.actor.state_dict(), model_save_path)
-        print(f"Saved checkpoint (state_dict) to {model_save_path}")
         for steps in range(local_steps_per_epoch):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
