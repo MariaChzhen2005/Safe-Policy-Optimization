@@ -46,12 +46,12 @@ print("imported everything")
 
 default_cfg = {
     'total_steps': 3000000,  # Moderate training: ~500 epochs (3000000 / 2048 = 1465)
-    'steps_per_epoch': 2048,
+    'steps_per_epoch': 4096,
     'hidden_sizes': [64, 64],
     'gamma': 0.99,
     'target_kl': 0.02,
     'batch_size': 64,
-    'learning_iters': 30,
+    'learning_iters': 25,
     'max_grad_norm': 40.0,
     'proj_action_penalty_coef': 0.05,
 }
