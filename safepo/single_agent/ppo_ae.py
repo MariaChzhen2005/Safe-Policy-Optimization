@@ -45,7 +45,7 @@ print("imported everything")
 
 
 default_cfg = {
-    'total_steps': 1024000,  # Moderate training: ~500 epochs (1024000 / 2048 = 500)
+    'total_steps': 3000000,  # Moderate training: ~500 epochs (3000000 / 2048 = 1465)
     'steps_per_epoch': 2048,
     'hidden_sizes': [64, 64],
     'gamma': 0.99,
@@ -357,7 +357,7 @@ def main(args, cfg_env=None):
 
         # Manual mini-batching to avoid DataLoader overhead/hangs with GPU tensors
         # batch_size = config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1))
-        batch_size = 256
+        batch_size = 1024
         num_samples = data["obs"].shape[0]
         num_batches = (num_samples + batch_size - 1) // batch_size
         logger.log(f"Epoch {epoch}: update using manual batching with {num_batches} batches x {config['learning_iters']} iters")
