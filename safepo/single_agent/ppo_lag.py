@@ -400,7 +400,7 @@ if __name__ == "__main__":
     args.log_dir = os.path.join(base_log_dir, args.experiment, args.task, algo, relpath)
     
     # Save terminal and error logs to files for full reproducibility
-    args.write_terminal = False
+    args.write_terminal = True
     
     if not args.write_terminal:
         terminal_log_name = "terminal.log"
