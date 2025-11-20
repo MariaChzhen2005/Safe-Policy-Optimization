@@ -21,7 +21,8 @@ def collect_pairs(
     Roll out a random policy until `n_samples` balanced state–action pairs are stored.
     This version only reflects TRUE hazards (as defined by the environment).
     """
-    env = gym.make(env_name)
+    env = gym.make(env_name, disable_env_checker=True)
+    env = env.unwrapped
     env.reset(seed=seed)
     np.random.seed(seed)
     obs_dim = env.observation_space.shape[0]
@@ -100,7 +101,8 @@ def collect_pairs_reservoir(
     """
     Memory-efficient collection using reservoir sampling for very large datasets.
     """
-    env = gym.make(env_name)
+    env = gym.make(env_name, disable_env_checker=True)
+    env = env.unwrapped
     env.reset(seed=seed)
     np.random.seed(seed)
     obs_dim = env.observation_space.shape[0]
