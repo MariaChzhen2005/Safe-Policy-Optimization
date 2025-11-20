@@ -1,4 +1,4 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: safepo
 Version: 1.0.1
 Summary: Pytorch version of Safe Reinforcement Learning Algorithm
@@ -25,13 +25,3 @@ Requires-Dist: pandas>=1.5.3
 Requires-Dist: safety-gymnasium
 Requires-Dist: rich>=13.3.0
 Requires-Dist: moviepy>=1.0.3
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: home-page
-Dynamic: keywords
-Dynamic: license
-Dynamic: license-file
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
