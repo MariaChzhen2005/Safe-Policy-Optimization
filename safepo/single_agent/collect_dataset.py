@@ -49,7 +49,15 @@ def collect_pairs(
 
         act = env.action_space.sample()
 
-        next_obs, _, cost, terminated, truncated, _ = env.step(act)
+        step_result = env.step(act)
+        if len(step_result) == 6:
+            next_obs, _, cost, terminated, truncated, info = step_result
+        elif len(step_result) == 5:
+            next_obs, _, terminated, truncated, info = step_result
+            # Safety-Gymnasium with Gymnasium API: cost is provided in info
+            cost = float(info.get("cost", info.get("cost_sum", 0.0)))
+        else:
+            raise RuntimeError(f"Unexpected number of elements from env.step: {len(step_result)}")
         total_steps += 1
         pair_vec = np.concatenate([obs, act]).astype(np.float32)
 
@@ -111,7 +119,14 @@ def collect_pairs_reservoir(
     total_steps = 0
     while total_steps < (max_steps or float('inf')):
         act = env.action_space.sample()
-        next_obs, _, cost, terminated, truncated, _ = env.step(act)
+        step_result = env.step(act)
+        if len(step_result) == 6:
+            next_obs, _, cost, terminated, truncated, info = step_result
+        elif len(step_result) == 5:
+            next_obs, _, terminated, truncated, info = step_result
+            cost = float(info.get("cost", info.get("cost_sum", 0.0)))
+        else:
+            raise RuntimeError(f"Unexpected number of elements from env.step: {len(step_result)}")
         total_steps += 1
         pair_vec = np.concatenate([obs, act]).astype(np.float32)
 
