@@ -172,8 +172,10 @@ def main(args, cfg_env=None):
     # Confirm CUDA usage at runtime
     if device.type == "cuda":
         assert torch.cuda.is_available(), "CUDA requested but not available"
+        num_cuda = torch.cuda.device_count()
+        assert 0 <= args.device_id < num_cuda, f"Invalid --device-id {args.device_id}; available device ids: 0..{num_cuda-1}"
         torch.cuda.set_device(args.device_id)
-        print(f"Using CUDA device: {torch.cuda.get_device_name(args.device_id)}")
+        print(f"Using CUDA device {args.device_id} of {num_cuda}: {torch.cuda.get_device_name(args.device_id)}")
     else:
         print("Using CPU device")
 

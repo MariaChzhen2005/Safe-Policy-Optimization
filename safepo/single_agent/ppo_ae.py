@@ -80,8 +80,10 @@ def main(args, cfg_env=None):
     # Confirm CUDA usage at runtime
     if device.type == "cuda":
         assert torch.cuda.is_available(), "CUDA requested but not available"
+        num_cuda = torch.cuda.device_count()
+        assert 0 <= args.device_id < num_cuda, f"Invalid --device-id {args.device_id}; available device ids: 0..{num_cuda-1}"
         torch.cuda.set_device(args.device_id)
-        print(f"Using CUDA device: {torch.cuda.get_device_name(args.device_id)}")
+        print(f"Using CUDA device {args.device_id} of {num_cuda}: {torch.cuda.get_device_name(args.device_id)}")
     else:
         print("Using CPU device")
 
@@ -118,7 +120,8 @@ def main(args, cfg_env=None):
     print(f"Loading autoencoder from: {autoencoder_path}")
     print(f"Observation space shape: {obs_space.shape[0]}D")
     print(f"Action space shape: {act_space.shape[0]}D")
-    
+    autoencoder = None
+    ae_state_dim = obs_space.shape[0]
     # Check if autoencoder file exists
     if not os.path.exists(autoencoder_path):
         print(f"ERROR: Autoencoder file not found at {autoencoder_path}")
