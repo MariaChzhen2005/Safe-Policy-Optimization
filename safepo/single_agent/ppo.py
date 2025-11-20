@@ -155,7 +155,7 @@ def main(args, cfg_env=None):
         model_save_path = os.path.join(args.log_dir, f"ppo_actor_epoch{epoch}.pt")
         torch.save(policy.actor, model_save_path)
         print(f"Saved checkpoint to {model_save_path}")
-        for steps in range(local_steps_per_epoch):
+        for steps in tqdm(range(local_steps_per_epoch), desc=f"Rollout {epoch+1}/{epochs}", unit="step", leave=False):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
             action = act.detach().squeeze() if args.task in isaac_gym_map.keys() else act.detach().squeeze().cpu().numpy()
@@ -234,7 +234,7 @@ def main(args, cfg_env=None):
 
         eval_episodes = 1 if epoch < epochs - 1 else 10
         if args.use_eval:
-            for _ in range(eval_episodes):
+            for _ in tqdm(range(eval_episodes), desc="Eval Episodes", unit="ep", leave=False):
                 eval_done = False
                 eval_obs, _ = eval_env.reset()
                 eval_obs = torch.as_tensor(eval_obs, dtype=torch.float32, device=device)
@@ -288,7 +288,7 @@ def main(args, cfg_env=None):
         )
         update_counts = 0
         final_kl = torch.ones_like(old_distribution.loc)
-        for _ in range(config["learning_iters"]):
+        for _ in tqdm(range(config["learning_iters"]), desc="Policy Update Iters", unit="iter", leave=False):
             for (
                 obs_b,
                 act_b,
@@ -296,7 +296,7 @@ def main(args, cfg_env=None):
                 target_value_r_b,
                 target_value_c_b,
                 adv_b,
-            ) in dataloader:
+            ) in tqdm(dataloader, desc="Policy Update Batches", unit="batch", leave=False):
                 reward_critic_optimizer.zero_grad()
                 loss_r = nn.functional.mse_loss(policy.reward_critic(obs_b), target_value_r_b)
                 cost_critic_optimizer.zero_grad()

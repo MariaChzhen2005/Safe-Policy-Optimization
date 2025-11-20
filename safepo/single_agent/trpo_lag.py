@@ -250,7 +250,7 @@ def main(args, cfg_env=None):
         torch.save(policy.actor, model_save_path)
         print(f"Saved checkpoint to {model_save_path}")
         # collect samples until we have enough to update
-        for steps in range(local_steps_per_epoch):
+        for steps in tqdm(range(local_steps_per_epoch), desc=f"Rollout {epoch+1}/{epochs}", unit="step", leave=False):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
             action = act.detach().squeeze() if args.task in isaac_gym_map.keys() else act.detach().squeeze().cpu().numpy()
@@ -329,7 +329,7 @@ def main(args, cfg_env=None):
 
         eval_episodes = 1 if epoch < epochs - 1 else 10
         if args.use_eval:
-            for _ in range(eval_episodes):
+            for _ in tqdm(range(eval_episodes), desc="Eval Episodes", unit="ep", leave=False):
                 eval_done = False
                 eval_obs, _ = eval_env.reset()
                 eval_obs = torch.as_tensor(eval_obs, dtype=torch.float32, device=device)
@@ -399,7 +399,7 @@ def main(args, cfg_env=None):
         final_kl = 0.0
 
         # While not within_trust_region and not out of total_steps:
-        for step in range(TRPO_SEARCHING_STEPS):
+        for step in tqdm(range(TRPO_SEARCHING_STEPS), desc="TRPO Line Search", unit="step", leave=False):
             # update theta params
             new_theta = theta_old + step_frac * step_direction
             # set new params as params of net
@@ -467,12 +467,12 @@ def main(args, cfg_env=None):
             batch_size=config.get("batch_size", args.steps_per_epoch//config.get("num_mini_batch", 1)),
             shuffle=True,
         )
-        for _ in range(config["learning_iters"]):
+        for _ in tqdm(range(config["learning_iters"]), desc="Value Update Iters", unit="iter", leave=False):
             for (
                 obs_b,
                 target_value_r_b,
                 target_value_c_b,
-            ) in dataloader:
+            ) in tqdm(dataloader, desc="Value Update Batches", unit="batch", leave=False):
                 reward_critic_optimizer.zero_grad()
                 loss_r = nn.functional.mse_loss(policy.reward_critic(obs_b), target_value_r_b)
                 cost_critic_optimizer.zero_grad()
