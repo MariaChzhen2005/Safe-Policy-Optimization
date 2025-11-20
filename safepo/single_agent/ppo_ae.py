@@ -77,6 +77,13 @@ def main(args, cfg_env=None):
     torch.backends.cudnn.deterministic = True
     torch.set_num_threads(4)
     device = torch.device(f'{args.device}:{args.device_id}')
+    # Confirm CUDA usage at runtime
+    if device.type == "cuda":
+        assert torch.cuda.is_available(), "CUDA requested but not available"
+        torch.cuda.set_device(args.device_id)
+        print(f"Using CUDA device: {torch.cuda.get_device_name(args.device_id)}")
+    else:
+        print("Using CPU device")
 
     if args.task not in isaac_gym_map.keys():
         env, obs_space, act_space = make_sa_mujoco_env(
@@ -203,9 +210,10 @@ def main(args, cfg_env=None):
     # training loop
     for epoch in tqdm(range(epochs), desc="Training Epochs", unit="epoch"):
         rollout_start_time = time.time()
-        model_save_path = os.path.join(args.log_dir, f"ppo_actor_epoch{epoch}.pt")
-        torch.save(policy.actor, model_save_path)
-        print(f"Saved checkpoint to {model_save_path}")
+        if (epoch + 1) % 15 == 0:
+            model_save_path = os.path.join(args.log_dir, f"ppo_actor_epoch{epoch}.pt")
+            torch.save(policy.actor, model_save_path)
+            print(f"Saved checkpoint to {model_save_path}")
         for steps in tqdm(range(local_steps_per_epoch), desc=f"Rollout {epoch+1}/{epochs}", unit="step", leave=False):
             with torch.no_grad():
                 act, log_prob, value_r, value_c = policy.step(obs, deterministic=False)
@@ -415,7 +423,7 @@ def main(args, cfg_env=None):
                 break
         update_end_time = time.time()
         actor_scheduler.step()
-        if epoch == 0 or epoch == 1 or (epoch + 1) % 15 == 0:
+        if (epoch + 1) % 15 == 0:
             logger.torch_save(itr=epoch)
             if args.task not in isaac_gym_map.keys():
                 logger.save_state(
