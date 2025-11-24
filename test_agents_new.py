@@ -232,6 +232,7 @@ class AgentTester:
         actions = []
         observations = []
 
+        start_time_s = time.perf_counter()
         while not done:
             with torch.no_grad():
                 # Get action from policy
@@ -264,11 +265,13 @@ class AgentTester:
             obs = torch.as_tensor(next_obs, dtype=torch.float32, device=self.device)
 
         env.close()
+        episode_time_s = time.perf_counter() - start_time_s
 
         return {
             'episode_reward': episode_reward,
             'episode_cost': episode_cost,
             'episode_length': episode_length,
+            'episode_time': episode_time_s,
             'rewards': rewards,
             'costs': costs,
             'actions': actions,
@@ -288,7 +291,7 @@ class AgentTester:
         algo_results = {
             'episode_rewards': [],
             'episode_costs': [],
-            'episode_lengths': [],
+            'episode_times': [],
             'all_episode_data': [],
         }
 
@@ -299,7 +302,7 @@ class AgentTester:
 
             seed_rewards = []
             seed_costs = []
-            seed_lengths = []
+            seed_times = []
             seed_episodes = []
 
             for ep in range(self.num_episodes):
@@ -307,7 +310,7 @@ class AgentTester:
 
                 seed_rewards.append(episode_data['episode_reward'])
                 seed_costs.append(episode_data['episode_cost'])
-                seed_lengths.append(episode_data['episode_length'])
+                seed_times.append(episode_data['episode_time'])
                 seed_episodes.append(episode_data)
 
                 if (ep + 1) % 5 == 0:
@@ -316,7 +319,7 @@ class AgentTester:
             # Store seed results
             algo_results['episode_rewards'].extend(seed_rewards)
             algo_results['episode_costs'].extend(seed_costs)
-            algo_results['episode_lengths'].extend(seed_lengths)
+            algo_results['episode_times'].extend(seed_times)
             algo_results['all_episode_data'].extend(seed_episodes)
 
             print(f" Avg Reward: {np.mean(seed_rewards):.2f}, Avg Cost: {np.mean(seed_costs):.2f}")
@@ -324,14 +327,14 @@ class AgentTester:
         # Compute statistics
         rewards = np.array(algo_results['episode_rewards'])
         costs = np.array(algo_results['episode_costs'])
-        lengths = np.array(algo_results['episode_lengths'])
+        times = np.array(algo_results['episode_times'])
 
         algo_results['reward_mean'] = np.mean(rewards)
         algo_results['reward_std'] = np.std(rewards)
         algo_results['cost_mean'] = np.mean(costs)
         algo_results['cost_std'] = np.std(costs)
-        algo_results['length_mean'] = np.mean(lengths)
-        algo_results['length_std'] = np.std(lengths)
+        algo_results['time_mean'] = np.mean(times)
+        algo_results['time_std'] = np.std(times)
 
         # Find best episode by reward
         best_idx = np.argmax(rewards)
@@ -341,7 +344,7 @@ class AgentTester:
         print(f"Results for {algo.upper()}:")
         print(f"  Reward: {algo_results['reward_mean']:.2f} ± {algo_results['reward_std']:.2f}")
         print(f"  Cost: {algo_results['cost_mean']:.2f} ± {algo_results['cost_std']:.2f}")
-        print(f"  Length: {algo_results['length_mean']:.2f} ± {algo_results['length_std']:.2f}")
+        print(f"  Time (s): {algo_results['time_mean']:.2f} ± {algo_results['time_std']:.2f}")
         print(f"  Best Episode Reward: {algo_results['best_reward']:.2f}")
 
         return algo_results
@@ -413,7 +416,7 @@ class AgentTester:
                            fontsize=14, transform=axes[1, 0].transAxes)
             axes[1, 0].text(0.1, 0.7, f"Total Cost: {episode_data['episode_cost']:.3f}",
                            fontsize=14, transform=axes[1, 0].transAxes)
-            axes[1, 0].text(0.1, 0.6, f"Episode Length: {episode_data['episode_length']}",
+            axes[1, 0].text(0.1, 0.6, f"Episode Time (s): {episode_data.get('episode_time', 0.0):.2f}",
                            fontsize=14, transform=axes[1, 0].transAxes)
             if rewards:
                 axes[1, 0].text(0.1, 0.5, f"Avg Step Reward: {np.mean(rewards):.3f}",
@@ -453,7 +456,7 @@ class AgentTester:
                    fontsize=18, ha='center', va='center', color='green')
             ax.text(0.5, 0.5, f"Cost: {episode_data['episode_cost']:.3f}",
                    fontsize=18, ha='center', va='center', color='red')
-            ax.text(0.5, 0.4, f"Length: {episode_data['episode_length']} steps",
+            ax.text(0.5, 0.4, f"Time: {episode_data.get('episode_time', 0.0):.2f} s",
                    fontsize=18, ha='center', va='center')
 
             # Safety rating
@@ -517,13 +520,13 @@ class AgentTester:
             # Summary table
             f.write("SUMMARY RESULTS\n")
             f.write("-" * 80 + "\n")
-            f.write(f"{'Algorithm':<15} {'Reward Mean':<12} {'Reward Std':<12} {'Cost Mean':<12} {'Cost Std':<12} {'Length Mean':<12}\n")
+            f.write(f"{'Algorithm':<15} {'Reward Mean':<12} {'Reward Std':<12} {'Cost Mean':<12} {'Cost Std':<12} {'Time Mean (s)':<12}\n")
             f.write("-" * 80 + "\n")
 
             for algo, result in results.items():
                 if result:
                     f.write(f"{algo.upper():<15} {result['reward_mean']:<12.2f} {result['reward_std']:<12.2f} "
-                           f"{result['cost_mean']:<12.2f} {result['cost_std']:<12.2f} {result['length_mean']:<12.2f}\n")
+                           f"{result['cost_mean']:<12.2f} {result['cost_std']:<12.2f} {result['time_mean']:<12.2f}\n")
 
             f.write("\n")
 
@@ -537,7 +540,7 @@ class AgentTester:
                 f.write(f"Total Episodes: {len(result['episode_rewards'])}\n")
                 f.write(f"Reward: {result['reward_mean']:.3f} ± {result['reward_std']:.3f}\n")
                 f.write(f"Cost: {result['cost_mean']:.3f} ± {result['cost_std']:.3f}\n")
-                f.write(f"Episode Length: {result['length_mean']:.3f} ± {result['length_std']:.3f}\n")
+                f.write(f"Time (s): {result['time_mean']:.3f} ± {result['time_std']:.3f}\n")
                 f.write(f"Best Episode Reward: {result['best_reward']:.3f}\n")
 
                 # Reward distribution
@@ -559,7 +562,7 @@ class AgentTester:
                 f.write(f"\nBest Episode Details:\n")
                 f.write(f"  Reward: {best_ep['episode_reward']:.3f}\n")
                 f.write(f"  Cost: {best_ep['episode_cost']:.3f}\n")
-                f.write(f"  Length: {best_ep['episode_length']}\n")
+                f.write(f"  Time (s): {best_ep.get('episode_time', 0.0):.2f}\n")
                 f.write(f"  Average reward per step: {best_ep['episode_reward']/best_ep['episode_length']:.3f}\n")
 
                 f.write("\n")
