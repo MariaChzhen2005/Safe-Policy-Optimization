@@ -18,7 +18,7 @@ def collect_pairs(
     exploration_strategy: str = "adaptive",
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
-    Roll out a random policy until `n_samples` balanced state–action pairs are stored.
+    Roll out a random policy until `n_samples` balanced state-action pairs are stored.
     This version only reflects TRUE hazards (as defined by the environment).
     """
     env = gym.make(env_name, disable_env_checker=True)
@@ -39,7 +39,7 @@ def collect_pairs(
 
     feasible_seen = 0
     infeasible_seen = 0
-    max_attempts = n_samples * 50
+    max_attempts = n_samples * 80
     while (len(safe) < target_feasible or len(unsafe) < target_infeasible) and total_steps < max_attempts:
         if total_steps % 5000 == 0:
             print(f"Step {total_steps}: safe={len(safe)}, unsafe={len(unsafe)}")
