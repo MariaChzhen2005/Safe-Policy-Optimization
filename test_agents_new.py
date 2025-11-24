@@ -130,6 +130,7 @@ class AgentTester:
                     print(f"Could not load model: {e2}")
                     return None, None, None
 
+            model.to(self.device)
             model.eval()
 
             # Load normalizer if available
@@ -189,6 +190,7 @@ class AgentTester:
                                     ieee37_model_instance_in=None,
                                 )
                                 autoencoder.load_state_dict(torch.load(autoencoder_path, map_location=self.device))
+                                autoencoder.to(self.device)
                                 autoencoder.eval()
                                 print(f"Loaded autoencoder for PPO_AE inference from {autoencoder_path}")
                                 break
