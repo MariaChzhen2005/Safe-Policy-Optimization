@@ -598,9 +598,9 @@ class AgentTester:
 
 def main():
     parser = argparse.ArgumentParser(description="Test trained RL agents")
-    parser.add_argument("--model-dirs", type=str, default="example_model_dirs_goal.json",
+    parser.add_argument("--model-dirs", type=str, default="example_model_dirs_push.json",
                        help="JSON file containing algorithm to model directory mapping")
-    parser.add_argument("--env", type=str, default="SafetyPointGoal2-v0",
+    parser.add_argument("--env", type=str, default="SafetyPointPush2-v0",
                        help="Environment to test on")
     parser.add_argument("--num-seeds", type=int, default=50,
                        help="Number of seeds to test")
